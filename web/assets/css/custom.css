@@ -1,0 +1,29 @@
+/* Add here all your css styles (customizations) */
+input[type="checkbox"]:checked + .g-bg-blue--checked,
+input[type="radio"]:checked + .g-bg-blue--checked,
+input[type="checkbox"]:checked + * .g-bg-blue--checked,
+input[type="radio"]:checked + * .g-bg-blue--checked {
+  background-color: #004b7c !important; 
+}
+
+.g-bg-blue--checked.g-checked,
+.g-checked .g-bg-blue--checked {
+  background-color: #004b7c !important; 
+}
+.g-bg-blue{
+  background-color: #3398dc !important; 
+}
+.g-bg-my-gradient-opacity-v1,
+.g-bg-my-gradient-opacity-v1--after::after {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(150deg, rgba(51, 152, 220, 0.7), #004b7c); 
+}
+.g-pt-250{
+  padding-top: 250px !important; 
+}
+.borderselect{
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none !important;
+}

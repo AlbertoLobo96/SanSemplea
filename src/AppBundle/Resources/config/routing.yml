@@ -1,0 +1,19 @@
+login:
+  path: /login
+  defaults: { _controller: AppBundle:Default:Login }
+
+login_check:
+  path: /login_check
+
+logout:
+  path: /logout
+#---------------------------------CRUD Ofertas--------------------------------
+
+#---------------------------------CRUD Usuarios--------------------------------
+
+#---------------------------------CRUD Titulaciones--------------------------------
+
+#---------------------------------CRUD Grados--------------------------------
+
+
+

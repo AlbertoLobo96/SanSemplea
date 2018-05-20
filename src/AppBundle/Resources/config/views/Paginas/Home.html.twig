@@ -1,0 +1,300 @@
+{% extends 'AppBundle:Inicio:Head.html.twig' %}
+{% block contenido %}
+    <section id="inicio" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+             data-options="{direction: &quot;reverse&quot;, settings_mode_oneelement_max_offset: &quot;150&quot;}" style="height: 965px">
+        <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-black-opacity-0_3--after" style="height: 100%; background-image: url(&quot;assets/img/my/img1.jpg&quot;);"></div>
+        <div class="container g-pt-250">
+            <div class="row justify-content-between align-items-center g-pt-30">
+                <div class="col-md-6 col-lg-7">
+                    <!-- BLOQUE TITULO -->
+                    <div class="g-mb-0">
+                        <h1 class="g-color-white g-font-weight-600 g-font-size-50 g-mb-3">SAN SEBASTIAN EMPLEA</h1>
+                        <p class="g-color-white g-font-size-18 g-line-height-2">SANSEEMPLEA le facilitará el envío de ofertas a los estudiantes de la ETSI, la difusión de las mismas será mucho más rápida y personalizada encontrando el perfil que necesita.</p>
+                    </div>
+                    <!-- FIN BLOQUE TITULO-->
+                </div>
+                <div class="col-lg-5 g-mb-130">
+                    <!-- LOGIN -->
+                    <form class="g-bg-white rounded g-px-30 g-py-30">
+                        <div class="text-center">
+                            <h2 class="h3 g-font-weight-600 g-mb-35">Login</h2>
+                        </div>
+                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--hover rounded g-py-15 g-px-15"
+                               placeholder="Email" type="text">
+                        <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--hover rounded g-py-15 g-px-15 mb-3"
+                               placeholder="Contraseña" type="password">
+
+                        <div class="g-mb-35">
+                            <button class="btn btn-md btn-block u-btn-blue rounded g-py-13" type="button">Login</button>
+                        </div>
+                    </form>
+                    <!-- FIN LOGIN -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formulario" class="g-bg-gray-dark-v1 g-color-white">
+        <div class="g-bg-my-gradient-opacity-v1">
+            <h2 class="u-divider-center g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-my-0">
+                Formulario de oferta
+            </h2>
+        </div>
+    </section>
+
+    <!-- Bloque formulario-->
+    <section class="g-bg-white g-color-black g-py-50 g-flex-centered">
+        <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30 col-9">
+            <div class="form-group g-mb-20">
+                <label>Nombre de la empresa:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-user"></i>
+                            </span>
+                    </div>
+                    <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text">
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label>Email:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-envelope"></i>
+                            </span>
+                    </div>
+                    <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="email">
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label>Telefono:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-phone"></i>
+                            </span>
+                    </div>
+                    <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text">
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label class="g-color-white">Titulaciones:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-graduation"></i>
+                            </span>
+                    </div>
+                    <select class="form-control form-control-md border-left-0 rounded-0 pl-0 js-example-basic-multiple" name="Cursos[]" multiple="multiple">
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                        <option value="DAW">Desarrollo de aplicaciones web</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label>Tipo de Oferta:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="btn-group justified-content">
+                        <label class="u-check g-bg-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" checked="" type="radio" />
+                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked rounded-0">Oferta Trabajo</span>
+                        </label>
+                        <label class="u-check g-bg-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" />
+                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Beca Formacion</span>
+                        </label>
+                        <label class="u-check g-bg-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" />
+                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Curso Formacion</span>
+                        </label>
+                        <label class="u-check g-bg-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" />
+                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Concurso</span>
+                        </label>
+                        <label class="u-check g-bg-white">
+                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio" />
+                            <span class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Otros</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label>Descripción de la oferta:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-note"></i>
+                            </span>
+                    </div>
+                    <textarea id="inputGroup2_3" class="form-control form-control-md u-textarea-expandable rounded-0" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <label>Enlaces de interes:</label>
+                <div class="input-group g-brd-blue--focus">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text rounded-0 g-bg-white g-color-blue">
+                                <i class="icon-link"></i>
+                            </span>
+                    </div>
+                    <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="HTPP">
+                </div>
+            </div>
+            <div class="form-group g-mb-20">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="g-recaptcha float-md-left" data-sitekey="6LfztFcUAAAAACDUmehDAWqLc6vmA4HYMjL2-0bM"></div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="float-md-right">
+                            <a href="#modal23" data-modal-target="#modal23" data-modal-effect="flash" class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                                <i class="icon-eye g-mr-5"></i>
+                                Visualizar Oferta
+                            </a>
+                            <a class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                                <i class="icon-paper-plane g-mr-5"></i>
+                                Enviar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- FIN bloque formulario -->
+    </section>
+    <div id="modal23" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <h3 class="g-mb-20">Titulo de la empresa</h3>
+        <h4>Tipo de oferta</h4>
+        <ul>
+            <li>Destinatario1</li>
+            <li>Destinatario2</li>
+            <li>Destinatario3</li>
+            <li>Destinatario4</li>
+            <li>Destinatario5</li>
+            <li>Destinatario6</li>
+            <li>Destinatario7</li>
+        </ul>
+        <p>Descripcion de la oferta de empleo para los alumnos</p>
+        <footer>
+                <span>
+                    <i class="icon-link"></i>
+                    URL
+                </span>
+            <br/>
+            <span>
+                    <i class="fa fa-phone"></i>
+                    telefono
+                </span>
+            <br/>
+            <span>
+                    <i class="fa fa-globe"></i>
+                    Correo
+                </span>
+        </footer>
+        <a class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+            <i class="icon-paper-plane g-mr-5"></i>
+            Enviar
+        </a>
+    </div>
+    <!-- Contacto -->
+    <div id="contacto" class="u-bg-overlay g-bg-black-opacity-0_6--after g-color-white-opacity-0_8 g-bg-img-hero g-py-60" style="background-image: url(assets/img/my/img2.jpg);">
+        <div class="container u-bg-overlay__inner g-mb-60">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">SANSEEMPLEA</h2>
+                        </div>
+                        <p>SANSEEMPLEA le facilitará el envío de ofertas a los estudiantes de la ETSI, la difusión de las
+                            mismas será mucho más rápida y personalizada encontrando el perfil que necesita.</p>
+                    </div>
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Contacto</h2>
+                        </div>
+
+                        <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(../../../assets/img/maps/map2.png);">
+                            <!-- Location -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                        <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1">
+                                            <i class="fa fa-map-marker"></i>
+                                        </span>
+                                </div>
+                                <p class="mb-0">Calle del instituto,
+                                    <br> Huelva, 21004
+                                </p>
+                            </div>
+                            <!-- End Location -->
+
+                            <!-- Phone -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                        <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                </div>
+                                <p class="mb-0">telefono1
+                                    <br> telefono2
+                                </p>
+                            </div>
+                            <!-- End Phone -->
+
+                            <!-- Email and Website -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                        <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1">
+                                            <i class="fa fa-globe"></i>
+                                        </span>
+                                </div>
+                                <p class="mb-0">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:info@htmlstream.com">correo del instituto</a>
+                                    <br>
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">web del instituto
+                                    </a>
+                                </p>
+                            </div>
+                            <!-- End Email and Website -->
+                        </address>
+                    </div>
+                    <!-- End Footer Content -->
+                    <!-- Footer Content -->
+                    <div class="row text-center text-uppercase">
+                        <div class="col-lg-3 col-sm-6 g-brd-right g-brd-white-opacity-0_2 g-mb-50">
+                            <div class="js-counter g-font-size-35 g-font-weight-300 g-mb-7">20</div>
+                            <h4 class="h5 g-color-white-opacity-0_6">Ofertas</h4>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 g-brd-right--lg g-brd-white-opacity-0_2 g-mb-50">
+                            <div class="js-counter g-font-size-35 g-font-weight-300 g-mb-7">300</div>
+                            <h4 class="h5 g-color-white-opacity-0_6">Alumnos</h4>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 g-brd-right g-brd-white-opacity-0_2 g-mb-50">
+                            <div class="js-counter g-font-size-35 g-font-weight-300 g-mb-7">1000</div>
+                            <h4 class="h5 g-color-white-opacity-0_6">Visitas</h4>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 g-mb-50">
+                            <div class="js-counter g-font-size-35 g-font-weight-300 g-mb-7">5</div>
+                            <h4 class="h5 g-color-white-opacity-0_6">Empresas</h4>
+                        </div>
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contacto -->
+{% endblock %}
