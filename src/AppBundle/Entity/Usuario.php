@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Usuario
@@ -10,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="usuario", uniqueConstraints={@ORM\UniqueConstraint(name="Email", columns={"Email"}), @ORM\UniqueConstraint(name="DNI", columns={"DNI"})})
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UsuarioRepository")
  */
-class Usuario
+class Usuario implements UserInterface
 {
     /**
      * @var string
@@ -57,9 +58,9 @@ class Usuario
     /**
      * @var integer
      *
-     * @ORM\Column(name="Admin", type="integer", nullable=false)
+     * @ORM\Column(name="Admin", type="string", nullable=false)
      */
-    private $admin = '0';
+    private $admin;
 
     /**
      * @var string
@@ -84,6 +85,30 @@ class Usuario
      */
     private $id;
 
+    //--------------------------------------------Metodos para autentificacion
+    /**
+     * @return mixed
+     */
+    public function getUsername()
+    {
+        return $this->email;
+    }
+    public function getSalt()
+    {
+        return null;
+    }
+    public function getRoles()
+    {
+        return array($this->getAdmin());
+    }
+    public function eraseCredentials()
+    {
+        return null;
+    }
+    public function getPassword()
+    {
+        return $this->getPasswd();
+    }
 
 
     /**

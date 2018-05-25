@@ -2,20 +2,22 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/", name="homepage")
-     */
-    public function indexAction(Request $request)
+    public function LoginAction()
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
-        ]);
+        //Llamamos al servicio de autenticacion
+        $authenticationUtils = $this->get('security.authentication_utils');
+        // conseguir el error del login si falla
+        $error = $authenticationUtils->getLastAuthenticationError();
+        // ultimo nombre de usuario que se ha intentado identificar
+        $lastUsername = $authenticationUtils->getLastUsername();
+        return $this->render(
+            'AppBundle:Paginas:Home.html.twig', array(
+            'last_username' => $lastUsername,
+            'error' => $error,
+        ));
     }
 }
