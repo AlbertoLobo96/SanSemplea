@@ -19,11 +19,6 @@
         <option name="fixed"/>
       </options>
     </field>
-    <field name="titulaciones" type="string" column="Titulaciones" length="50" nullable="true">
-      <options>
-        <option name="fixed"/>
-      </options>
-    </field>
     <field name="tipo" type="integer" column="Tipo" nullable="true">
       <options>
         <option name="unsigned"/>
@@ -37,6 +32,11 @@
     <field name="enlaces" type="string" column="Enlaces" length="200" nullable="true">
       <options>
         <option name="fixed"/>
+      </options>
+    </field>
+    <field name="validar" type="integer" column="Validar" nullable="true">
+      <options>
+        <option name="unsigned"/>
       </options>
     </field>
   </entity>

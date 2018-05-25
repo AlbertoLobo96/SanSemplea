@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Usuario
  *
  * @ORM\Table(name="usuario", uniqueConstraints={@ORM\UniqueConstraint(name="Email", columns={"Email"}), @ORM\UniqueConstraint(name="DNI", columns={"DNI"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\UsuarioRepository")
  */
 class Usuario
 {
@@ -67,6 +67,13 @@ class Usuario
      * @ORM\Column(name="Passwd", type="string", length=50, nullable=false)
      */
     private $passwd;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Foto", type="string", length=150, nullable=true)
+     */
+    private $foto;
 
     /**
      * @var integer
@@ -269,6 +276,30 @@ class Usuario
     public function getPasswd()
     {
         return $this->passwd;
+    }
+
+    /**
+     * Set foto
+     *
+     * @param string $foto
+     *
+     * @return Usuario
+     */
+    public function setFoto($foto)
+    {
+        $this->foto = $foto;
+
+        return $this;
+    }
+
+    /**
+     * Get foto
+     *
+     * @return string
+     */
+    public function getFoto()
+    {
+        return $this->foto;
     }
 
     /**

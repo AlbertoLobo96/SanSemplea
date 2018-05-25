@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Oferta
  *
  * @ORM\Table(name="oferta")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\OfertaRepository")
  */
 class Oferta
 {
@@ -34,13 +34,6 @@ class Oferta
     private $telefono;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="Titulaciones", type="string", length=50, nullable=true)
-     */
-    private $titulaciones;
-
-    /**
      * @var integer
      *
      * @ORM\Column(name="Tipo", type="integer", nullable=true)
@@ -60,6 +53,13 @@ class Oferta
      * @ORM\Column(name="Enlaces", type="string", length=200, nullable=true)
      */
     private $enlaces;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Validar", type="integer", nullable=true)
+     */
+    private $validar;
 
     /**
      * @var integer
@@ -145,30 +145,6 @@ class Oferta
     }
 
     /**
-     * Set titulaciones
-     *
-     * @param string $titulaciones
-     *
-     * @return Oferta
-     */
-    public function setTitulaciones($titulaciones)
-    {
-        $this->titulaciones = $titulaciones;
-
-        return $this;
-    }
-
-    /**
-     * Get titulaciones
-     *
-     * @return string
-     */
-    public function getTitulaciones()
-    {
-        return $this->titulaciones;
-    }
-
-    /**
      * Set tipo
      *
      * @param integer $tipo
@@ -238,6 +214,30 @@ class Oferta
     public function getEnlaces()
     {
         return $this->enlaces;
+    }
+
+    /**
+     * Set validar
+     *
+     * @param integer $validar
+     *
+     * @return Oferta
+     */
+    public function setValidar($validar)
+    {
+        $this->validar = $validar;
+
+        return $this;
+    }
+
+    /**
+     * Get validar
+     *
+     * @return integer
+     */
+    public function getValidar()
+    {
+        return $this->validar;
     }
 
     /**

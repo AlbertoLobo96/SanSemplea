@@ -3,12 +3,11 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Grado
  *
  * @ORM\Table(name="grado")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\GradoRepository")
  */
 class Grado
 {
