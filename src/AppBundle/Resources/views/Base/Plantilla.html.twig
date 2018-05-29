@@ -11,7 +11,7 @@
 <body>
 {% block body %}
     {% block NavBar %}
-        {{ include('AppBundle:Base:NavBar.html.twig') }}
+
     {% endblock %}
     {% for tipo in app.session.flashbag().get("tipo") %}
         <div class="alert alert-{{ tipo }}">
@@ -58,7 +58,6 @@
     <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
     <script src="{{ asset('assets/vendor/appear.js') }}"></script>
     <script src="{{ asset('assets/js/components/hs.modal-window.js') }}"></script>
-
     <!-- JS Custom -->
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     <!-- JS SELECT2 -->

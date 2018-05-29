@@ -24,10 +24,10 @@ var
   util         = require('gulp-util'),
   watch        = require('gulp-watch'),
 
-  // user config
+  // user Config
   config       = require('../config/docs'),
 
-  // task config
+  // task Config
   tasks        = require('../config/tasks'),
   configSetup  = require('../config/project/config'),
   install      = require('../config/project/install'),
@@ -48,7 +48,7 @@ require('../collections/internal')(gulp);
 
 module.exports = function () {
 
-  // use a different config
+  // use a different Config
   config = configSetup.addDerivedValues(config);
 
   // shorthand

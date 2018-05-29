@@ -28,7 +28,7 @@
     var fullscreen,
     scroll = { x: 0, y: 0 },
 
-    // Default config
+    // Default Config
     defaults = {
         enabled:                true,
         debug:                  false,
@@ -740,7 +740,7 @@
         var _log = function() { _console('log', arguments) },
             _warn = function() { _console('warn', arguments) };
 
-        // Log config options
+        // Log Config options
         _log('Config', config);
 
         // Get icon URL
@@ -1198,7 +1198,7 @@
             // Try to load the value from storage
             var active = plyr.storage.captionsEnabled;
 
-            // Otherwise fall back to the default config
+            // Otherwise fall back to the default Config
             if (!_is.boolean(active)) {
                 active = config.captions.defaultActive;
             }
@@ -1442,7 +1442,7 @@
 
             if (!value) {
                 // Key wasn't set (or had been cleared), move along
-                return;
+
             } else if (/^\d+(\.\d+)?$/.test(value)) {
                 // If value is a number, it's probably volume from an older
                 // version of plyr. See: https://github.com/Selz/plyr/pull/313
@@ -1842,7 +1842,7 @@
             });
 
             // TODO: Captions
-            /*if (config.captions.defaultActive) {
+            /*if (Config.captions.defaultActive) {
                 plyr.embed.enableTextTrack('en');
             }*/
 
@@ -2225,7 +2225,7 @@
                 volume = plyr.storage.volume;
             }
 
-            // Use config if all else fails
+            // Use Config if all else fails
             if (volume === null || isNaN(volume)) {
                 volume = config.volume;
             }
@@ -2585,7 +2585,7 @@
 
         // Show the player controls in fullscreen mode
         function _toggleControls(toggle) {
-            // Don't hide if config says not to, it's audio, or not ready or loading
+            // Don't hide if Config says not to, it's audio, or not ready or loading
             if (!config.hideControls || plyr.type === 'audio') {
                 return;
             }
@@ -3536,7 +3536,7 @@
         // Inject hidden div with sprite on load
         x.onload = function() {
             container.innerHTML = x.responseText;
-        }
+        };
 
         x.send();
     }
@@ -3677,10 +3677,10 @@
             }
 
             // Setup a player instance and add to the element
-            // Create instance-specific config
+            // Create instance-specific Config
             var data = {};
 
-            // Try parsing data attribute config
+            // Try parsing data attribute Config
             try { data = JSON.parse(element.getAttribute('data-plyr')); }
             catch(e) { }
 

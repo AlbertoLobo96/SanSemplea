@@ -30,7 +30,7 @@ var
 
 
   // oAuth configuration for GitHub
-  oAuth          = fs.existsSync(__dirname + '/../../config/admin/oauth.js')
+  oAuth          = fs.existsSync(__dirname + '/../../Config/admin/oauth.js')
     ? require('../../config/admin/oauth')
     : false,
 
@@ -49,7 +49,7 @@ module.exports = function(callback) {
   ;
 
   if(!oAuth) {
-    console.error('Must add oauth token for GitHub in tasks/config/admin/oauth.js');
+    console.error('Must add oauth token for GitHub in tasks/Config/admin/oauth.js');
     return;
   }
 
@@ -85,9 +85,9 @@ module.exports = function(callback) {
       commitOptions   = { args: commitArgs, cwd: outputDirectory },
       releaseOptions  = { tag_name: version, owner: release.org, repo: repoName },
 
-      fileModeOptions = { args : 'config core.fileMode false', cwd: outputDirectory },
-      usernameOptions = { args : 'config user.name "' + oAuth.name + '"', cwd: outputDirectory },
-      emailOptions    = { args : 'config user.email "' + oAuth.email + '"', cwd: outputDirectory },
+      fileModeOptions = { args : 'Config core.fileMode false', cwd: outputDirectory },
+      usernameOptions = { args : 'Config user.name "' + oAuth.name + '"', cwd: outputDirectory },
+      emailOptions    = { args : 'Config user.email "' + oAuth.email + '"', cwd: outputDirectory },
       versionOptions =  { args : 'rev-parse --verify HEAD', cwd: outputDirectory },
 
       localRepoSetup  = fs.existsSync(path.join(outputDirectory, '.git')),

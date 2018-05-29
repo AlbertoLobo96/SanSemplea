@@ -34,13 +34,6 @@ class Oferta
     private $telefono;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="Titulaciones", type="string", length=50, nullable=true)
-     */
-    private $titulaciones;
-
-    /**
      * @var integer
      *
      * @ORM\Column(name="Tipo", type="integer", nullable=true)
@@ -60,6 +53,13 @@ class Oferta
      * @ORM\Column(name="Enlaces", type="string", length=200, nullable=true)
      */
     private $enlaces;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="Validar", type="integer", nullable=true)
+     */
+    private $validar;
 
     /**
      * @var integer

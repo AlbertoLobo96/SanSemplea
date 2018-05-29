@@ -23,10 +23,10 @@ var
   rtlcss       = require('gulp-rtlcss'),
   uglify       = require('gulp-uglify'),
 
-  // user config
+  // user Config
   config       = require('../config/user'),
 
-  // install config
+  // install Config
   tasks        = require('../config/tasks'),
   install      = require('../config/project/install'),
 

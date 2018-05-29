@@ -37,7 +37,7 @@
 	};
 
 	/**
-	 * Returns the path to a grammar, using the language_path and use_minified config keys.
+	 * Returns the path to a grammar, using the language_path and use_minified Config keys.
 	 * @param {string} lang
 	 * @returns {string}
 	 */

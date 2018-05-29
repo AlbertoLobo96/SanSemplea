@@ -23,7 +23,7 @@ var
   replace      = require('gulp-replace'),
   runSequence  = require('run-sequence'),
 
-  // config
+  // Config
   config       = require('../config/user'),
   tasks        = require('../config/tasks'),
   install      = require('../config/project/install'),

@@ -40,7 +40,7 @@
 		 * Initialization of ModalWindow wrapper.
 		 *
 		 * @param String selector (optional)
-		 * @param Object config (optional)
+		 * @param Object Config (optional)
 		 *
 		 * @return jQuery - collection of initialized items.
 		 */
@@ -68,7 +68,7 @@
 		 * Initialization of each Autonomous Modal Window of the page.
 		 *
 		 * @param jQuery collection
-		 * @param Object config
+		 * @param Object Config
 		 *
 		 * @return jQuery collection
 		 */
@@ -119,7 +119,7 @@
 		 * Initialization of each Autonomous Modal Window of the page.
 		 *
 		 * @param jQuery collection
-		 * @param Object config
+		 * @param Object Config
 		 *
 		 * @return jQuery collection
 		 */

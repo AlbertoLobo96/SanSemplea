@@ -19,7 +19,7 @@ var
   replace      = require('gulp-replace'),
   uglify       = require('gulp-uglify'),
 
-  // config
+  // Config
   config       = require('../config/user'),
   tasks        = require('../config/tasks'),
   install      = require('../config/project/install'),

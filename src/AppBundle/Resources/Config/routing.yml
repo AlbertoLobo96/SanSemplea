@@ -7,6 +7,10 @@ login_check:
 
 logout:
   path: /logout
+
+Home:
+  path: /Home
+  defaults: {_controller: AppBundle:Loged:Home}
 #---------------------------------CRUD Ofertas--------------------------------
 
 #---------------------------------CRUD Usuarios--------------------------------

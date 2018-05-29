@@ -46,7 +46,7 @@
 		 * Initialization of Progress Bar wrapper.
 		 * 
 		 * @param String selector (optional)
-		 * @param Object config (optional)
+		 * @param Object Config (optional)
 		 *
 		 * @return jQuery currentCollection - collection of initialized items.
 		 */
@@ -125,7 +125,7 @@
 		 * Constructor Function of Horizontal Progress Bar
 		 * 
 		 * @param jQuery element
-		 * @param Object config
+		 * @param Object Config
 		 *
 		 */
 		HorizontalProgressBar: function(element, config) {
@@ -172,7 +172,7 @@
 		 * Constructor Function of Vertical Progress Bar
 		 * 
 		 * @param jQuery element
-		 * @param Object config
+		 * @param Object Config
 		 *
 		 */
 		VerticalProgressBar: function(element, config) {

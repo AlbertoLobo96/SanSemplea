@@ -31,7 +31,7 @@ var
 
 
   // oAuth configuration for GitHub
-  oAuth     = fs.existsSync(__dirname + '/../../config/admin/oauth.js')
+  oAuth     = fs.existsSync(__dirname + '/../../Config/admin/oauth.js')
     ? require('../../config/admin/oauth')
     : false,
 
@@ -50,7 +50,7 @@ module.exports = function(callback) {
   ;
 
   if(!oAuth) {
-    console.error('Must add oauth token for GitHub in tasks/config/admin/oauth.js');
+    console.error('Must add oauth token for GitHub in tasks/Config/admin/oauth.js');
     return;
   }
 

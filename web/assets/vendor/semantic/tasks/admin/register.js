@@ -12,7 +12,7 @@ var
   // node dependencies
   process = require('child_process'),
 
-  // config
+  // Config
   release = require('../config/admin/release'),
 
   // register components and distributions

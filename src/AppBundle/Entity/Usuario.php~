@@ -69,6 +69,13 @@ class Usuario
     private $passwd;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="Foto", type="string", length=150, nullable=true)
+     */
+    private $foto;
+
+    /**
      * @var integer
      *
      * @ORM\Column(name="ID", type="integer")

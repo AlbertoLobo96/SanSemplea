@@ -31,7 +31,7 @@ catch(error) {
   };
 }
 
-// looks for version in config or package.json (whichever is available)
+// looks for version in Config or package.json (whichever is available)
 version = (npmPackage && npmPackage.version !== undefined && npmPackage.name == 'semantic-ui')
   ? npmPackage.version
   : config.version

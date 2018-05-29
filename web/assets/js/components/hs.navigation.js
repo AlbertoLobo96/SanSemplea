@@ -181,9 +181,8 @@
       this.destroy().init();
 
     }
-  };
-
-  /**
+  }
+    /**
    * HSNavigationOverlay.
    *
    * @param {jQuery} element
@@ -220,10 +219,8 @@
 
     });
 
-  };
-
-
-  /**
+  }
+    /**
    * Initialization of the instance.
    *
    * @public
@@ -271,10 +268,10 @@
 
           // Old code
           // if(_self.isOpened && (e.originalEvent.propertyName == 'right' || e.originalEvent.propertyName == 'left')) {
-          //   _self.config.afterOpen.call(_self.element, _self.overlay);
+          //   _self.Config.afterOpen.call(_self.element, _self.overlay);
           // }
           // else if(!_self.isOpened && (e.originalEvent.propertyName == 'right' || e.originalEvent.propertyName == 'left')) {
-          //   _self.config.afterClose.call(_self.element, _self.overlay);
+          //   _self.Config.afterClose.call(_self.element, _self.overlay);
           // }
 
           // New code
@@ -429,7 +426,7 @@
 
     // Old code
     // if(this.transitionDuration !== undefined && this.transitionDuration == 0) {
-    //   this.config.afterClose.call(this.element, this.overlay);
+    //   this.Config.afterClose.call(this.element, this.overlay);
     // }
 
     // New code
@@ -491,10 +488,8 @@
 
     // this.init();
 
-  };
-
-
-  /**
+  }
+    /**
    * Initialization of the instance.
    *
    * @public
@@ -542,10 +537,10 @@
 
           // Old code
           // if(_self.isOpened && (e.originalEvent.propertyName == 'right' || e.originalEvent.propertyName == 'left')) {
-          //   _self.config.afterOpen.call(_self.element, _self.overlay);
+          //   _self.Config.afterOpen.call(_self.element, _self.overlay);
           // }
           // else if(!_self.isOpened && (e.originalEvent.propertyName == 'right' || e.originalEvent.propertyName == 'left')) {
-          //   _self.config.afterClose.call(_self.element, _self.overlay);
+          //   _self.Config.afterClose.call(_self.element, _self.overlay);
           // }
 
           // New code

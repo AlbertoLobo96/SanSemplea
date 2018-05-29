@@ -28,7 +28,7 @@ module.exports = {
         if( fs.existsSync(currentPath) ) {
           // found file
           configPath = path.normalize(directory);
-          return;
+
         }
         else {
           // reached file system root, let's stop
@@ -48,7 +48,7 @@ module.exports = {
     return configPath || '';
   },
 
-  // adds additional derived values to a config object
+  // adds additional derived values to a Config object
   addDerivedValues: function(config) {
 
     config = config || extend(false, {}, defaults);
@@ -64,7 +64,7 @@ module.exports = {
       folder
     ;
 
-    // resolve paths (config location + base + path)
+    // resolve paths (Config location + base + path)
     for(folder in config.paths.source) {
       if(config.paths.source.hasOwnProperty(folder)) {
         sourcePaths[folder] = path.resolve(path.join(configPath, config.base, config.paths.source[folder]));
@@ -76,7 +76,7 @@ module.exports = {
       }
     }
 
-    // set config paths to full paths
+    // set Config paths to full paths
     config.paths.source = sourcePaths;
     config.paths.output = outputPaths;
 

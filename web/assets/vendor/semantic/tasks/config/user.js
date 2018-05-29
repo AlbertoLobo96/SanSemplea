@@ -13,7 +13,7 @@ var
   defaults        = require('./defaults'),
   config          = require('./project/config'),
 
-  // Final config object
+  // Final Config object
   gulpConfig = {},
 
   // semantic.json settings
@@ -27,16 +27,16 @@ var
 *******************************/
 
 try {
-  // looks for config file across all parent directories
+  // looks for Config file across all parent directories
   userConfig = requireDotFile('semantic.json');
 }
 catch(error) {
   if(error.code === 'MODULE_NOT_FOUND') {
-    console.error('No semantic.json config found');
+    console.error('No semantic.json Config found');
   }
 }
 
-// extend user config with defaults
+// extend user Config with defaults
 gulpConfig = (!userConfig)
   ? extend(true, {}, defaults)
   : extend(false, {}, defaults, userConfig)

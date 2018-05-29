@@ -6041,7 +6041,7 @@ module.exports = function inflate_fast(strm, start) {
           }
           else if ((op & 64) === 0) {          /* 2nd level distance code */
             here = dcode[(here & 0xffff)/*here.val*/ + (hold & ((1 << op) - 1))];
-            continue dodist;
+            continue;
           }
           else {
             strm.msg = 'invalid distance code';
@@ -6054,7 +6054,7 @@ module.exports = function inflate_fast(strm, start) {
       }
       else if ((op & 64) === 0) {              /* 2nd level length code */
         here = lcode[(here & 0xffff)/*here.val*/ + (hold & ((1 << op) - 1))];
-        continue dolen;
+        continue;
       }
       else if (op & 32) {                     /* end-of-block */
         //Tracevv((stderr, "inflate:         end of block\n"));
@@ -6084,7 +6084,7 @@ module.exports = function inflate_fast(strm, start) {
   strm.avail_out = (_out < end ? 257 + (end - _out) : 257 - (_out - end));
   state.hold = hold;
   state.bits = bits;
-  return;
+
 };
 
 },{}],35:[function(_dereq_,module,exports){
@@ -9223,7 +9223,7 @@ module.exports = ZStream;
 		// Browser
 		factory( jQuery, window, document );
 	}
-}
+};
 (function( $, window, document, undefined ) {
 	"use strict";
 
@@ -15563,7 +15563,7 @@ module.exports = ZStream;
 	
 			_fnCallbackFire( settings, 'aoStateLoaded', 'stateLoaded', [settings, s] );
 			callback();
-		}
+		};
 	
 		if ( ! settings.oFeatures.bStateSave ) {
 			callback();
@@ -25203,7 +25203,7 @@ $.extend( AutoFill.prototype, {
 
 			currNode = currOffsetParent; // for next loop
 		}
-		while ( currOffsetParent.get(0) !== targetParent.get(0) )
+		while ( currOffsetParent.get(0) !== targetParent.get(0) );
 
 		return {
 			top: top,
@@ -25852,7 +25852,7 @@ var _dtButtons = DataTable.ext.buttons;
  */
 var Buttons = function( dt, config )
 {
-	// If there is no config set it to an empty object
+	// If there is no Config set it to an empty object
 	if ( typeof( config ) === 'undefined' ) {
 		config = {};	
 	}
@@ -26575,7 +26575,7 @@ $.extend( Buttons.prototype, {
 
 	/**
 	 * Resolve a button configuration
-	 * @param  {string|function|object} conf Button config to resolve
+	 * @param  {string|function|object} conf Button Config to resolve
 	 * @return {object} Button configuration
 	 * @private
 	 */
@@ -34273,7 +34273,7 @@ $.extend( FixedHeader.prototype, {
 				.appendTo( 'body' );
 
 			// Insert a fake thead/tfoot into the DataTable to stop it jumping around
-			itemDom.placeholder = itemElement.clone( false )
+			itemDom.placeholder = itemElement.clone( false );
 			itemDom.placeholder
 				.find( '*[id]' )
 				.removeAttr( 'id' );

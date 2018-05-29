@@ -36,7 +36,7 @@
 		 * Initialization of Counter wrapper.
 		 *
 		 * @param jQuery collection
-		 * @param Object config
+		 * @param Object Config
 		 *
 		 * @return jQuery
 		 */
@@ -134,7 +134,7 @@
 	 * HSSmartMenu Constructor.
 	 * 
 	 * @param jQuery element
-	 * @param Object config
+	 * @param Object Config
 	 */
 	function HSSmartMenu(element, config) {
 
@@ -197,7 +197,7 @@
 
 		this.defaultState = false;
 		return this;
-	}
+	};
 
 	/**
 	 * Destroy of HSSmartMenu instance.
@@ -210,7 +210,7 @@
 
 		this.defaultState = true;
 		return this;
-	}
+	};
 
 	/**
 	 * Returns true if instance is in default state.
@@ -219,7 +219,7 @@
 	 */
 	HSSmartMenu.prototype.isDefaultState = function() {
 		return this.defaultState;
-	}
+	};
 
 	/**
 	 * Returns fixe moment.

@@ -1,0 +1,9 @@
+{% extends 'AppBundle:Base:Plantilla.html.twig' %}
+{% block NavBar %}
+    {{ include('AppBundle:Base:NavBar.html.twig') }}
+{% endblock %}
+{% block contenido %}
+    {{ include('AppBundle:Paginas/Partes:Slider.html.twig') }}
+    {{ include('AppBundle:Paginas/Partes:Formulario.html.twig') }}
+    {{ include('AppBundle:Paginas/Partes:Contacto.html.twig') }}
+{% endblock %}

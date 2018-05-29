@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -58,9 +59,9 @@ class Usuario implements UserInterface
     /**
      * @var integer
      *
-     * @ORM\Column(name="Admin", type="string", nullable=false)
+     * @ORM\Column(name="Rol", type="string", nullable=false)
      */
-    private $admin;
+    private $rol;
 
     /**
      * @var string
@@ -99,7 +100,7 @@ class Usuario implements UserInterface
     }
     public function getRoles()
     {
-        return array($this->getAdmin());
+        return array($this->getRol());
     }
     public function eraseCredentials()
     {
@@ -256,27 +257,27 @@ class Usuario implements UserInterface
     }
 
     /**
-     * Set admin
+     * Set rol
      *
-     * @param integer $admin
+     * @param integer $rol
      *
      * @return Usuario
      */
-    public function setAdmin($admin)
+    public function setRol($rol)
     {
-        $this->admin = $admin;
+        $this->rol = $rol;
 
         return $this;
     }
 
     /**
-     * Get admin
+     * Get rol
      *
      * @return integer
      */
-    public function getAdmin()
+    public function getRol()
     {
-        return $this->admin;
+        return $this->rol;
     }
 
     /**

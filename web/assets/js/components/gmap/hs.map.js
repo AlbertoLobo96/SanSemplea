@@ -31,7 +31,7 @@
      * Initialization of Gmap wrapper.
      *
      * @param String selector (optional)
-     * @param Object config (optional)
+     * @param Object Config (optional)
      *
      * @return jQuery pageCollection - collection of initialized items.
      */

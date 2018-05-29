@@ -42,7 +42,7 @@
      * Initialization of animation.
      *
      * @param jQuery selector (optional)
-     * @param Object config (optional)
+     * @param Object Config (optional)
      *
      * @return jQuery _pageCollection - collection of initialized items.
      */
@@ -94,13 +94,13 @@
 
     }
 
-  }
+  };
 
   /**
    * HSAnimationElement constructor function.
    * 
    * @param jQuery element
-   * @param Object config
+   * @param Object Config
    *
    * @return undefined
    */
@@ -156,7 +156,7 @@
       }, this.config.animationDuration );
     }
 
-  }
+  };
 
   /**
    * Hides element.

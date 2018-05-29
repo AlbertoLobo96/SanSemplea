@@ -1,32 +1,41 @@
 <!--IMAGEN PARALLAX -->
-<section id="inicio" class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
-         data-options="{direction: &quot;reverse&quot;, settings_mode_oneelement_max_offset: &quot;150&quot;}" style="height: 965px">
-    <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-black-opacity-0_3--after" style="height: 100%; background-image: url({{ asset('assets/img/my/img1.jpg') }});"></div>
+<section id="inicio"
+         class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall"
+         data-options="{direction: &quot;reverse&quot;, settings_mode_oneelement_max_offset: &quot;150&quot;}"
+         style="height: 965px">
+    <div class="divimage dzsparallaxer--target w-100 g-bg-cover g-bg-black-opacity-0_3--after"
+         style="height: 100%; background-image: url({{ asset('assets/img/my/img1.jpg') }});"></div>
     <div class="container g-pt-100">
         <div class="row justify-content-between align-items-center g-pt-80">
             <div class="col-md-6">
                 <!-- BLOQUE TITULO -->
                 <div class="g-mb-0">
                     <h1 class="g-color-white g-font-weight-600 g-font-size-50 g-mb-3">SAN SEBASTIAN EMPLEA</h1>
-                    <p class="g-color-white g-font-size-18 g-line-height-2">SANSEEMPLEA le facilitará el envío de ofertas a los estudiantes de la ETSI, la difusión de las mismas será mucho más rápida y personalizada encontrando el perfil que necesita.</p>
+                    <p class="g-color-white g-font-size-18 g-line-height-2">SANSEEMPLEA le facilitará el envío de
+                        ofertas a los estudiantes de la ETSI, la difusión de las mismas será mucho más rápida y
+                        personalizada encontrando el perfil que necesita.</p>
                 </div>
                 <!-- FIN BLOQUE TITULO-->
             </div>
             <div class="col-md-6">
                 <!-- LOGIN -->
-                <form class="g-bg-white rounded g-px-30 g-py-30">
+                <form action="{{ path('login_check') }}" method="post" class="g-bg-white rounded g-px-30 g-py-30">
                     <div class="text-center">
                         <h2 class="h3 g-font-weight-600 g-mb-35">Login</h2>
                     </div>
                     <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--hover rounded g-py-15 g-px-15"
-                           placeholder="Email" type="text">
+                           placeholder="Email" type="email" id="username" name="_username" value="{{ last_username }}"/>
                     <input class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-blue--hover rounded g-py-15 g-px-15 mb-3"
-                           placeholder="Contraseña" type="password">
+                           placeholder="Contraseña" id="password" type="password" name="_password"/>
 
                     <div class="g-mb-35">
-                        <button class="btn btn-md btn-block u-btn-blue rounded g-py-13" type="button">Login</button>
+                        <input class="btn btn-md btn-block u-btn-blue rounded g-py-13" type="submit" value="Login"/>
+                        <input type="hidden" name="_target_path" value="/Home"/>
                     </div>
                 </form>
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
                 <!-- FIN LOGIN -->
             </div>
         </div>

@@ -7,7 +7,7 @@ var
   gulp         = require('gulp-help')(require('gulp')),
   runSequence  = require('run-sequence'),
 
-  // config
+  // Config
   config       = require('./config/user'),
   install      = require('./config/project/install'),
 

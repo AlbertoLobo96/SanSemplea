@@ -36,7 +36,7 @@ var
   tap             = require('gulp-tap'),
   util            = require('gulp-util'),
 
-  // config
+  // Config
   config          = require('../../config/user'),
   release         = require('../../config/admin/release'),
   project         = require('../../config/project/release'),

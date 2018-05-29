@@ -25,10 +25,10 @@ var
   replace      = require('gulp-replace'),
   uglify       = require('gulp-uglify'),
 
-  // user config
+  // user Config
   config       = require('../config/docs'),
 
-  // install config
+  // install Config
   tasks        = require('../config/tasks'),
   configSetup  = require('../config/project/config'),
   install      = require('../config/project/install'),
@@ -59,7 +59,7 @@ module.exports = function(callback) {
     uncompressedStream
   ;
 
-  // use a different config
+  // use a different Config
   config = configSetup.addDerivedValues(config);
 
   // shorthand

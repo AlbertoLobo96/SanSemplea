@@ -9,7 +9,7 @@ var
   chmod        = require('gulp-chmod'),
   gulpif       = require('gulp-if'),
 
-  // config
+  // Config
   config       = require('../config/user'),
   tasks        = require('../config/tasks'),
 

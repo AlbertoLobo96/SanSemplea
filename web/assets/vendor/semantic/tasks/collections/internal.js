@@ -27,11 +27,11 @@ module.exports = function(gulp) {
     replace    = require('gulp-replace'),
     uglify     = require('gulp-uglify'),
 
-    // user config
+    // user Config
     config     = require('./../config/user'),
     docsConfig = require('./../config/docs'),
 
-    // install config
+    // install Config
     tasks      = require('./../config/tasks'),
     release    = require('./../config/project/release'),
 

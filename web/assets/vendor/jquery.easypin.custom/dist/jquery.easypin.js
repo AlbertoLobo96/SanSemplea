@@ -174,7 +174,7 @@
                 height: setPx(imageHeight)
               });
 
-            // get config variable
+            // get Config variable
             var src = $.fn.easypin.defaults.markerSrc;
             var markerWidth = $.fn.easypin.defaults.markerWidth;
             var markerHeight = $.fn.easypin.defaults.markerHeight == 'auto' ? markerWidth : $.fn.easypin.defaults.markerHeight;
@@ -374,7 +374,7 @@
         var parentElement = $(markerInstance).parent();
         var markerContainer = $(markerInstance);
 
-        var targetImage = $('img.easypin-target', parentElement)
+        var targetImage = $('img.easypin-target', parentElement);
         var markerWidthHalf = (depends.markerWidth / 2);
         var markerHeightHalf = (depends.markerHeight / 2);
         liveY = e.pageY - targetImage.offset().top;
@@ -401,7 +401,7 @@
         var absY = parseInt(relY.toFixed(3)) + markerHeightHalf;
 
         // on move marker then check tool container position
-        checkToolsPosition(absY, depends.imageHeight, markerContainer)
+        checkToolsPosition(absY, depends.imageHeight, markerContainer);
 
         // drag event
         $.fn.easypin.defaults.drag(absX, absY, markerContainer);
@@ -605,7 +605,7 @@
       });
 
     } catch (e) {
-      var args = new Array();
+      var args = [];
       args.push(e.message);
       args.push(e);
       depends.error.apply(null, args);
@@ -670,7 +670,7 @@
           $.fn.easypin.di('pin_id', j);
 
           // run callback function
-          var args = new Array();
+          var args = [];
           args.push(i);
           args.push(depends.data[parentId][j]);
           var returnData = depends.each.apply(null, args);
@@ -778,7 +778,7 @@
 
     markerContainer = $(markerContainer)
       .css('left', pinLeft + '%')
-      .css('top', pinTop + '%')
+      .css('top', pinTop + '%');
 
     return markerContainer;
   };
@@ -795,7 +795,7 @@
 
         if (typeof(callbackVars) != 'undefined' && typeof(callbackVars[i]) == 'function') {
 
-          var args = new Array();
+          var args = [];
 
           // current canvas id
           args.push($.fn.easypin.container['canvas_id']);
@@ -855,14 +855,14 @@
       }
 
       if (typeof(callback) == 'function') {
-        var callbackArgs = new Array();
+        var callbackArgs = [];
         callbackArgs.push(getEventData(namespace));
         var eventReturn = callback.apply(null, callbackArgs);
       } else {
         var eventReturn = getEventData(namespace);
       }
 
-      var dependsArgs = new Array();
+      var dependsArgs = [];
       dependsArgs.push($.fn.easypin.container['instance']);
       dependsArgs.push(eventReturn);
       dependsArgs.push(params);
@@ -898,7 +898,7 @@
 
       expectParm = depends.match(/(\$[a-zA-Z]+)/g);
 
-      var dependsArgs = new Array();
+      var dependsArgs = [];
 
       for (var i in expectParm) {
         if ($.fn.easypin.container[expectParm[i]]) {
@@ -1063,7 +1063,7 @@
     // modal parent element append to parent element
     $('.popupOpacityLayer', parentElement).after(modalParent);
 
-    var modalHeight = $('.modalContext').height()
+    var modalHeight = $('.modalContext').height();
     var modalWidth = $(modalContext).width();
 
     var parentLeft = $(elem.target).closest(setClass($.fn.easypin.defaults.parentClass)).offset().left;
@@ -1196,11 +1196,11 @@
 
         var formData = getFormData(modalBody, function (data) {
 
-          data['coords'] = new Object();
+          data['coords'] = {};
 
           data.coords['lat'] = lat;
           data.coords['long'] = long;
-          data.coords['canvas'] = new Object();
+          data.coords['canvas'] = {};
           data.coords.canvas['src'] = $(targetImage).attr('src');
           data.coords.canvas['width'] = ImgWidth;
           data.coords.canvas['height'] = ImgHeight;
@@ -1232,12 +1232,12 @@
     var items = localStorage.getItem('easypin');
 
     if (!items) {
-      var items = new Object();
+      var items = {};
     } else {
       try {
         var items = JSON.parse(items);
       } catch (e) {
-        var items = new Object();
+        var items = {};
       }
     }
 
@@ -1265,12 +1265,12 @@
     var items = $('input[name="easypin-store"]').val();
 
     if (!items) {
-      var items = new Object();
+      var items = {};
     } else {
       try {
         var items = JSON.parse(decodeURIComponent(items));
       } catch (e) {
-        var items = new Object();
+        var items = {};
       }
     }
 
@@ -1367,7 +1367,7 @@
       try {
         var items = JSON.parse(decodeURIComponent(items));
 
-        items = removeHelper(parentId, markerIndex, items)
+        items = removeHelper(parentId, markerIndex, items);
 
         var totalPin = $('input[name="easypin-store"]').size();
         if (totalPin < 1) {
@@ -1452,11 +1452,11 @@
   var setNestedObject = function (parentId, markerIndex, items) {
 
     if (typeof(items[parentId]) == 'undefined') {
-      items[parentId] = new Object();
+      items[parentId] = {};
     }
 
     if (typeof(items[parentId][markerIndex]) == 'undefined') {
-      items[parentId][markerIndex] = new Object();
+      items[parentId][markerIndex] = {};
     }
 
     return items;
@@ -1492,7 +1492,7 @@
   // get values of current modal
   var getFormData = function (element, callback) {
 
-    var elements = new Object();
+    var elements = {};
 
     $('input, select, textarea', element).each(function () {
 
@@ -1524,7 +1524,7 @@
 
     if (typeof(callback) == 'function') {
 
-      var args = new Array();
+      var args = [];
       args.push(elements);
       return callback.apply(null, args);
 
@@ -1721,7 +1721,7 @@
 
       // callback check and run
       if (popoverCallBacks && typeof(popoverCallBacks[i]) == 'function') {
-        var args = new Array();
+        var args = [];
         args.push(formData[i]);
         formData[i] = popoverCallBacks[i].apply(null, args);
       }

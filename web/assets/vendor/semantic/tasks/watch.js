@@ -24,10 +24,10 @@ var
   util         = require('gulp-util'),
   watch        = require('gulp-watch'),
 
-  // user config
+  // user Config
   config       = require('./config/user'),
 
-  // task config
+  // task Config
   tasks        = require('./config/tasks'),
   install      = require('./config/project/install'),
 
@@ -113,7 +113,7 @@ module.exports = function(callback) {
 
       if(isConfig) {
         console.info('Rebuilding all UI');
-        // impossible to tell which file was updated in theme.config, rebuild all
+        // impossible to tell which file was updated in theme.Config, rebuild all
         gulp.start('build-css');
         return;
       }

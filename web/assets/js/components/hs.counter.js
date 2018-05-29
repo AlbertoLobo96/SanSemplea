@@ -35,7 +35,7 @@
 		 * Initialization of Counter wrapper.
 		 *
 		 * @param String selector (optional)
-		 * @param Object config (optional)
+		 * @param Object Config (optional)
 		 *
 		 * @return jQuery pageCollection - collection of initialized items.
 		 */
@@ -123,7 +123,7 @@
 								$item.text(endValue);
 							}
 
-							return;
+
 
 						}
 
@@ -157,7 +157,7 @@
 		 */
 		getCommaSeparatedValue: function(value) {
 
-			value = new String(value);
+			value = String(value);
 
 			switch(value.length) {
 

@@ -247,7 +247,7 @@ module.exports = {
     themeImport  : './src/theme.less',
     themes       : './src/themes',
     defaultTheme : './src/themes/default',
-    userGulpFile : './tasks/config/npm/gulpfile.js'
+    userGulpFile : './tasks/Config/npm/gulpfile.js'
   },
 
   // expected final filenames

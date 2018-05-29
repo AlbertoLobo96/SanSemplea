@@ -31,7 +31,7 @@ var
   replace         = require('gulp-replace'),
   tap             = require('gulp-tap'),
 
-  // config
+  // Config
   config          = require('../../config/user'),
   release         = require('../../config/admin/release'),
   project         = require('../../config/project/release'),

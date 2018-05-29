@@ -871,13 +871,13 @@
 
     }
 
-  }
+  };
 
   /**
    * HSHeader constructor function.
    *
    * @param jQuery element
-   * @param Object config
+   * @param Object Config
    * @param Object observers
    *
    * @return undefined
@@ -936,7 +936,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    * Notifies all observers.
@@ -958,7 +958,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    * Reinit all header's observers.
@@ -990,7 +990,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    * Abstract constructor function for each observer.
@@ -1011,7 +1011,7 @@
         .destroy()
         .init()
         .check();
-    }
+    };
 
     return true;
   }
@@ -1040,7 +1040,7 @@
     this.offset = this.element.offset().top;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1053,7 +1053,7 @@
     this.toDefaultState();
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1076,7 +1076,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1092,7 +1092,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1108,7 +1108,7 @@
 
     return this;
 
-  }
+  };
 
 
   /**
@@ -1136,7 +1136,7 @@
     this.effect = this.element.data('header-fix-effect') ? this.element.data('header-fix-effect') : 'show-hide';
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1147,7 +1147,7 @@
     this.toDefaultState();
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1169,7 +1169,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1194,7 +1194,7 @@
     this.defaultState = !this.defaultState;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1219,7 +1219,7 @@
     this.defaultState = !this.defaultState;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1241,7 +1241,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1273,7 +1273,7 @@
     this.effect = this.element.data('header-fix-effect') ? this.element.data('header-fix-effect') : 'show-hide';
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1289,7 +1289,7 @@
     this._removeCap();
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1323,7 +1323,7 @@
 
     this.capInserted = true;
 
-  }
+  };
 
   /**
    *
@@ -1352,7 +1352,7 @@
 
     this.capInserted = false;
 
-  }
+  };
 
 
   /**
@@ -1382,7 +1382,7 @@
 
 
 
-  }
+  };
 
   /**
    *
@@ -1412,7 +1412,7 @@
 
     this.defaultState = !this.defaultState;
 
-  }
+  };
 
   /**
    *
@@ -1443,7 +1443,7 @@
 
     this.defaultState = !this.defaultState;
 
-  }
+  };
 
   /**
    *
@@ -1458,7 +1458,7 @@
 
     this.config = {
       fixPointSelf: false
-    }
+    };
 
     if( config && $.isPlainObject(config) ) this.config = $.extend(true, {}, this.config, config);
 
@@ -1499,7 +1499,7 @@
     if( !this.imgs.length ) return this;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1512,7 +1512,7 @@
     this.toDefaultState();
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1536,7 +1536,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1557,7 +1557,7 @@
     this.defaultState = !this.defaultState;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1578,7 +1578,7 @@
     this.defaultState = !this.defaultState;
 
     return this;
-  }
+  };
 
   /**
    *
@@ -1611,7 +1611,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1632,7 +1632,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1657,7 +1657,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1677,7 +1677,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1695,7 +1695,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1709,7 +1709,7 @@
 
     this.config = {
       fixPointSelf: false
-    }
+    };
 
     if( config && $.isPlainObject(config) ) this.config = $.extend(true, {}, this.config, config);
 
@@ -1749,7 +1749,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1764,7 +1764,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1789,7 +1789,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1816,7 +1816,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1843,7 +1843,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1857,7 +1857,7 @@
 
     this.config = {
       animated: true
-    }
+    };
 
     if( config && $.isPlainObject(config) ) this.config = $.extend(true, {}, this.config, config);
 
@@ -1876,7 +1876,7 @@
     this.elements = this.element.find('.u-header--hidden-element');
     this.defaultState = true;
     return this;
-  }
+  };
 
   /**
    *
@@ -1891,7 +1891,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1916,7 +1916,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1937,7 +1937,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -1958,7 +1958,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
 
 
@@ -1994,7 +1994,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -2009,7 +2009,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -2032,7 +2032,7 @@
 
     return this;
 
-  }
+  };
 
   /**
    *
@@ -2062,7 +2062,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
   /**
    *
@@ -2092,7 +2092,7 @@
     this.defaultState = !this.defaultState;
     return this;
 
-  }
+  };
 
 
   /**
@@ -2102,23 +2102,23 @@
    *
    * @return
    */
-  function HSHeaderWithoutBehaviorObserver( element ) { if( !HSAbstractObserver.call(this, element) ) return; }
+  function HSHeaderWithoutBehaviorObserver( element ) { if( !HSAbstractObserver.call(this, element) )  }
 
   HSHeaderWithoutBehaviorObserver.prototype.check = function() {
     return this;
-  }
+  };
 
   HSHeaderWithoutBehaviorObserver.prototype.init = function() {
     return this;
-  }
+  };
 
   HSHeaderWithoutBehaviorObserver.prototype.destroy = function() {
     return this;
-  }
+  };
 
   HSHeaderWithoutBehaviorObserver.prototype.changeState = function() {
     return this;
-  }
+  };
 
   HSHeaderWithoutBehaviorObserver.prototype.toDefaultState = function() {
     return this;

@@ -36,13 +36,13 @@ var
   requireDotFile = require('require-dot-file'),
   wrench         = require('wrench-sui'),
 
-  // install config
+  // install Config
   install        = require('./config/project/install'),
 
-  // user config
+  // user Config
   config         = require('./config/user'),
 
-  // release config (name/title/etc)
+  // release Config (name/title/etc)
   release        = require('./config/project/release'),
 
   // shorthand
@@ -75,7 +75,7 @@ manager = {
 */
 
 
-/* Don't do end user config if SUI is a sub-module */
+/* Don't do end user Config if SUI is a sub-module */
 if( install.isSubModule() ) {
   console.info('SUI is a sub-module, skipping end-user install');
   return;
@@ -217,7 +217,7 @@ gulp.task('create install files', function(callback) {
    Exit Conditions
   ---------------*/
 
-  // if config exists and user specifies not to proceed
+  // if Config exists and user specifies not to proceed
   if(answers.overwrite !== undefined && answers.overwrite == 'no') {
     return;
   }
@@ -277,7 +277,7 @@ gulp.task('create install files', function(callback) {
     // add install folder to all output paths
     for(var destination in installPaths) {
       if( installPaths.hasOwnProperty(destination) ) {
-        // config goes in project root, rest in install folder
+        // Config goes in project root, rest in install folder
         installPaths[destination] = (destination == 'config' || destination == 'configFolder')
           ? path.normalize( path.join(manager.root, installPaths[destination]) )
           : path.normalize( path.join(installFolder, installPaths[destination]) )
@@ -348,7 +348,7 @@ gulp.task('create install files', function(callback) {
 
   gulp.task('create theme.config', function() {
     var
-      // determine path to site theme folder from theme config
+      // determine path to site theme folder from theme Config
       // force CSS path variable to use forward slashes for paths
       pathToSite   = path.relative(path.resolve(installPaths.themeConfigFolder), path.resolve(installPaths.site)).replace(/\\/g,'/'),
       siteVariable = "@siteFolder   : '" + pathToSite + "/';"
@@ -358,7 +358,7 @@ gulp.task('create install files', function(callback) {
     console.info('Adjusting @siteFolder to: ', pathToSite + '/');
 
     if(fs.existsSync(installPaths.themeConfig)) {
-      console.info('Modifying src/theme.config (LESS config)', installPaths.themeConfig);
+      console.info('Modifying src/theme.Config (LESS Config)', installPaths.themeConfig);
       return gulp.src(installPaths.themeConfig)
         .pipe(plumber())
         .pipe(replace(regExp.siteVariable, siteVariable))
@@ -366,7 +366,7 @@ gulp.task('create install files', function(callback) {
       ;
     }
     else {
-      console.info('Creating src/theme.config (LESS config)', installPaths.themeConfig);
+      console.info('Creating src/theme.Config (LESS Config)', installPaths.themeConfig);
       return gulp.src(source.themeConfig)
         .pipe(plumber())
         .pipe(rename({ extname : '' }))
@@ -388,7 +388,7 @@ gulp.task('create install files', function(callback) {
 
     // adjust variables in theme.less
     if( fs.existsSync(installPaths.config) ) {
-      console.info('Extending config file (semantic.json)', installPaths.config);
+      console.info('Extending Config file (semantic.json)', installPaths.config);
       return gulp.src(installPaths.config)
         .pipe(plumber())
         .pipe(rename(settings.rename.json)) // preserve file extension
@@ -397,7 +397,7 @@ gulp.task('create install files', function(callback) {
       ;
     }
     else {
-      console.info('Creating config file (semantic.json)', installPaths.config);
+      console.info('Creating Config file (semantic.json)', installPaths.config);
       return gulp.src(source.config)
         .pipe(plumber())
         .pipe(rename({ extname : '' })) // remove .template from ext

@@ -214,8 +214,8 @@ function sourceFromStacktrace( offset ) {
 
 /**
  * Config object: Maintain internal state
- * Later exposed as QUnit.config
- * `config` initialized at top of scope
+ * Later exposed as QUnit.Config
+ * `Config` initialized at top of scope
  */
 var config = {
 
@@ -469,7 +469,7 @@ extend( QUnit, {
 	only: only,
 
 	// DEPRECATED: The functionality of QUnit.start() will be altered in QUnit 2.0.
-	// In QUnit 2.0, invoking it will ONLY affect the `QUnit.config.autostart` blocking behavior.
+	// In QUnit 2.0, invoking it will ONLY affect the `QUnit.Config.autostart` blocking behavior.
 	start: function( count ) {
 		var globalStartAlreadyCalled = globalStartCalled;
 
@@ -2290,7 +2290,7 @@ if ( urlParams.seed === true ) {
 	QUnit.config.seed = urlParams.seed;
 }
 
-// Add URL-parameter-mapped config values with UI form rendering data
+// Add URL-parameter-mapped Config values with UI form rendering data
 QUnit.config.urlConfig.push(
 	{
 		id: "hidepassed",
@@ -2558,7 +2558,7 @@ function getUrlConfigHtml() {
 }
 
 // Handle "click" events on toolbar checkboxes and "change" for select menus.
-// Updates the URL with the new state of `config.urlConfig` values.
+// Updates the URL with the new state of `Config.urlConfig` values.
 function toolbarChanged() {
 	var updatedUrl, value, tests,
 		field = this,
@@ -2638,7 +2638,7 @@ function toolbarUrlConfigContainer() {
 	var urlConfigContainer = document.createElement( "span" );
 
 	urlConfigContainer.innerHTML = getUrlConfigHtml();
-	addClass( urlConfigContainer, "qunit-url-config" );
+	addClass( urlConfigContainer, "qunit-url-Config" );
 
 	// For oldIE support:
 	// * Add handlers to the individual elements instead of the container

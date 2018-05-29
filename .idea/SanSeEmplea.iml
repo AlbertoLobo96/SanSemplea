@@ -126,5 +126,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="api" level="application" />
+    <orderEntry type="library" name="mdb" level="application" />
+    <orderEntry type="library" name="bootstrap-select" level="application" />
   </component>
 </module>

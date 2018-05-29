@@ -25,10 +25,10 @@ var
   util         = require('gulp-util'),
   watch        = require('gulp-watch'),
 
-  // user config
+  // user Config
   config       = require('../config/user'),
 
-  // task config
+  // task Config
   tasks        = require('../config/tasks'),
   install      = require('../config/project/install'),
 
@@ -100,8 +100,8 @@ module.exports = function(callback) {
 
 
       if(isConfig) {
-        console.log('Change detected in theme config');
-        // cant tell which theme was changed in theme.config, rebuild all
+        console.log('Change detected in theme Config');
+        // cant tell which theme was changed in theme.Config, rebuild all
         gulp.start('build');
       }
       else if(isPackagedTheme) {

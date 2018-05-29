@@ -31,7 +31,7 @@ module.exports = {
 
     comments: {
 
-      // remove all comments from config files (.variable)
+      // remove all comments from Config files (.variable)
       variables : {
         in  : /(\/\*[\s\S]+?\*\/+)[\s\S]+?\/\* End Config \*\//,
         out : '$1',
@@ -97,7 +97,7 @@ module.exports = {
             if(error.line == 5) {
               element  = regExp.variable.exec(error.message)[1];
               if(element) {
-                console.error('Missing theme.config value for ', element);
+                console.error('Missing theme.Config value for ', element);
               }
               console.error('Most likely new UI was added in an update. You will need to add missing elements from theme.config.example');
             }
