@@ -80,8 +80,8 @@
                 <div class="g-pr-10">
                     <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Titulaciones</strong>
                     <span class="align-top">
-                                        {% for sel in app.user.galumno %}
-                                            {{ sel.grado.nombre }}
+                                        {% for sel in app.user.Grados %}
+                                            {{ sel.nombre }}
                                         {% endfor %}
                                     </span>
                 </div>

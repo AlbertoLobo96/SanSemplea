@@ -14,7 +14,7 @@ class Oferta
 {
     public function __construct()
     {
-        $this->GOferta = new ArrayCollection();
+        $this->Grados = new ArrayCollection();
     }
     /**
      * @ORM\Column(type="integer")
@@ -69,32 +69,15 @@ class Oferta
      * @ORM\Column(type="integer")
      */
     private $Validar;
-
     /**
-     * @ORM\OneToMany(targetEntity="Grado_Oferta", mappedBy="Oferta")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Grado", inversedBy="Ofertas")
+     * @ORM\JoinTable(name="Grados_Ofertas")
      */
-    private $GOferta;
+    private $Grados;
 
 
 
     //-------------------------------------------------------GETTER Y SETTER-------------------
-    /**
-     * @return mixed
-     */
-    public function getGOferta()
-    {
-        return $this->GOferta;
-    }
-
-    /**
-     * @param mixed $GOferta
-     */
-    public function setGOferta($GOferta)
-    {
-        $this->GOferta = $GOferta;
-    }
-
-
     /**
      * @return mixed
      */
@@ -239,5 +222,23 @@ class Oferta
         $this->Validar = $Validar;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getGrados()
+    {
+        return $this->Grados;
+    }
+    public function addGrado(...$grados)
+    {
+        foreach ( $grados as $grado) {
+            if (!$this->Grados->contains($grado)) {
+                $this->Grados->add($grado);
+            }
+        }
+    }
+    public function removeGrado($grado){
+        $this->Grados->removeElement($grado);
+    }
 
 }

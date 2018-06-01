@@ -1,16 +1,15 @@
 {% block panel %}
 <div class=" g-mb-40 g-pb-100">
     <div class="row">
-    {% for key in ListaOfertas %}
-        {% for oferta in key %}
+    {% for oferta in ListaOfertas %}
         <div class="col-md-6 g-mt-10">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Nombre Empresa: {{ oferta.nombre }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:{{ oferta.tipo }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:</h6>
                     <ul>
-                        {% for sel in oferta.GOferta %}
-                           <li> {{ sel.grado.nombre }}</li>
+                        {% for sel in oferta.Grados %}
+                           <li> {{ sel.nombre }}</li>
                         {% endfor %}
                     </ul>
                     <p class="card-text">Descripcion: {{ oferta.descripcion }}</p>
@@ -28,11 +27,10 @@
                     <a href="#" class="card-link">Solicitar</a>
                     {% elseif oferta.validar == 0 %}
                     <a href="#" class="card-link">Validar</a>
-                    {% endif %}</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
-            {% endfor %}
         {% endfor %}
     </div>
     <nav class="g-mt-50" aria-label="Page Navigation">
