@@ -24,10 +24,29 @@
                 <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
                     <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
                         <li class="nav-item g-mx-20--lg">
-                            <a href="#" class="nav-link px-0">Bienvenido:{USER}</a>
+                            <a href="{{ path('Home') }}" class="nav-link px-0">Datos Personales</a>
+                        </li>
+                        {% if app.user.rol == "ROLE_ADMIN" %}
+                        <li class="nav-item g-mx-20--lg">
+                            <a href="{{ path('Listar_Alumnos') }}" class="nav-link px-0">Listado Alumnos</a>
+                        </li>
+                        {% endif %}
+                        <li class="nav-item g-mx-20--lg">
+                            {% if app.user.rol != "ROLE_ADMIN" %}
+                            <a href="{{ path('Listar_MisOfertas') }}" class="nav-link px-0">
+                                    Mis Ofertas
+                            </a>
+                                {% else %}
+                            <a href="{{ path('Listar_Ofertas')}}" class="nav-link px-0">
+                                Todas las Ofertas
+                            </a>
+                                {% endif %}</a>
                         </li>
                         <li class="nav-item g-mx-20--lg">
-                            <a href="#" class="nav-link px-0">Desconectar
+                            <a href="#" class="nav-link px-0">Bienvenido: {{ app.user.nombre }}</a>
+                        </li>
+                        <li class="nav-item g-mx-20--lg">
+                            <a href="{{ path('login') }}" class="nav-link px-0">Desconectar
                                 <i class="fa fa-power-off"></i>
                             </a>
                         </li>

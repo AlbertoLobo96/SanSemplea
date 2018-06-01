@@ -7,17 +7,21 @@ login_check:
 
 logout:
   path: /logout
-
+  
 Home:
   path: /Home
-  defaults: {_controller: AppBundle:Loged:Home}
-#---------------------------------CRUD Ofertas--------------------------------
+  defaults: {_controller: AppBundle:Default:DatosPersonales}
 
-#---------------------------------CRUD Usuarios--------------------------------
+Listar_Alumnos:
+  path: /Home/Alumnos/{page}
+  defaults: {_controller: AppBundle:Default:ListarAlumnos,page: 1}
 
-#---------------------------------CRUD Titulaciones--------------------------------
+Listar_Ofertas:
+  path: /Home/Ofertas/{page}
+  defaults: {_controller: AppBundle:Default:ListarOfertas,page: 1}
 
-#---------------------------------CRUD Grados--------------------------------
-
+Listar_MisOfertas:
+  path: /Home/MisOfertas/{page}
+  defaults: {_controller: AppBundle:Default:MisOfertas,page: 1}
 
 

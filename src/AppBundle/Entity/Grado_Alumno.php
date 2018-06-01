@@ -7,13 +7,12 @@ namespace AppBundle\Entity;
  * Time: 16:19
  */
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity()
- * @ORM\Table(name="Grado")
+ * @ORM\Table(name="Grado_Alumno")
  */
-class Grado
+class Grado_Alumno
 {
     public function __construct()
     {
@@ -25,10 +24,13 @@ class Grado
      */
     private $id;
     /**
-     * @ORM\Column(type="string", length=100)
-     * @Assert\NotBlank()
+     * @ORM\ManyToOne(targetEntity="Grado", inversedBy="GAlumno")
      */
-    private $Nombre;
+    private $Grado;
+    /**
+     * @ORM\ManyToOne(targetEntity="Usuario", inversedBy="GAlumno")
+     */
+    private $Alumno;
 
     /**
      * @return mixed
@@ -49,17 +51,34 @@ class Grado
     /**
      * @return mixed
      */
-    public function getNombre()
+    public function getGrado()
     {
-        return $this->Nombre;
+        return $this->Grado;
     }
 
     /**
-     * @param mixed $Nombre
+     * @param mixed $Grado
      */
-    public function setNombre($Nombre)
+    public function setGrado($Grado)
     {
-        $this->Nombre = $Nombre;
+        $this->Grado = $Grado;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getAlumno()
+    {
+        return $this->Alumno;
+    }
+
+    /**
+     * @param mixed $Alumno
+     */
+    public function setAlumno($Alumno)
+    {
+        $this->Alumno = $Alumno;
+    }
+
 
 }

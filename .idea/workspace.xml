@@ -1,160 +1,626 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89cb09cb-2cc7-4ec0-a231-ff0d2ebc03a2" name="Default" comment="Creada estructura synfony">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LogedController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Home.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/demo-square.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img2-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img2-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img2-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/unify-preview/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/my/fast.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/my/fiable.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/img/my/img1.jpg" afterPath="$PROJECT_DIR$/web/assets/img/my/img1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SanSeEmplea.iml" afterPath="$PROJECT_DIR$/.idea/SanSeEmplea.iml" />
+    <list default="true" id="bbb8a4e4-e451-4411-af79-46c543a526c6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/FctPractica.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.vscode/settings.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/login.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SanSeEmplea.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LogedController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/GradoRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Grado.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Oferta.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionAlum.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionOfer.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Usuario.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-bottom-50x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-left-100x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-right-100x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-top-50x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/ic_close_36px.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-20x48.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-bottom-2-680x200.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-bottom-680x200.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-left-2-200x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-left-200x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-right-2-200x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-right-200x680.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-top-2-680x200.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-top-680x200.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/unify-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1200x800/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1200x900/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img27.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img28.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img29.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img30.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img33.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img37.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img38.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img39.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img41.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img42.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img43.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img44.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x500/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x700/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x700/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/250x170/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/250x170/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/3500x1080/img1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/760x900/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x700/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x1000/img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x535/img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/bg-img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/bricks--white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/diagonal-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/diagonal-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/tile-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/tile-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/wave.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/zigzag-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/zigzag-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-primary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/none-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern--green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/bricks-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/darkness.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/doodles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/figures-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/footer-lodyas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/math-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/memphis-colorful.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/noise-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/noise2-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6--beige.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6--gray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-1-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/secondary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/captcha/captcha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/ASEAN.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Afghanistan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/African Union(OAS).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Albania.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Algeria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/American Samoa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Andorra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Angola.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Anguilla.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Antarctica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Antigua &amp; Barbuda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Arab League.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Argentina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Armenia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Aruba.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Australia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Austria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Azerbaijan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bahamas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bahrain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bangladesh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Barbados.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belarus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belgium.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Benin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bermuda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bhutan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bolivia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bosnia &amp; Herzegovina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Botswana.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Brazil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Brunei.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bulgaria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Burkina Faso.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Burundi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/CARICOM.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/CIS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cambodja.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cameroon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Canada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cape Verde.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cayman Islands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Central African Republic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Chad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Chile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/China.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Colombia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Commonwealth.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Comoros.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Congo-Brazzaville.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Congo-Kinshasa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cook Islands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Costa Rica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cote d'Ivoire.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Croatia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cuba.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cyprus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Czech Republic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Denmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Djibouti.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Dominica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Dominican Republic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Egypt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/El Salvador.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/England.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Equador.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Equatorial Guinea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Eritrea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Estonia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ethiopia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/European Union.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Faroes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Fiji.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Finland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/France.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gabon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gambia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Georgia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Germany.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ghana.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gibraltar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Greece.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Greenland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Grenada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guadeloupe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guam.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guatemala.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guernsey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guinea-Bissau.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guinea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guyana.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Haiti.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Honduras.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Hong Kong.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Hungary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iceland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/India.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Indonesia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iran.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iraq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ireland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Islamic Conference.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Isle of Man.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Israel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Italy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jamaica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jersey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jordan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kazakhstan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kenya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kiribati.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kosovo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kuwait.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kyrgyzstan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Laos.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Latvia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lebanon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lesotho.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Liberia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Libya.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Liechtenstein.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lithuania.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Luxembourg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Macao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Macedonia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Madagascar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malawi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malaysia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Maldives.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mali.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malta.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Marshall Islands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Martinique.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mauritania.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mauritius.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mexico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Micronesia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Moldova.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Monaco.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mongolia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Montenegro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Montserrat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Morocco.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mozambique.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Myanmar(Burma).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/NATO.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Namibia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nauru.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nepal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Netherlands Antilles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Netherlands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/New Caledonia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/New Zealand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nicaragua.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Niger.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nigeria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/North Korea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Northern Cyprus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Northern Ireland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Norway.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/OPEC.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Olimpic Movement.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Oman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Pakistan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Palau.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Palestine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Panama.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Papua New Guinea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Paraguay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Peru.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Philippines.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Poland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Portugal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Puerto Rico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Qatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Red Cross.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Reunion.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Romania.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Russian Federation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Rwanda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Saint Lucia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Samoa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/San Marino.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sao Tome &amp; Principe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Saudi Arabia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Scotland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Senegal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Serbia(Yugoslavia).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Seyshelles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sierra Leone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Singapore.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Slovakia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Slovenia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Solomon Islands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Somalia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Somaliland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/South Africa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/South Korea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Spain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sri Lanka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/St Kitts &amp; Nevis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/St Vincent &amp; the Grenadines.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sudan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Suriname.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Swaziland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sweden.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Switzerland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Syria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tahiti(French Polinesia).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Taiwan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tajikistan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tanzania.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Thailand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Timor-Leste.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Togo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tonga.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Trinidad &amp; Tobago.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tunisia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turkey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turkmenistan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turks and Caicos Islands.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tuvalu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uganda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ukraine.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Arab Emirates.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Kingdom(Great Britain).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Nations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United States of America(USA).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uruguay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uzbekistan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Vanuatu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Vatican City.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Venezuela.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Viet Nam.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Virgin Islands British.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Virgin Islands US.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Wales.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Western Sahara.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Yemen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Zambia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Zimbabwe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/japan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/mobile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/oil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/payment-systems/master-card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/payment-systems/visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/aqua.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/bluegray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/brown.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/cyan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkblue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkpurple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/deeporange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/gray-dark-v2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/indigo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/lightred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/teal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/preloaders/preloader-black.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/preloaders/preloader-white.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/audio-bg/tiesto.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg-poster.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg.webm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/pdfmake.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/vfs_fonts.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" afterPath="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/gmap/hs.map.js" afterPath="$PROJECT_DIR$/web/assets/js/components/gmap/hs.map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.ajax-autocomplete.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.ajax-autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.autocomplete-local-search.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.autocomplete-local-search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.autocomplete.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.autocomplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.bg-video.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.bg-video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.carousel.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.chart-pie.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.chart-pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.count-qty.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.count-qty.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.countdown.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.countdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.counter.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.counter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.cubeportfolio.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.cubeportfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.datepicker-1.0.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.datepicker-1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.datepicker.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.file-attachement.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.file-attachement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.go-to.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.go-to.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.header.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.map.pin.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.map.pin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.map.svg.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.map.svg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.markup-copy.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.markup-copy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.masked-input.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.masked-input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.modal-event.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.modal-event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.modal-window.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.modal-window.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.navigation.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.nl-form.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.nl-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.onscroll-animation.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.onscroll-animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.popup.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.progress-bar.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.progress-bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.select.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.select.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.slider.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.smart-menu.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.smart-menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.step-form.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.step-form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.sticky-block.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.sticky-block.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.tabs.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.tabs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.validation.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/hs.video-audio.js" afterPath="$PROJECT_DIR$/web/assets/js/components/hs.video-audio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/components/text-animation/hs.text-slideshow.js" afterPath="$PROJECT_DIR$/web/assets/js/components/text-animation/hs.text-slideshow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.js" afterPath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/pdfmake.js" afterPath="$PROJECT_DIR$/web/assets/vendor/datatable/pdfmake.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/jquery.easypin.custom/dist/jquery.easypin.js" afterPath="$PROJECT_DIR$/web/assets/vendor/jquery.easypin.custom/dist/jquery.easypin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/jquery.easypin/dist/jquery.easypin.js" afterPath="$PROJECT_DIR$/web/assets/vendor/jquery.easypin/dist/jquery.easypin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/plyr/src/js/plyr.js" afterPath="$PROJECT_DIR$/web/assets/vendor/plyr/src/js/plyr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/prism/plugins/autoloader/prism-autoloader.js" afterPath="$PROJECT_DIR$/web/assets/vendor/prism/plugins/autoloader/prism-autoloader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/prism/vendor/promise.js" afterPath="$PROJECT_DIR$/web/assets/vendor/prism/vendor/promise.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/js/select2.full.js" afterPath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/js/select2.full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/js/select2.js" afterPath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/js/select2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/select2-develop/tests/vendor/qunit-1.23.1.js" afterPath="$PROJECT_DIR$/web/assets/vendor/select2-develop/tests/vendor/qunit-1.23.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/dist/components/search.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/dist/components/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/dist/semantic.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/dist/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/karma.conf.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/src/definitions/modules/search.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/src/definitions/modules/search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/create.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/init.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/update.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/components/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/create.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/create.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/init.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/update.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/distributions/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/register.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/admin/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/assets.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/assets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/css.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/javascript.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/build/javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/collections/internal.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/collections/internal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/admin/github.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/admin/github.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/admin/release.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/admin/release.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/config.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/install.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/install.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/release.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/project/release.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/tasks.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/tasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/user.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/config/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/docs/build.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/docs/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/docs/serve.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/docs/serve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/install.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/install.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/rtl/build.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/rtl/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/rtl/watch.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/rtl/watch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/watch.js" afterPath="$PROJECT_DIR$/web/assets/vendor/semantic/tasks/watch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Grado.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Grado.orm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Oferta.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Oferta.orm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/TitulacionAlum.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionAlum.orm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/TitulacionOfer.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionOfer.orm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Usuario.orm.xml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Usuario.orm.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/custom.css" afterPath="$PROJECT_DIR$/web/assets/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/unify.css" afterPath="$PROJECT_DIR$/web/assets/css/unify.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" afterPath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -163,85 +629,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-  </component>
+  <component name="ComposerSettings" doNotAsk="true" />
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Loged.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="386">
+              <caret line="77" column="74" lean-forward="false" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
               <folding>
                 <element signature="e#40#97#0#PHP" expanded="true" />
-                <element signature="e#768#803#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml">
+      <file leaf-file-name="OfertaRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Slider.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+            <state relative-caret-position="562">
+              <caret line="28" column="80" lean-forward="false" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#47#81#0#PHP" expanded="true" />
+                <marker date="1527864517342" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
+                <marker date="1527864517342" expanded="true" signature="797:879" ph="SELECT e FRO... AppBundle" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig">
+      <file leaf-file-name="Grado_Oferta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="330">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5412">
-              <caret line="303" column="29" lean-forward="true" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
-              <folding>
-                <element signature="e#36#68#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -250,62 +673,76 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin</find>
-      <find>getPasswd</find>
+      <find>for</find>
+      <find>Alumnos</find>
+      <find>imagen</find>
+      <find>alumno</find>
+      <find>Alumno</find>
+      <find>foto</find>
+      <find>username</find>
+      <find>empresa</find>
+      <find>Totalem</find>
+      <find>border-left</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Lobo &lt;t.albertito@gmail.es&gt;" />
-      </list>
-    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Base/Plantilla.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Inicio.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Loged.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/GradoRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/TitulacionRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/Usuario.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Base/Footer.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Base/Header.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Base/NavBar.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Base/NavBarLoged.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Partes/Contacto.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Partes/Panel.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Partes/Formulario.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/config/views/Paginas/Partes/Slider.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/TitulacionAlum.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Contacto.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Panel.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBar.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig" />
-        <option value="$PROJECT_DIR$/web/app.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Home.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/LogedController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FCTController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/FCT/PDF.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ProfesorController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Profesor/PDF.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Profesor.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/ProfesorType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Alumnos/PerfilAlumno.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Empresa/ListarEmpresas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Empresa/PerfilEmpresa.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/FCT/ListarFCT.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Profesor/PerfilProfesor.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Profesor/ListarProfesor.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Inicio/NavBar.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/AlumnoRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Alumnos/ListarAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlumnoController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Inicio/Login.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Panel.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Panel.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/PanelOfertas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelInicio.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelOfertas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListarAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/css/unify.css" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" />
       </list>
     </option>
   </component>
@@ -315,49 +752,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
-    <include_path>
-      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
-      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
-      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
-      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
-      <path value="$PROJECT_DIR$/vendor/psr/log" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
-      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
-      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
-      <path value="$PROJECT_DIR$/vendor/symfony/assetic-bundle" />
-      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="113" />
-    <option name="width" value="1376" />
-    <option name="height" value="784" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -375,41 +775,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -419,11 +803,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -437,11 +821,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -467,11 +851,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -501,11 +885,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -531,11 +915,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -557,11 +941,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -579,11 +963,33 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Install" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FctPractica" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -601,11 +1007,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -623,25 +1029,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -651,33 +1043,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SanSeEmplea" />
+              <option name="myItemId" value="FctPractica" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -691,20 +1061,29 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FctPractica - copia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\SanSeEmplea\web\assets\vendor" />
-      <recent name="D:\xampp\htdocs\SanSeEmplea\src\AppBundle\Resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\SanSeEmplea\src\AppBundle\Resources\config\views\Paginas\Partes" />
-      <recent name="D:\xampp\htdocs\SanSeEmplea\src\AppBundle\Repository" />
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Paginas\Partes" />
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Repository" />
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Paginas" />
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Entity" />
+      <recent name="C:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Profesor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Paginas\Partes" />
+      <recent name="D:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Paginas" />
+      <recent name="C:\xampp\htdocs\FctPractica\src\AppBundle\Resources" />
+      <recent name="C:\xampp\htdocs\FctPractica\src\AppBundle\Resources\views\Alumnos" />
+      <recent name="C:\xampp\htdocs\FctPractica\src\AppBundle\Resources\Imagenes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -719,10 +1098,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.DefaultController.php">
-    <configuration default="false" name="DefaultController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SanSeEmplea/src/AppBundle/Controller/DefaultController.php">
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -790,71 +1166,83 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.DefaultController.php" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.DefaultController.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89cb09cb-2cc7-4ec0-a231-ff0d2ebc03a2" name="Default" comment="" />
-      <created>1526805497351</created>
+      <changelist id="bbb8a4e4-e451-4411-af79-46c543a526c6" name="Default" comment="" />
+      <created>1519660402923</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526805497351</updated>
-      <workItem from="1526805498638" duration="4428000" />
-      <workItem from="1527185479383" duration="79000" />
-      <workItem from="1527261144503" duration="14052000" />
-      <workItem from="1527488824432" duration="3423000" />
+      <updated>1519660402923</updated>
+      <workItem from="1519660405742" duration="4146000" />
+      <workItem from="1519740662131" duration="7639000" />
+      <workItem from="1519748836281" duration="715000" />
+      <workItem from="1519860490044" duration="597000" />
+      <workItem from="1519870530850" duration="123000" />
+      <workItem from="1519870696836" duration="397000" />
+      <workItem from="1519871140003" duration="3742000" />
+      <workItem from="1519922201138" duration="6754000" />
+      <workItem from="1520006904427" duration="9709000" />
+      <workItem from="1520080743293" duration="22067000" />
+      <workItem from="1520177450442" duration="3507000" />
+      <workItem from="1520246441106" duration="8329000" />
+      <workItem from="1520258927701" duration="6444000" />
+      <workItem from="1520330999365" duration="9915000" />
+      <workItem from="1520347388485" duration="11682000" />
+      <workItem from="1520417299163" duration="6216000" />
+      <workItem from="1520431684186" duration="1752000" />
+      <workItem from="1520517928905" duration="25000" />
+      <workItem from="1520604493356" duration="349000" />
+      <workItem from="1520604918256" duration="3546000" />
+      <workItem from="1520608661219" duration="152000" />
+      <workItem from="1520684798058" duration="4629000" />
+      <workItem from="1520689584015" duration="13578000" />
+      <workItem from="1520789613437" duration="5702000" />
+      <workItem from="1520864292339" duration="8556000" />
+      <workItem from="1520875731933" duration="1251000" />
+      <workItem from="1520950424979" duration="582000" />
+      <workItem from="1520953888464" duration="935000" />
+      <workItem from="1520955233720" duration="718000" />
+      <workItem from="1520955994115" duration="15000" />
+      <workItem from="1521036183881" duration="9182000" />
+      <workItem from="1521046015253" duration="571000" />
+      <workItem from="1521046823348" duration="159000" />
+      <workItem from="1527599586782" duration="9318000" />
+      <workItem from="1527614122482" duration="4915000" />
+      <workItem from="1527702186424" duration="4461000" />
+      <workItem from="1527706733563" duration="70000" />
+      <workItem from="1527784027091" duration="9969000" />
+      <workItem from="1527863243565" duration="1337000" />
     </task>
-    <task id="LOCAL-00001" summary="Creada estructura synfony">
-      <created>1527262160753</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1527262160753</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Creada estructura synfony">
-      <created>1527280550533</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1527280550533</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21982000" />
+    <option name="totallyTimeSpent" value="183754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="113" width="1376" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23235294" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS-X-Fire" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -864,393 +1252,264 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Creada estructura synfony" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creada estructura synfony" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="14" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/FCT/ListarFCT.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Alumnos/ListarAlumnos.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ProfesorType.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/FCT.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EmpresaController.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlumnoController.php" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Empresa/ListarEmpresas.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/TitulacionOfer.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7040.19763/FCT.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7040.20811/Ciclo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa5760.22538/Ciclo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa5760.22403/FCT.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7556.33390/TitulacionAlum.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7556.41315/TitulacionOfer.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2020.19133/FCT.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa11220.36074/Ciclo.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa11220.36213/Alumno.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa11220.9128/FCT.php" />
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="117" column="38" lean-forward="false" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="9" lean-forward="false" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Grado.orm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Titulacion.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/Usuario.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GradoRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../FctPractica/src/AppBundle/Entity/Alumno.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="e#115#147#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/TitulacionAlum.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/TitulacionRepository.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="68" lean-forward="false" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Contacto.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="61" lean-forward="false" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/symfony_requirements">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Panel.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="190" column="91" lean-forward="false" selection-start-line="190" selection-start-column="91" selection-end-line="190" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="61" column="6" lean-forward="false" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="6" />
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="96" lean-forward="false" selection-start-line="21" selection-start-column="96" selection-end-line="21" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="59" column="82" lean-forward="false" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LogedController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="638">
+          <caret line="29" column="67" lean-forward="false" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="56" lean-forward="false" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        <state relative-caret-position="440">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Contacto.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelInicio.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelAlumnos.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelOfertas.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#47#81#0#PHP" expanded="false" />
+            <marker date="1527607467819" expanded="true" signature="377:435" ph="SELECT e FRO... AppBundle" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/unify.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        <state relative-caret-position="264">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Install/bbdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="115" column="94" lean-forward="false" selection-start-line="115" selection-start-column="94" selection-end-line="115" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="877">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-132">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="474">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" column="81" lean-forward="false" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="206" column="17" lean-forward="false" selection-start-line="206" selection-start-column="17" selection-end-line="206" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="0" column="29" lean-forward="true" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="108" column="26" lean-forward="false" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="77" column="53" lean-forward="false" selection-start-line="77" selection-start-column="53" selection-end-line="77" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5412">
-          <caret line="303" column="29" lean-forward="true" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
-          <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="86" column="48" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="386">
+          <caret line="77" column="74" lean-forward="false" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
           <folding>
             <element signature="e#40#97#0#PHP" expanded="true" />
-            <element signature="e#768#803#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Filesystem/Filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3234">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/logs/dev.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="2" column="94" lean-forward="true" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="562">
+          <caret line="28" column="80" lean-forward="false" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+          <folding>
+            <element signature="e#47#81#0#PHP" expanded="true" />
+            <marker date="1527864517342" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
+            <marker date="1527864517342" expanded="true" signature="797:879" ph="SELECT e FRO... AppBundle" />
+          </folding>
         </state>
       </provider>
     </entry>

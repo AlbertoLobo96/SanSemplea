@@ -1,9 +1,9 @@
 imports:
-    - { resource: Config.yml }
+    - { resource: config.yml }
 
 #framework:
 #    validation:
-#        cache: validator.mapping.cache.doctrine.apc
+#        cache: validator.mapping.cache.apc
 #    serializer:
 #        cache: serializer.mapping.cache.apc
 

@@ -25,5 +25,9 @@ input[type="radio"]:checked + * .g-bg-blue--checked {
     border-color: #cccccc;
     border-style: solid;
     border-width: 1px;
-    border-left: none !important;
+}
+.u-pagination-v1-5--active, .u-pagination-v1-5:hover, .u-pagination-v1-5:focus {
+    background-color: #3398dc;
+    color: #fff;
+    border-color: #3398dc;
 }

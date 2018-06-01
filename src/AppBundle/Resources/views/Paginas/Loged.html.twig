@@ -3,5 +3,41 @@
     {{ include('AppBundle:Base:NavBarLoged.html.twig') }}
 {% endblock %}
 {% block contenido %}
-{{ include('@App/Paginas/Partes/Panel.html.twig') }}
+    <section class="g-mt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 g-mb-0--lg">
+                    <!-- User Imagen -->
+                    <div class="u-block-hover g-pos-rel">
+                        <figure>
+                            <img class="img-fluid w-100 u-block-hover__main--zoom-v1"
+                                 src="{{ asset('assets/img/my/') }}{{ app.user.Foto }}" alt="Image Description">
+                        </figure>
+                        <!-- User Info -->
+                        <span class="g-pos-abs g-top-20 g-left-0">
+                                <small class="d-block g-bg-blue g-color-white g-pa-5">{{ app.user.nombre }}</small>
+                                <small class="d-block g-bg-black g-color-white g-pa-5">
+                                    {% if app.user.rol == "ROLE_ADMIN" %}
+                                        Administrador
+                                    {% else %}
+                                        Alumno
+                                    {% endif %}
+                                </small>
+                            </span>
+                        <!-- End User Info -->
+                    </div>
+                    <!-- User Image -->
+                </div>
+                <!-- End Profile Sidebar -->
+                <!-- Profle Content -->
+                <div class="col-lg-9">
+                    {% block panel %}
+                        {{ include('AppBundle:Paginas/Partes:DatosPersonales.html.twig') }}
+                    {% endblock %}
+                    <!-- End Tab panes -->
+                </div>
+                <!-- End Profle Content -->
+            </div>
+        </div>
+    </section>
 {% endblock %}

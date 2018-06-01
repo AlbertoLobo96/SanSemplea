@@ -3,250 +3,241 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Oferta
- *
- * @ORM\Table(name="oferta")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\OfertaRepository")
+ * @ORM\Table(name="Oferta")
  */
 class Oferta
 {
+    public function __construct()
+    {
+        $this->GOferta = new ArrayCollection();
+    }
     /**
-     * @var string
-     *
-     * @ORM\Column(name="Nombre_Emp", type="string", length=50, nullable=true)
-     */
-    private $nombreEmp;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Email", type="string", length=50, nullable=true)
-     */
-    private $email;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Telefono", type="string", length=50, nullable=true)
-     */
-    private $telefono;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="Tipo", type="integer", nullable=true)
-     */
-    private $tipo;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Descripcion", type="string", length=200, nullable=true)
-     */
-    private $descripcion;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Enlaces", type="string", length=200, nullable=true)
-     */
-    private $enlaces;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="Validar", type="integer", nullable=true)
-     */
-    private $validar;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Column(type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     */
+    private $Nombre;
 
     /**
-     * Set nombreEmp
-     *
-     * @param string $nombreEmp
-     *
-     * @return Oferta
+     * @ORM\Column(type="string", length=100)
+     * @Assert\Regex(
+     *      pattern="/.+\@([a-zA-Z]|[0-9])+\.[a-z]+/",
+     *      message="Email incorrecto"
+     * )
      */
-    public function setNombreEmp($nombreEmp)
-    {
-        $this->nombreEmp = $nombreEmp;
+    private $Email;
 
-        return $this;
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\Regex(
+     *      pattern="/[0-9]{9}/",
+     *      message="Telefono incorrecto"
+     * )
+     */
+    private $Telefono;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Tipo;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Descripcion;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Enlaces;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Archivos;
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $Validar;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Grado_Oferta", mappedBy="Oferta")
+     */
+    private $GOferta;
+
+
+
+    //-------------------------------------------------------GETTER Y SETTER-------------------
+    /**
+     * @return mixed
+     */
+    public function getGOferta()
+    {
+        return $this->GOferta;
     }
 
     /**
-     * Get nombreEmp
-     *
-     * @return string
+     * @param mixed $GOferta
      */
-    public function getNombreEmp()
+    public function setGOferta($GOferta)
     {
-        return $this->nombreEmp;
+        $this->GOferta = $GOferta;
     }
 
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Oferta
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-
-        return $this;
-    }
 
     /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * Set telefono
-     *
-     * @param string $telefono
-     *
-     * @return Oferta
-     */
-    public function setTelefono($telefono)
-    {
-        $this->telefono = $telefono;
-
-        return $this;
-    }
-
-    /**
-     * Get telefono
-     *
-     * @return string
-     */
-    public function getTelefono()
-    {
-        return $this->telefono;
-    }
-
-    /**
-     * Set tipo
-     *
-     * @param integer $tipo
-     *
-     * @return Oferta
-     */
-    public function setTipo($tipo)
-    {
-        $this->tipo = $tipo;
-
-        return $this;
-    }
-
-    /**
-     * Get tipo
-     *
-     * @return integer
-     */
-    public function getTipo()
-    {
-        return $this->tipo;
-    }
-
-    /**
-     * Set descripcion
-     *
-     * @param string $descripcion
-     *
-     * @return Oferta
-     */
-    public function setDescripcion($descripcion)
-    {
-        $this->descripcion = $descripcion;
-
-        return $this;
-    }
-
-    /**
-     * Get descripcion
-     *
-     * @return string
-     */
-    public function getDescripcion()
-    {
-        return $this->descripcion;
-    }
-
-    /**
-     * Set enlaces
-     *
-     * @param string $enlaces
-     *
-     * @return Oferta
-     */
-    public function setEnlaces($enlaces)
-    {
-        $this->enlaces = $enlaces;
-
-        return $this;
-    }
-
-    /**
-     * Get enlaces
-     *
-     * @return string
-     */
-    public function getEnlaces()
-    {
-        return $this->enlaces;
-    }
-
-    /**
-     * Set validar
-     *
-     * @param integer $validar
-     *
-     * @return Oferta
-     */
-    public function setValidar($validar)
-    {
-        $this->validar = $validar;
-
-        return $this;
-    }
-
-    /**
-     * Get validar
-     *
-     * @return integer
-     */
-    public function getValidar()
-    {
-        return $this->validar;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer
+     * @return mixed
      */
     public function getId()
     {
         return $this->id;
     }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombre()
+    {
+        return $this->Nombre;
+    }
+
+    /**
+     * @param mixed $Nombre
+     */
+    public function setNombre($Nombre)
+    {
+        $this->Nombre = $Nombre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->Email;
+    }
+
+    /**
+     * @param mixed $Email
+     */
+    public function setEmail($Email)
+    {
+        $this->Email = $Email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTelefono()
+    {
+        return $this->Telefono;
+    }
+
+    /**
+     * @param mixed $Telefono
+     */
+    public function setTelefono($Telefono)
+    {
+        $this->Telefono = $Telefono;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTipo()
+    {
+        return $this->Tipo;
+    }
+
+    /**
+     * @param mixed $Tipo
+     */
+    public function setTipo($Tipo)
+    {
+        $this->Tipo = $Tipo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescripcion()
+    {
+        return $this->Descripcion;
+    }
+
+    /**
+     * @param mixed $Descripcion
+     */
+    public function setDescripcion($Descripcion)
+    {
+        $this->Descripcion = $Descripcion;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEnlaces()
+    {
+        return $this->Enlaces;
+    }
+
+    /**
+     * @param mixed $Enlaces
+     */
+    public function setEnlaces($Enlaces)
+    {
+        $this->Enlaces = $Enlaces;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getArchivos()
+    {
+        return $this->Archivos;
+    }
+
+    /**
+     * @param mixed $Archivos
+     */
+    public function setArchivos($Archivos)
+    {
+        $this->Archivos = $Archivos;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getValidar()
+    {
+        return $this->Validar;
+    }
+
+    /**
+     * @param mixed $Validar
+     */
+    public function setValidar($Validar)
+    {
+        $this->Validar = $Validar;
+    }
+
+
 }

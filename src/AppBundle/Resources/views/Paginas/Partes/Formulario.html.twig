@@ -11,46 +11,25 @@
     <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30 col-9">
         <div class="form-group g-mb-20">
             <label>Nombre de la empresa:</label>
-            <div class="input-group g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-user"></i>
-                                </span>
-                </div>
-                <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text">
+                <input id="NombreEmp" name="NombreEmp" class="form-control form-control-md rounded-0 " type="text">
             </div>
         </div>
         <div class="form-group g-mb-20">
             <label>Email:</label>
             <div class="input-group g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-envelope"></i>
-                                </span>
-                </div>
-                <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="email">
+                <input id="EmailEmp" name="EmailEmp" class="form-control form-control-md rounded-0 " type="email">
             </div>
         </div>
         <div class="form-group g-mb-20">
             <label>Telefono:</label>
             <div class="input-group g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-phone"></i>
-                                </span>
-                </div>
-                <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text">
+                <input id="TelefonoEmp" name="TelefonoEmp" class="form-control form-control-md rounded-0" type="text">
             </div>
         </div>
         <div class="form-group g-mb-20">
             <label class="g-color-black">Titulaciones:</label>
             <div class="input-group g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-graduation"></i>
-                                </span>
-                </div>
-                <select class="form-control form-control-md border-left-0 rounded-0 pl-0 js-example-basic-multiple"
+                <select id="Cursos" class="form-control form-control-md rounded-0 js-example-basic-multiple"
                         name="Cursos[]" multiple="multiple">
                     <option value="DAW">Desarrollo de aplicaciones web</option>
                     <option value="DAW">Desarrollo de aplicaciones web</option>
@@ -66,28 +45,28 @@
             <div class="input-group g-brd-blue--focus">
                 <div class="btn-group justified-content">
                     <label class="u-check g-bg-white">
-                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" checked=""
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="OfertaTrabajo" id="OfertaTrabajo" checked=""
                                type="radio"/>
                         <span
                                 class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked rounded-0">Oferta Trabajo</span>
                     </label>
                     <label class="u-check g-bg-white">
-                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio"/>
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="BecaForm" id="BecaForm" type="radio"/>
                         <span
                                 class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Beca Formacion</span>
                     </label>
                     <label class="u-check g-bg-white">
-                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio"/>
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="CursoForm" id="CursoForm" type="radio"/>
                         <span
                                 class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Curso Formacion</span>
                     </label>
                     <label class="u-check g-bg-white">
-                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio"/>
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="Concurso" id="Concurso" type="radio"/>
                         <span
                                 class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Concurso</span>
                     </label>
                     <label class="u-check g-bg-white">
-                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="radGroupBtn1_1" type="radio"/>
+                        <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" name="Otros" id="Otros" type="radio"/>
                         <span
                                 class="btn btn-md btn-block u-btn-outline-lightgray g-color-white--checked g-bg-blue--checked g-brd-left-none--md rounded-0">Otros</span>
                     </label>
@@ -97,39 +76,24 @@
         <div class="form-group g-mb-20">
             <label>Descripción de la oferta:</label>
             <div class="input-group">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-note"></i>
-                                </span>
-                </div>
-                <textarea id="inputGroup2_3" class="form-control form-control-md u-textarea-expandable rounded-0"
+                <textarea name="DescpEmp" id="DescpEmp" class="form-control form-control-md u-textarea-expandable rounded-0"
                           rows="2"></textarea>
             </div>
         </div>
         <div class="form-group g-mb-20">
             <label>Enlaces de interes:</label>
             <div class="input-group g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class="icon-link"></i>
-                                </span>
-                </div>
-                <input class="form-control form-control-md border-left-0 rounded-0 pl-0" type="text" placeholder="HTPP">
+                <input name="EnlacesEmp" id="EnlacesEmp" class="form-control form-control-md rounded-0 " type="text" placeholder="HTPP">
             </div>
         </div>
         </div>
         <div class="form-group g-mb-20">
             <label>Documentos de interes:</label>
             <div class="input-group u-file-attach-v1 g-brd-blue--focus">
-                <div class="input-group-prepend">
-                                <span class="input-group-text rounded-0 g-bg-white g-color-blue">
-                                    <i class=" icon-folder-alt "></i>
-                                </span>
-                </div>
-                <input class="form-control form-control-md rounded-0" placeholder="Text in field" readonly=""
+                <input name="DocEmp" id="DocEmp" class="form-control form-control-md rounded-0" placeholder="Text in field" readonly=""
                        type="text">
                 <div class="input-group-append">
-                    <button class="btn btn-md g-bg-blue g-color-white rounded-0" type="submit">Browse</button>
+                    <button class="btn btn-md g-bg-blue g-color-white rounded-0" type="submit">Abrir</button>
                     <input type="file">
                 </div>
             </div>
@@ -142,7 +106,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="float-md-right">
-                        <a href="#modal23" data-modal-target="#modal23" data-modal-effect="flash"
+                        <a id="btnvis" href="#modal23" data-modal-target="#modal23" data-modal-effect="flash"
                            class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
                             <i class="icon-eye g-mr-5"></i>
                             Visualizar Oferta
@@ -163,9 +127,9 @@
     <button type="button" class="close" onclick="Custombox.modal.close();">
         <i class="hs-icon hs-icon-close"></i>
     </button>
-    <h3 class="g-mb-20">Titulo de la empresa</h3>
-    <h4>Tipo de oferta</h4>
-    <ul>
+    <h3 id="titlemod" class="h3 g-mb-20">Titulo de la empresa</h3>
+    <h4 id="tipomod" class="h4 text-muted">Tipo de oferta</h4>
+    <ul id="titulmod">
         <li>Destinatario1</li>
         <li>Destinatario2</li>
         <li>Destinatario3</li>
@@ -174,22 +138,18 @@
         <li>Destinatario6</li>
         <li>Destinatario7</li>
     </ul>
-    <p>Descripcion de la oferta de empleo para los alumnos</p>
+    <p id="descpmod">Descripcion de la oferta de empleo para los alumnos</p>
     <footer>
         <span>
-            <i class="icon-link"></i>URL
+            <i class="icon-link"></i> <span id="urlmod">URL</span>
         </span>
         <br/>
         <span>
-            <i class="fa fa-phone"></i>telefono
+            <i class="fa fa-phone"></i> <span id="telmod">Telefono</span>
         </span>
         <br/>
         <span>
-            <i class="fa fa-globe"></i>Correo
+            <i class="fa fa-globe"></i> <span id="httpmod">Enlaces</span>
         </span>
     </footer>
-    <a class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
-        <i class="icon-paper-plane g-mr-5"></i>
-        Enviar
-    </a>
 </div>

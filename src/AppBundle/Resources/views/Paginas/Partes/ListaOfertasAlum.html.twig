@@ -1,7 +1,8 @@
 {% block panel %}
 <div class=" g-mb-40 g-pb-100">
     <div class="row">
-    {% for oferta in ListaOfertas %}
+    {% for key in ListaOfertas %}
+        {% for oferta in key %}
         <div class="col-md-6 g-mt-10">
             <div class="card">
                 <div class="card-body">
@@ -31,6 +32,7 @@
                 </div>
             </div>
         </div>
+            {% endfor %}
         {% endfor %}
     </div>
     <nav class="g-mt-50" aria-label="Page Navigation">

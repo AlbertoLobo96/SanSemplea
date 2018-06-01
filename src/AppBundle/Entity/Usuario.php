@@ -1,90 +1,92 @@
 <?php
-
 namespace AppBundle\Entity;
-
+/**
+ * Created by PhpStorm.
+ * User: 2DAW
+ * Date: 20/02/2018
+ * Time: 16:19
+ */
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * Usuario
- *
- * @ORM\Table(name="usuario", uniqueConstraints={@ORM\UniqueConstraint(name="Email", columns={"Email"}), @ORM\UniqueConstraint(name="DNI", columns={"DNI"})})
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UsuarioRepository")
+ * @ORM\Table(name="Usuario")
  */
 class Usuario implements UserInterface
 {
+    public function __construct()
+    {
+        $this->GAlumno = new ArrayCollection();
+    }
     /**
-     * @var string
-     *
-     * @ORM\Column(name="DNI", type="string", length=9, nullable=false)
-     */
-    private $dni;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Email", type="string", length=50, nullable=false)
-     */
-    private $email;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Nombre", type="string", length=50, nullable=true)
-     */
-    private $nombre;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Apellidos", type="string", length=50, nullable=true)
-     */
-    private $apellidos;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="Curso", type="integer", nullable=true)
-     */
-    private $curso;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Telefono", type="string", length=50, nullable=true)
-     */
-    private $telefono;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="Rol", type="string", nullable=false)
-     */
-    private $rol;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Passwd", type="string", length=50, nullable=false)
-     */
-    private $passwd;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Foto", type="string", length=150, nullable=true)
-     */
-    private $foto;
-
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="ID", type="integer")
+     * @ORM\Column(type="integer")
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+    /**
+     * @ORM\Column(type="string", length=9)
+     * @Assert\Regex(
+     *      pattern="/[0-9]{8}[A-Za-z]{1}/",
+     *      message="NIF incorrecto"
+     * )
+     * @Assert\Length(
+     *      min="9",
+     *      max="9",
+     *     exactMessage="El Nif debe tener 9 caracteres"
+     * )
+     * @Assert\NotBlank()
+     */
+    private $NIF;
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     */
+    private $Nombre;
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     */
+    private $Apellido;
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\Regex(
+     *      pattern="/[0-9]{9}/",
+     *      message="Telefono incorrecto"
+     * )
+     */
+    private $Telefono;
+    /**
+     * @ORM\Column(type="string", length=100, unique=true)
+     * @Assert\Regex(
+     *      pattern="/.+\@([a-zA-Z]|[0-9])+\.[a-z]+/",
+     *      message="Email incorrecto"
+     * )
+     */
+    private $Email;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Foto;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Passwd;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Rol;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $Curso;
+    /**
+     * @ORM\OneToMany(targetEntity="Grado_Alumno", mappedBy="Alumno")
+     */
+    private $GAlumno;
 
     //--------------------------------------------Metodos para autentificacion
     /**
@@ -92,7 +94,7 @@ class Usuario implements UserInterface
      */
     public function getUsername()
     {
-        return $this->email;
+        return $this->getEmail();
     }
     public function getSalt()
     {
@@ -110,231 +112,182 @@ class Usuario implements UserInterface
     {
         return $this->getPasswd();
     }
-
-
+    //--------------------------------------------SETTERS Y GETTERS------------------------------------------------
     /**
-     * Set dni
-     *
-     * @param string $dni
-     *
-     * @return Usuario
-     */
-    public function setDni($dni)
-    {
-        $this->dni = $dni;
-
-        return $this;
-    }
-
-    /**
-     * Get dni
-     *
-     * @return string
-     */
-    public function getDni()
-    {
-        return $this->dni;
-    }
-
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Usuario
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * Set nombre
-     *
-     * @param string $nombre
-     *
-     * @return Usuario
-     */
-    public function setNombre($nombre)
-    {
-        $this->nombre = $nombre;
-
-        return $this;
-    }
-
-    /**
-     * Get nombre
-     *
-     * @return string
-     */
-    public function getNombre()
-    {
-        return $this->nombre;
-    }
-
-    /**
-     * Set apellidos
-     *
-     * @param string $apellidos
-     *
-     * @return Usuario
-     */
-    public function setApellidos($apellidos)
-    {
-        $this->apellidos = $apellidos;
-
-        return $this;
-    }
-
-    /**
-     * Get apellidos
-     *
-     * @return string
-     */
-    public function getApellidos()
-    {
-        return $this->apellidos;
-    }
-
-    /**
-     * Set curso
-     *
-     * @param integer $curso
-     *
-     * @return Usuario
-     */
-    public function setCurso($curso)
-    {
-        $this->curso = $curso;
-
-        return $this;
-    }
-
-    /**
-     * Get curso
-     *
-     * @return integer
-     */
-    public function getCurso()
-    {
-        return $this->curso;
-    }
-
-    /**
-     * Set telefono
-     *
-     * @param string $telefono
-     *
-     * @return Usuario
-     */
-    public function setTelefono($telefono)
-    {
-        $this->telefono = $telefono;
-
-        return $this;
-    }
-
-    /**
-     * Get telefono
-     *
-     * @return string
-     */
-    public function getTelefono()
-    {
-        return $this->telefono;
-    }
-
-    /**
-     * Set rol
-     *
-     * @param integer $rol
-     *
-     * @return Usuario
-     */
-    public function setRol($rol)
-    {
-        $this->rol = $rol;
-
-        return $this;
-    }
-
-    /**
-     * Get rol
-     *
-     * @return integer
-     */
-    public function getRol()
-    {
-        return $this->rol;
-    }
-
-    /**
-     * Set passwd
-     *
-     * @param string $passwd
-     *
-     * @return Usuario
-     */
-    public function setPasswd($passwd)
-    {
-        $this->passwd = $passwd;
-
-        return $this;
-    }
-
-    /**
-     * Get passwd
-     *
-     * @return string
-     */
-    public function getPasswd()
-    {
-        return $this->passwd;
-    }
-
-    /**
-     * Set foto
-     *
-     * @param string $foto
-     *
-     * @return Usuario
-     */
-    public function setFoto($foto)
-    {
-        $this->foto = $foto;
-
-        return $this;
-    }
-
-    /**
-     * Get foto
-     *
-     * @return string
-     */
-    public function getFoto()
-    {
-        return $this->foto;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer
+     * @return mixed
      */
     public function getId()
     {
         return $this->id;
     }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNIF()
+    {
+        return $this->NIF;
+    }
+
+    /**
+     * @param mixed $NIF
+     */
+    public function setNIF($NIF)
+    {
+        $this->NIF = $NIF;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombre()
+    {
+        return $this->Nombre;
+    }
+
+    /**
+     * @param mixed $Nombre
+     */
+    public function setNombre($Nombre)
+    {
+        $this->Nombre = $Nombre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getApellido()
+    {
+        return $this->Apellido;
+    }
+
+    /**
+     * @param mixed $Apellido
+     */
+    public function setApellido($Apellido)
+    {
+        $this->Apellido = $Apellido;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTelefono()
+    {
+        return $this->Telefono;
+    }
+
+    /**
+     * @param mixed $Telefono
+     */
+    public function setTelefono($Telefono)
+    {
+        $this->Telefono = $Telefono;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->Email;
+    }
+
+    /**
+     * @param mixed $Email
+     */
+    public function setEmail($Email)
+    {
+        $this->Email = $Email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFoto()
+    {
+        return $this->Foto;
+    }
+
+    /**
+     * @param mixed $Foto
+     */
+    public function setFoto($Foto)
+    {
+        $this->Foto = $Foto;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPasswd()
+    {
+        return $this->Passwd;
+    }
+
+    /**
+     * @param mixed $Passwd
+     */
+    public function setPasswd($Passwd)
+    {
+        $this->Passwd = $Passwd;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCurso()
+    {
+        return $this->Curso;
+    }
+
+    /**
+     * @param mixed $Curso
+     */
+    public function setCurso($Curso)
+    {
+        $this->Curso = $Curso;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRol()
+    {
+        return $this->Rol;
+    }
+
+    /**
+     * @param mixed $Rol
+     */
+    public function setRol($Rol)
+    {
+        $this->Rol = $Rol;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGAlumno()
+    {
+        return $this->GAlumno;
+    }
+
+    /**
+     * @param mixed $GAlumno
+     */
+    public function setGAlumno($GAlumno)
+    {
+        $this->GAlumno = $GAlumno;
+    }
+
+
 }
