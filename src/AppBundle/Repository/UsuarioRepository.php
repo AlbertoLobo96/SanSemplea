@@ -23,5 +23,4 @@ class UsuarioRepository extends EntityRepository
         $Paginator = new Paginator($query,$fetchJoinCollection = true);
         return $Paginator;
     }
-
 }

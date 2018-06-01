@@ -18,8 +18,8 @@ class Grado
 {
     public function __construct()
     {
-        $this->GAlumno = new ArrayCollection();
-        $this->GOferta = new ArrayCollection();
+        $this->Alumnos = new ArrayCollection();
+        $this->Ofertas = new ArrayCollection();
     }
     /**
      * @ORM\Column(type="integer")
@@ -32,19 +32,48 @@ class Grado
      * @Assert\NotBlank()
      */
     private $Nombre;
-
     /**
-     * @ORM\OneToMany(targetEntity="Grado_Alumno", mappedBy="Grado")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Usuario", mappedBy="Grados")
      */
-    private $GAlumno;
-
+    private $Alumnos;
     /**
-     * @ORM\OneToMany(targetEntity="Grado_Oferta", mappedBy="Oferta")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Oferta", mappedBy="Grados")
      */
-    private $GOferta;
+    private $Ofertas;
 
     //------------------------------------------------------GETTER Y SETTER--------------------------------------
 
+    public function getOfertas()
+    {
+        return $this->Ofertas;
+    }
+    public function addOferta(...$Ofertas)
+    {
+        foreach ( $Ofertas as $oferta) {
+            if (!$this->Ofertas->contains($oferta)) {
+                $this->Ofertas->add($oferta);
+            }
+        }
+    }
+    public function removeOferta($oferta){
+        $this->Ofertas->removeElement($oferta);
+    }
+
+    public function getAlumnos()
+    {
+        return $this->Alumnos;
+    }
+    public function addAlumno(...$Alumnos)
+    {
+        foreach ( $Alumnos as $alumno) {
+            if (!$this->Alumnos->contains($alumno)) {
+                $this->Alumnos->add($alumno);
+            }
+        }
+    }
+    public function removeAlumno($alumno){
+        $this->Alumnos->removeElement($alumno);
+    }
     /**
      * @return mixed
      */

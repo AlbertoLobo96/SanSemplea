@@ -2,625 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb8a4e4-e451-4411-af79-46c543a526c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/FctPractica.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.vscode/settings.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/login.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/SanSeEmplea.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/LogedController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/GradoRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Grado.orm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Oferta.orm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionAlum.orm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/TitulacionOfer.orm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/doctrine/Usuario.orm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-bottom-50x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-left-100x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-right-100x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/half-circle-top-50x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/ic_close_36px.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-20x48.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-bottom-2-680x200.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-bottom-680x200.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-left-2-200x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-left-200x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-right-2-200x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-right-200x680.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-top-2-680x200.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/triangle-top-680x200.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/figures/unify-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/100x100/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1150x650/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1200x800/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1200x900/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/125x125/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/140x80/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1500x1040/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/150x150/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img27.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img28.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img29.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img34.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img37.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img45.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img46.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img47.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img48.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img49.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img53.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img54.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img55.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x1080/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x500/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x700/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/1920x700/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x100/img9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/200x200/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/230x230/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/250x170/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/250x170/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/3500x1080/img1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/760x900/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x500/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x700/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/800x800/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x1000/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x400/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x535/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x600/img9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x700/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/900x900/img7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img-temp/logos/img6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/bg-img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/bricks--white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/diagonal-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/diagonal-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/tile-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/tile-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/wave.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/zigzag-left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/grid/zigzag-right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-primary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/marker/marker-bg-yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/none-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern--green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern-7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/bricks-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/darkness.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/doodles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/figures-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/footer-lodyas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/math-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/memphis-colorful.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/noise-green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern/noise2-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6--beige.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6--gray.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-1-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6-dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/pattern6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/secondary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/bg/transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/captcha/captcha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/apple/icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/ASEAN.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Afghanistan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/African Union(OAS).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Albania.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Algeria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/American Samoa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Andorra.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Angola.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Anguilla.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Antarctica.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Antigua &amp; Barbuda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Arab League.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Argentina.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Armenia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Aruba.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Australia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Austria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Azerbaijan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bahamas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bahrain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bangladesh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Barbados.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belarus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belgium.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Belize.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Benin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bermuda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bhutan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bolivia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bosnia &amp; Herzegovina.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Botswana.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Brazil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Brunei.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Bulgaria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Burkina Faso.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Burundi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/CARICOM.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/CIS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cambodja.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cameroon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Canada.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cape Verde.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cayman Islands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Central African Republic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Chad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Chile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/China.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Colombia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Commonwealth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Comoros.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Congo-Brazzaville.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Congo-Kinshasa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cook Islands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Costa Rica.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cote d'Ivoire.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Croatia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cuba.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Cyprus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Czech Republic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Denmark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Djibouti.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Dominica.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Dominican Republic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Egypt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/El Salvador.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/England.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Equador.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Equatorial Guinea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Eritrea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Estonia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ethiopia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/European Union.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Faroes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Fiji.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Finland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/France.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gabon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gambia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Georgia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Germany.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ghana.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Gibraltar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Greece.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Greenland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Grenada.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guadeloupe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guatemala.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guernsey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guinea-Bissau.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guinea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Guyana.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Haiti.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Honduras.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Hong Kong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Hungary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iceland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/India.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Indonesia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iran.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Iraq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ireland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Islamic Conference.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Isle of Man.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Israel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Italy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jamaica.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jersey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Jordan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kazakhstan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kenya.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kiribati.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kosovo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kuwait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Kyrgyzstan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Laos.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Latvia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lebanon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lesotho.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Liberia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Libya.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Liechtenstein.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Lithuania.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Luxembourg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Macao.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Macedonia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Madagascar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malawi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malaysia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Maldives.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mali.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Malta.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Marshall Islands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Martinique.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mauritania.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mauritius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mexico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Micronesia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Moldova.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Monaco.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mongolia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Montenegro.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Montserrat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Morocco.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Mozambique.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Myanmar(Burma).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/NATO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Namibia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nauru.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nepal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Netherlands Antilles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Netherlands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/New Caledonia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/New Zealand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nicaragua.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Niger.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Nigeria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/North Korea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Northern Cyprus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Northern Ireland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Norway.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/OPEC.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Olimpic Movement.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Oman.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Pakistan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Palau.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Palestine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Panama.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Papua New Guinea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Paraguay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Peru.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Philippines.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Poland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Portugal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Puerto Rico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Qatar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Red Cross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Reunion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Romania.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Russian Federation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Rwanda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Saint Lucia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Samoa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/San Marino.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sao Tome &amp; Principe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Saudi Arabia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Scotland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Senegal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Serbia(Yugoslavia).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Seyshelles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sierra Leone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Singapore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Slovakia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Slovenia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Solomon Islands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Somalia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Somaliland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/South Africa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/South Korea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Spain.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sri Lanka.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/St Kitts &amp; Nevis.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/St Vincent &amp; the Grenadines.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sudan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Suriname.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Swaziland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Sweden.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Switzerland.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Syria.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tahiti(French Polinesia).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Taiwan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tajikistan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tanzania.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Thailand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Timor-Leste.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Togo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tonga.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Trinidad &amp; Tobago.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tunisia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turkey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turkmenistan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Turks and Caicos Islands.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Tuvalu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uganda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Ukraine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Arab Emirates.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Kingdom(Great Britain).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United Nations.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/United States of America(USA).png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uruguay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Uzbekistan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Vanuatu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Vatican City.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Venezuela.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Viet Nam.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Virgin Islands British.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Virgin Islands US.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Wales.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Western Sahara.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Yemen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Zambia.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/Zimbabwe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/flags/japan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/mobile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/oil.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/payment-systems/master-card.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/payment-systems/visa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/aqua.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/bluegray.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/brown.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/cyan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkblue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkpurple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/darkred.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/deeporange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/gray-dark-v2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/indigo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/lightred.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/teal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/pin/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-1/03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-2/icon4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/icons/set-3/icon3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/inline/inline9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/maps/map3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/preloaders/preloader-black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/img/preloaders/preloader-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/audio-bg/tiesto.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg-poster.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg.mp4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/media-temp/video-bg/video-bg.webm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/datatables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/pdfmake.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/vendor/datatable/vfs_fonts.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="$PROJECT_DIR$/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" afterPath="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Slider.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/custom.css" afterPath="$PROJECT_DIR$/web/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/unify.css" afterPath="$PROJECT_DIR$/web/assets/css/unify.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" afterPath="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -633,38 +27,89 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="77" column="74" lean-forward="false" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
+            <state relative-caret-position="407">
+              <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
               <folding>
-                <element signature="e#40#97#0#PHP" expanded="true" />
+                <element signature="e#40#64#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfertaRepository.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Usuario.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1602">
+              <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaOfertasAlum.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListaAlumnos.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatosPersonales.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Oferta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grado.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <element signature="e#115#147#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OfertaRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="28" column="80" lean-forward="false" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+            <state relative-caret-position="704">
+              <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
               <folding>
                 <element signature="e#47#81#0#PHP" expanded="true" />
-                <marker date="1527864517342" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
-                <marker date="1527864517342" expanded="true" signature="797:879" ph="SELECT e FRO... AppBundle" />
+                <marker date="1527869023393" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grado_Oferta.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -683,6 +128,7 @@
       <find>empresa</find>
       <find>Totalem</find>
       <find>border-left</find>
+      <find>go</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -714,8 +160,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Header.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Panel.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Panel.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/PanelOfertas.html.twig" />
@@ -724,25 +168,27 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/PanelOfertas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListarAlumnos.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Loged.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/unify.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Footer.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/Config/routing.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarOfertas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/NavBarLoged.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/web/assets/vendor/select2-develop/dist/css/select2.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Base/Plantilla.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/Formulario.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Grado.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -1068,7 +514,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1215,18 +661,18 @@
       <workItem from="1527702186424" duration="4461000" />
       <workItem from="1527706733563" duration="70000" />
       <workItem from="1527784027091" duration="9969000" />
-      <workItem from="1527863243565" duration="1337000" />
+      <workItem from="1527863243565" duration="5823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183754000" />
+    <option name="totallyTimeSpent" value="188240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20572917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20522387" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1315,17 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="false" />
-            <marker date="1527607467819" expanded="true" signature="377:435" ph="SELECT e FRO... AppBundle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/css/unify.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1340,54 +775,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Install/Cargar.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Install/bbdd.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="115" column="94" lean-forward="false" selection-start-line="115" selection-start-column="94" selection-end-line="115" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1395,14 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
           <caret line="35" column="68" lean-forward="false" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1459,30 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="86" column="48" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Oferta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1491,24 +851,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado_Alumno.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="77" column="74" lean-forward="false" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
+        <state relative-caret-position="704">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Grado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="59" column="5" lean-forward="false" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
-            <element signature="e#40#97#0#PHP" expanded="true" />
+            <element signature="e#115#147#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Install/bbdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="80" column="49" lean-forward="true" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/DatosPersonales.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/ListarAlumnos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="98" selection-end-line="17" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertas.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1602">
+          <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Oferta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaAlumnos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UsuarioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#47#81#0#PHP" expanded="true" />
+            <marker date="1527868916677" expanded="true" signature="377:435" ph="SELECT e FRO... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Paginas/Partes/ListaOfertasAlum.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfertaRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="28" column="80" lean-forward="false" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+        <state relative-caret-position="704">
+          <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
             <element signature="e#47#81#0#PHP" expanded="true" />
-            <marker date="1527864517342" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
-            <marker date="1527864517342" expanded="true" signature="797:879" ph="SELECT e FRO... AppBundle" />
+            <marker date="1527869023393" expanded="true" signature="376:433" ph="SELECT e FRO... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

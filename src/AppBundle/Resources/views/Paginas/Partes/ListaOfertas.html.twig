@@ -8,8 +8,8 @@
                     <h5 class="card-title">Nombre Empresa: {{ oferta.nombre }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:{{ oferta.tipo }}</h6>
                     <ul>
-                        {% for sel in oferta.GOferta %}
-                           <li> {{ sel.grado.nombre }}</li>
+                        {% for sel in oferta.grados %}
+                           <li> {{ sel.nombre }}</li>
                         {% endfor %}
                     </ul>
                     <p class="card-text">Descripcion: {{ oferta.descripcion }}</p>

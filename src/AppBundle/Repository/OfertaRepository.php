@@ -23,17 +23,17 @@ class OfertaRepository extends EntityRepository
         $Paginator = new Paginator($query,$fetchJoinCollection = true);
         return $Paginator;
     }
-    public function GetPaginaAlum($PagSize, $PagActual,$cod){
-        $em = $this->getEntityManager();
+    public function GetOfertas($PagSize, $PagActual,$id){
 
-        $dql = "SELECT e FROM AppBundle\Entity\Grado_Oferta e WHERE e.Grado=$cod ORDER BY e.id ASC";
-
-        $query = $em->createQuery($dql)
+        $query = $this->createQueryBuilder('o');
+        $result = $query->select('o')
+            ->join('o.Grados','g')->addSelect('g')
+            ->join('g.Alumnos','a')->addSelect('a')
+            ->andWhere('a.id='.$id)
             ->setFirstResult($PagSize *($PagActual-1))
-            ->setMaxResults(1);
-        var_dump($query);
-        die();
-        $Paginator = new Paginator($query,$fetchJoinCollection = true);
+            ->setMaxResults($PagSize)
+            ->getQuery();
+        $Paginator = new Paginator($result,$fetchJoinCollection = true);
         return $Paginator;
     }
 }

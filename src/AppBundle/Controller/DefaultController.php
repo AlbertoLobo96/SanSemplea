@@ -2,6 +2,9 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\AppBundle;
+use AppBundle\Entity\Oferta;
+use AppBundle\Entity\Usuario;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -67,28 +70,16 @@ class DefaultController extends Controller
         ));
     }
     public function MisOfertasAction($page){
-        $cont = 0;
-        $arr = [];
-        $em = $this->getDoctrine()->getManager();
 
-        $Ofertas_repository = $em->getRepository("AppBundle:Oferta");
+
+        $Usuario_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $tampag = 4;
         $user = $this->getUser();
-        //foreach($user->GetGAlumno() as $sel){
-            $Ofertas = $Ofertas_repository->GetPaginaAlum($tampag, $page,1);
-          /*  $arr=[
-                $cont => $Ofertas
-            ];
-            $cont++;
-          */
-        //}
-        //array con todos los alumnos de la base de datos
+        $Ofertas = $Usuario_repository->GetOfertas($tampag, $page,$user->getId());
 
-        $totalofertas = count($arr);
+        $totalofertas = count($Ofertas);
         $totalpag = ceil($totalofertas / $tampag);
 
-        var_dump($Ofertas);
-        die();
         return $this->render('AppBundle:Paginas:ListarOfertas.html.twig', array(
             "ListaOfertas" => $Ofertas,
             "pagina" => $page,

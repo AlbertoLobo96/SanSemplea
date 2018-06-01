@@ -19,7 +19,7 @@ class Usuario implements UserInterface
 {
     public function __construct()
     {
-        $this->GAlumno = new ArrayCollection();
+        $this->Grados = new ArrayCollection();
     }
     /**
      * @ORM\Column(type="integer")
@@ -83,10 +83,12 @@ class Usuario implements UserInterface
      * @ORM\Column(type="string", length=100)
      */
     private $Curso;
+
     /**
-     * @ORM\OneToMany(targetEntity="Grado_Alumno", mappedBy="Alumno")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Grado", inversedBy="Alumnos")
+     * @ORM\JoinTable(name="Grados_Alumnos")
      */
-    private $GAlumno;
+    private $Grados;
 
     //--------------------------------------------Metodos para autentificacion
     /**
@@ -272,22 +274,23 @@ class Usuario implements UserInterface
     {
         $this->Rol = $Rol;
     }
-
     /**
      * @return mixed
      */
-    public function getGAlumno()
+    public function getGrados()
     {
-        return $this->GAlumno;
+        return $this->Grados;
     }
-
-    /**
-     * @param mixed $GAlumno
-     */
-    public function setGAlumno($GAlumno)
+    public function addGrado(...$grados)
     {
-        $this->GAlumno = $GAlumno;
+        foreach ( $grados as $grado) {
+            if (!$this->Grados->contains($grado)) {
+                $this->Grados->add($grado);
+            }
+        }
     }
-
+    public function removeGrado($grado){
+        $this->Grados->removeElement($grado);
+    }
 
 }
