@@ -98,6 +98,36 @@
             // initialization of counters
             $('.js-example-basic-multiple').select2();
             $('.select2-container--default').addClass("borderselect");
+
+            $('#btnvis').on('click',function () {
+                $("#titlemod").text($('#NombreEmp').val());
+                if( $('#OfertaTrabajo').prop("checked") === true) {
+                    $("#tipomod").text("Oferta de Trabajo");
+                }
+                if( $('#BecaForm').prop("checked") === true) {
+                    $("#tipomod").text("Beca de Formación");
+                }
+                if( $('#CursoForm').prop("checked") === true) {
+                    $("#tipomod").text("Curso de Formación");
+                }
+                if( $('#Otros').prop("checked") === true) {
+                    $("#tipomod").text("Otros");
+                }
+                if( $('#Concurso').prop("checked") === true) {
+                    $("#tipomod").text("Concurso");
+                }
+                $('#titulmod').text("");
+
+                for (var i=0;i<$('#Cursos').val().length -1;i++){
+                    $('#titulmod').append("<li>"+$('#Cursos').val()[i]+"</li>");
+                }
+                $("#descpmod").text($('#DescpEmp').val());
+
+                $("#urlmod").text($('#EnlacesEmp').val());
+                $("#telmod").text($('#TelefonoEmp').val());
+                $("#emailmod").text($('#EmailEmp').val());
+            });
+
         });
 
         $(window).on('load', function () {

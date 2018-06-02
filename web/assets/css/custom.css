@@ -5,10 +5,8 @@ input[type="checkbox"]:checked + * .g-bg-blue--checked,
 input[type="radio"]:checked + * .g-bg-blue--checked {
   background-color: #004b7c !important; 
 }
-
-.g-bg-blue--checked.g-checked,
-.g-checked .g-bg-blue--checked {
-  background-color: #004b7c !important; 
+.activo{
+    background-color: #004b7c !important;
 }
 .g-bg-blue{
   background-color: #3398dc !important; 

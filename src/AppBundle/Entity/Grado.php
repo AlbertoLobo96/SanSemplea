@@ -33,6 +33,11 @@ class Grado
      */
     private $Nombre;
     /**
+     * @ORM\Column(type="string", length=100)
+     * @Assert\NotBlank()
+     */
+    private $Descripcion;
+    /**
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Usuario", mappedBy="Grados")
      */
     private $Alumnos;
@@ -104,6 +109,22 @@ class Grado
     public function setNombre($Nombre)
     {
         $this->Nombre = $Nombre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescripcion()
+    {
+        return $this->Descripcion;
+    }
+
+    /**
+     * @param mixed $Descripcion
+     */
+    public function setDescripcion($Descripcion)
+    {
+        $this->Descripcion = $Descripcion;
     }
 
 }

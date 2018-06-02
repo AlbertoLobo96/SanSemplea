@@ -24,4 +24,9 @@ Listar_MisOfertas:
   path: /Home/MisOfertas/{page}
   defaults: {_controller: AppBundle:Default:MisOfertas,page: 1}
 
+ActualizarDatos:
+  path: /Home
+  defaults: {_controller: AppBundle:Default:ActualizarDatos}
+
+
 

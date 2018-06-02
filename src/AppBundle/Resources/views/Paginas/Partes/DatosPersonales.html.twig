@@ -1,116 +1,153 @@
 {% block panel %}
-<!-- Nav tabs -->
-<ul class="nav nav-justified u-nav-v1-1 u-nav-blue g-brd-bottom--md g-brd-bottom-2 g-brd-blue g-mb-20"
-    role="tablist" data-target="nav-1-1-default-hor-left-underline"
-    data-tabs-mobile-type="slide-up-down"
-    data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-blue g-mb-20">
-    <li class="nav-item">
-        <a class="nav-link g-py-10 active" data-toggle="tab"
-           href="#nav-1-1-default-hor-left-underline--1" role="tab">Datos Personales</a>
-    </li>
-</ul>
-<!-- End Nav tabs -->
-<!-- Tab panes -->
-<div id="nav-1-1-default-hor-left-underline" class="tab-content g-mb-50 g-pb-100">
-    <!-- Edit Profile -->
-    <div class="tab-pane fade show active" id="nav-1-1-default-hor-left-underline--1" role="tabpanel"
-         data-parent="#nav-1-1-default-hor-left-underline">
-        <ul class="list-unstyled g-mb-30">
-            <!-- DNI -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">DNI</strong>
-                    <span class="align-top" name="nombre">{{ app.user.nif }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End DNI -->
-            <!-- Nombre -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Nombre</strong>
-                    <span class="align-top">{{ app.user.nombre }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Nombre -->
+    <!-- Nav tabs -->
+    <ul class="nav nav-justified u-nav-v1-1 u-nav-blue g-brd-bottom--md g-brd-bottom-2 g-brd-blue g-mb-20"
+        role="tablist" data-target="nav-1-1-default-hor-left-underline"
+        data-tabs-mobile-type="slide-up-down"
+        data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-blue g-mb-20">
+        <li class="nav-item">
+            <a class="nav-link g-py-10 active" data-toggle="tab"
+               href="#nav-1-1-default-hor-left-underline--1" role="tab">Datos Personales</a>
+        </li>
+    </ul>
+    <!-- End Nav tabs -->
+    <!-- Tab panes -->
+    <div id="nav-1-1-default-hor-left-underline" class="tab-content g-mb-50 g-pb-100">
+        <!-- Edit Profile -->
+        <div class="tab-pane fade show active" id="nav-1-1-default-hor-left-underline--1" role="tabpanel"
+             data-parent="#nav-1-1-default-hor-left-underline">
+            <ul class="list-unstyled g-mb-30">
+                <!-- DNI -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">DNI</strong>
+                        <span class="align-top" name="nombre">{{ app.user.nif }}</span>
+                    </div>
+                </li>
+                <!-- End DNI -->
+                <!-- Nombre -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Nombre</strong>
+                        <span class="align-top">{{ app.user.nombre }}</span>
+                    </div>
+                </li>
+                <!-- End Nombre -->
 
-            <!-- Apellidos -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Apellidos</strong>
-                    <span class="align-top">{{ app.user.apellido }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Apellidos -->
+                <!-- Apellidos -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Apellidos</strong>
+                        <span class="align-top">{{ app.user.apellido }}</span>
+                    </div>
+                </li>
+                <!-- End Apellidos -->
 
-            <!-- Email -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Email</strong>
-                    <span class="align-top">{{ app.user.email }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Email  -->
+                <!-- Email -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Email</strong>
+                        <span class="align-top">{{ app.user.email }}</span>
+                    </div>
+                </li>
+                <!-- End Email  -->
 
-            <!-- Telefono -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Telefono</strong>
-                    <span class="align-top">{{ app.user.telefono }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Telefono -->
+                <!-- Telefono -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Telefono</strong>
+                        <span class="align-top">{{ app.user.telefono }}</span>
+                    </div>
+                </li>
+                <!-- End Telefono -->
 
-            <!-- Titulaciones -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Titulaciones</strong>
-                    <span class="align-top">
+                <!-- Titulaciones -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Titulaciones</strong>
+                        <span class="align-top">
                                         {% for sel in app.user.Grados %}
                                             {{ sel.nombre }}
                                         {% endfor %}
                                     </span>
-                </div>
-                <span>
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Titulaciones -->
+                    </div>
+                </li>
+                <!-- End Titulaciones -->
 
-            <!-- Curso -->
-            <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
-                <div class="g-pr-10">
-                    <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Curso</strong>
-                    <span class="align-top">{{ app.user.curso }}</span>
-                </div>
-                <span class="editspan">
-                                            <i class="icon-pencil g-color-gray-dark-v5 g-color-blue--hover g-cursor-pointer g-pos-rel g-top-1"></i>
-                                        </span>
-            </li>
-            <!-- End Curso -->
-        </ul>
+                <!-- Curso -->
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Curso</strong>
+                        <span class="align-top">{{ app.user.curso }}</span>
+                    </div>
+                </li>
+                <li class="d-flex align-items-center justify-content-between g-brd-bottom g-brd-gray-light-v4 g-py-15">
+                    <div class="g-pr-10">
+                        <strong class="d-block d-md-inline-block g-color-gray-dark-v2 g-width-200 g-pr-10">Recibir
+                            Notificaciones</strong>
+                        <span class="align-top">
+                            {% if app.user.recibir == 0 %}
+                                Si deseo recibir notificaciones
+                            {% else %}
+                                No deseo recibir notificaciones
+                            {% endif %}
+                        </span>
+                    </div>
+                </li>
+                <!-- End Curso -->
+            </ul>
 
-        <div class="text-sm-right">
-            <input class="btn u-btn-blue rounded-0 g-py-12 g-px-25" type="submit" name="GDATOS"
-                   value="Guardar"/>
+            <div class="text-sm-right">
+                <a href="#modal23" data-modal-target="#modal23" data-modal-effect="flash"
+                   class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                    <i class="icon-pencil g-mr-5"></i>
+                    Activar Edición
+                </a>
+            </div>
         </div>
+        <!-- End Edit Profile -->
     </div>
-    <!-- End Edit Profile -->
+    <div id="modal23" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>
+        <form action="#" method="post">
+        <p>
+            DNI: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.nif }}">
+        </p>
+        <p>
+            Nombre: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.nombre }}">
+        </p>
+        <p>
+            Apellidos: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.apellido }}">
+        </p>
+        <p>
+            Email: <input id="nombre" class="form-control form-control-md rounded-0 " type="Email" value="{{ app.user.email }}">
+        </p>
+        <p>
+            Telefono: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.telefono }}">
+        </p>
+        <p>
+            Titulaciones:
+            <select id="Cursos" class="form-control" name="Cursos[]" multiple="multiple">
+                {% for grado in ListaGrados %}
+                    <option value="{{ grado.id }}">{{ grado.descripcion }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <p>
+            Curso: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.curso }}">
+        </p>
+        <p>
+            Notificaciones:
+            <select id="Cursos" class="form-control ">
+                <option {% if app.user.recibir ==1 %}  checked {% endif %} value="1">Deseo recibir notificaiones por correo</option>
+                <option {% if app.user.recibir ==0 %} checked {% endif %} value="0">No deseo recibir notificaiones por correo</option>
+            </select>
+        </p>
 
-    <!-- End Security Settings -->
-</div>
+            <div class="float-md-center">
+                <input type="submit" class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white" value="Guardar" />
+            </div>
+        </form>
+    </div>
 {% endblock %}

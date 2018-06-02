@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\AppBundle;
+use AppBundle\Entity\Grado;
 use AppBundle\Entity\Oferta;
 use AppBundle\Entity\Usuario;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -12,6 +13,9 @@ class DefaultController extends Controller
 {
     public function LoginAction()
     {
+        $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
+        $grados = $Grados_repository->GetAllGrados();
+
         //Llamamos al servicio de autenticacion
         $authenticationUtils = $this->get('security.authentication_utils');
         // conseguir el error del login si falla
@@ -22,19 +26,24 @@ class DefaultController extends Controller
             'AppBundle:Paginas:login.html.twig', array(
             'last_username' => $lastUsername,
             'error' => $error,
+            'ListaGrados' => $grados,
         ));
     }
 
     public function DatosPersonalesAction()
     {
-        return $this->render('AppBundle:Paginas:Loged.html.twig');
+        $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
+        $grados = $Grados_repository->GetAllGrados();
+
+        return $this->render('AppBundle:Paginas:Loged.html.twig',array(
+            'ListaGrados' => $grados
+        ));
     }
 
     public function ListarAlumnosAction($page)
     {
-        $em = $this->getDoctrine()->getManager();
+        $Alumnos_repository = $this->getDoctrine()->getRepository(Usuario::class);
 
-        $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
         $tampag = 4;
         $alumnos = $Alumnos_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
 
@@ -52,11 +61,9 @@ class DefaultController extends Controller
 
     public function ListarOfertasAction($page)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $Ofertas_repository = $em->getRepository("AppBundle:Oferta");
+        $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $tampag = 4;
-        $Ofertas = $Ofertas_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
+        $Ofertas = $Oferta_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
 
         $totalofertas = count($Ofertas);
 
@@ -69,13 +76,13 @@ class DefaultController extends Controller
             "TotalPaginas" => $totalpag
         ));
     }
-    public function MisOfertasAction($page){
 
-
-        $Usuario_repository = $this->getDoctrine()->getRepository(Oferta::class);
+    public function MisOfertasAction($page)
+    {
+        $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $tampag = 4;
         $user = $this->getUser();
-        $Ofertas = $Usuario_repository->GetOfertas($tampag, $page,$user->getId());
+        $Ofertas = $Oferta_repository->GetOfertas($tampag, $page, $user->getId());
 
         $totalofertas = count($Ofertas);
         $totalpag = ceil($totalofertas / $tampag);
@@ -86,5 +93,9 @@ class DefaultController extends Controller
             "TotalOfertas" => $totalofertas,
             "TotalPaginas" => $totalpag
         ));
+    }
+
+    public function ActualizarDatos(){
+
     }
 }

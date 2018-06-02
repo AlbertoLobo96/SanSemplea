@@ -83,6 +83,10 @@ class Usuario implements UserInterface
      * @ORM\Column(type="string", length=100)
      */
     private $Curso;
+    /**
+     * @ORM\Column(type="integer",)
+     */
+    private $Recibir;
 
     /**
      * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Grado", inversedBy="Alumnos")
@@ -292,5 +296,22 @@ class Usuario implements UserInterface
     public function removeGrado($grado){
         $this->Grados->removeElement($grado);
     }
+
+    /**
+     * @return mixed
+     */
+    public function getRecibir()
+    {
+        return $this->Recibir;
+    }
+
+    /**
+     * @param mixed $Recibir
+     */
+    public function setRecibir($Recibir)
+    {
+        $this->Recibir = $Recibir;
+    }
+
 
 }

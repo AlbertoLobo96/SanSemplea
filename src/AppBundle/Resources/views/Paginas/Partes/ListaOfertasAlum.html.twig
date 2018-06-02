@@ -38,7 +38,7 @@
             {% if pagina <= TotalPaginas and pagina>1 %}
                 <li class="list-inline-item">
                     <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-13"
-                       href="{{ path('Listar_Ofertas') }}/{{ pagina-1 }}">
+                       href="{{ path('Listar_MisOfertas') }}/{{ pagina-1 }}">
                             <span>
                                 <i class="fa fa-angle-left"></i>
                             </span>
@@ -53,13 +53,13 @@
              {% else %}
 
              {% endif %}
-" href="{{ path('Listar_Ofertas') }}/{{ i }}">{{ i }}</a>
+" href="{{ path('Listar_MisOfertas') }}/{{ i }}">{{ i }}</a>
                 </li>
             {% endfor %}
             {% if pagina < TotalPaginas and pagina>0 %}
                 <li class="list-inline-item">
                     <a class="u-pagination-v1__item u-pagination-v1-5 rounded g-pa-4-13"
-                       href="{{ path('Listar_Ofertas') }}/{{ pagina+1 }}">
+                       href="{{ path('Listar_MisOfertas') }}/{{ pagina+1 }}">
                             <span>
                                 <i class="fa fa-angle-right"></i>
                             </span>
