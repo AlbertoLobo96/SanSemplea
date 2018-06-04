@@ -136,4 +136,40 @@ class DefaultController extends Controller
             "TotalPaginas" => $totalpag
         ));
     }
+    public function DeleteAction(Request $request){
+        $em = $this->getDoctrine()->getManager();
+
+        $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
+
+        $id = $request->query->get("id");
+        $alumno = $Alumnos_repository->find($id); //Buscamos el objeto con el id
+
+        $em->remove($alumno);
+
+        $flush=$em->flush();
+
+        if($flush != null){
+            $status = "Alumno no borrado";
+            $tipo="danger";
+        }
+        else{
+            $status = "El alumno ha sido borrado correctamente";
+            $tipo ="success";
+        }
+        $this->addFlash('estado', $status);
+        $this->addFlash('tipo', $tipo);
+        return $this->redirectToRoute('Listar_Alumnos');
+    }
+
+    public function ConfirmarAction($id){
+        $em = $this->getDoctrine()->getManager();
+
+        $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
+
+        $alumno = $Alumnos_repository->find($id); //Buscamos el objeto con el id
+
+        return $this->render("AppBundle:Paginas:Confirmar.html.twig",array(
+            "alumno"=> $alumno
+        ));
+    }
 }
