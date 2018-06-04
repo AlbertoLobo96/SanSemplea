@@ -13,14 +13,14 @@
     {% block NavBar %}
 
     {% endblock %}
-    {% for tipo in app.session.flashbag().get("tipo") %}
-        <div class="alert alert-{{ tipo }}">
-            {% for message in app.session.flashbag().get("estado") %}
-                <h4>{{ message }}</h4>
-            {% endfor %}
-        </div>
-    {% endfor %}
     {% block contenido %}
+        {% for tipo in app.session.flashbag().get("tipo") %}
+            <div class="alert alert-{{ tipo }}">
+                {% for message in app.session.flashbag().get("estado") %}
+                    <h4>{{ message }}</h4>
+                {% endfor %}
+            </div>
+        {% endfor %}
     <!-- Bloque donde se incrusta el contenido de la pagina web -->
     {% endblock %}
 {% endblock %}

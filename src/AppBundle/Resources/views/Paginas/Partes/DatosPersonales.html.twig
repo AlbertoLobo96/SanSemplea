@@ -11,7 +11,7 @@
     </ul>
     <!-- End Nav tabs -->
     <!-- Tab panes -->
-    <div id="nav-1-1-default-hor-left-underline" class="tab-content g-mb-50 g-pb-100">
+    <div id="nav-1-1-default-hor-left-underline" class="tab-content g-mb-50 ">
         <!-- Edit Profile -->
         <div class="tab-pane fade show active" id="nav-1-1-default-hor-left-underline--1" role="tabpanel"
              data-parent="#nav-1-1-default-hor-left-underline">
@@ -110,44 +110,9 @@
         <button type="button" class="close" onclick="Custombox.modal.close();">
             <i class="hs-icon hs-icon-close"></i>
         </button>
-        <form action="#" method="post">
-        <p>
-            DNI: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.nif }}">
-        </p>
-        <p>
-            Nombre: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.nombre }}">
-        </p>
-        <p>
-            Apellidos: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.apellido }}">
-        </p>
-        <p>
-            Email: <input id="nombre" class="form-control form-control-md rounded-0 " type="Email" value="{{ app.user.email }}">
-        </p>
-        <p>
-            Telefono: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.telefono }}">
-        </p>
-        <p>
-            Titulaciones:
-            <select id="Cursos" class="form-control" name="Cursos[]" multiple="multiple">
-                {% for grado in ListaGrados %}
-                    <option value="{{ grado.id }}">{{ grado.descripcion }}</option>
-                {% endfor %}
-            </select>
-        </p>
-        <p>
-            Curso: <input id="nombre" class="form-control form-control-md rounded-0 " type="text" value="{{ app.user.curso }}">
-        </p>
-        <p>
-            Notificaciones:
-            <select id="Cursos" class="form-control ">
-                <option {% if app.user.recibir ==1 %}  checked {% endif %} value="1">Deseo recibir notificaiones por correo</option>
-                <option {% if app.user.recibir ==0 %} checked {% endif %} value="0">No deseo recibir notificaiones por correo</option>
-            </select>
-        </p>
-
-            <div class="float-md-center">
-                <input type="submit" class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white" value="Guardar" />
-            </div>
-        </form>
+        {{ form_start( form ,{'enctype':'multipart/from-data'}) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
     </div>
 {% endblock %}
