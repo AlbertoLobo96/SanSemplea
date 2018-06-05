@@ -1,9 +1,11 @@
 {% extends 'AppBundle:Base:Plantilla.html.twig' %}
 {% block NavBar %}
-    {{ include('AppBundle:Base:NavBar.html.twig') }}
+    {{ include('AppBundle:Base:NavBarLoged.html.twig') }}
 {% endblock %}
 {% block contenido %}
+    <div class="container g-my-100">
     <h1>¿Esta seguro que desea eliminar </h1>
     <a class="btn btn-md u-btn-3d g-bg-red g-mr-10 g-mb-15 g-color-white" href="{{ path('Alumno_Delete',{"id":alumno.id}) }}">Eliminar</a>
-    <a class="btn btn-md u-btn-3d g-bg-beig g-mr-10 g-mb-15 g-color-white" href="{{ path('Listar_Alumnos')}}">Cancelar</a>
+    <a class="btn btn-md u-btn-3d g-bg-beige g-mr-10 g-mb-15 g-color-black" href="{{ path('Listar_Alumnos')}}">Cancelar</a>
+    </div>
 {% endblock %}

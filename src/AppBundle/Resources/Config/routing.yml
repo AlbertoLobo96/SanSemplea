@@ -29,8 +29,12 @@ Alumno_Delete:
   defaults: { _controller: AppBundle:Default:Delete }
 
 Alumno_Confirmar:
-  path: /Alumnos/Confirmar{id}
+  path: /Alumnos/Confirmar/{id}
   defaults: { _controller: AppBundle:Default:Confirmar }
+
+EnviarOferta:
+  path: /Oferta/Enviar
+  defaults: {_controller: AppBundle:Default:EnviarOferta}
 
 
 

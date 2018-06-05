@@ -14,7 +14,7 @@ class UsuarioRepository extends EntityRepository
     public function GetPagina($PagSize, $PagActual){
         $em = $this->getEntityManager();
 
-        $dql = "SELECT e FROM AppBundle\Entity\Usuario e ORDER BY e.id ASC";
+        $dql = "SELECT e FROM AppBundle\Entity\Usuario e WHERE e.Rol='ROLE_USER' ORDER BY e.id ASC";
 
         $query = $em->createQuery($dql)
             ->setFirstResult($PagSize *($PagActual-1))

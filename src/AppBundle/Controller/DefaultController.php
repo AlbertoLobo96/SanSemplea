@@ -6,15 +6,21 @@ use AppBundle\Entity\Grado;
 use AppBundle\Entity\Oferta;
 use AppBundle\Entity\Usuario;
 use AppBundle\Form\UsuarioType;
+use AppBundle\Form\OfertaType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    public function LoginAction()
+    public function LoginAction(Request $request)
     {
         $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
         $grados = $Grados_repository->GetAllGrados();
+
+        $Oferta  = new Oferta();
+
+        $form = $this->createForm(OfertaType::class,$Oferta);
+
 
         //Llamamos al servicio de autenticacion
         $authenticationUtils = $this->get('security.authentication_utils');
@@ -27,6 +33,7 @@ class DefaultController extends Controller
             'last_username' => $lastUsername,
             'error' => $error,
             'ListaGrados' => $grados,
+            'form' => $form->createView()
         ));
     }
 
@@ -142,6 +149,7 @@ class DefaultController extends Controller
         $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
 
         $id = $request->query->get("id");
+
         $alumno = $Alumnos_repository->find($id); //Buscamos el objeto con el id
 
         $em->remove($alumno);
@@ -171,5 +179,58 @@ class DefaultController extends Controller
         return $this->render("AppBundle:Paginas:Confirmar.html.twig",array(
             "alumno"=> $alumno
         ));
+    }
+
+    public function EnviarOfertaAction(Request $request){
+        $Oferta
+        $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
+
+
+
+        $form = $this->createForm(OfertaType::class,$alumno);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted()) {
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+
+                $alumno = $form->getData();
+
+                $file = $form["Foto"]->getData();
+                $extension= $file->guessExtension();
+                $file_name = time().".".$extension;
+                $file->move('assets/img/my',$file_name);
+
+                $alumno->setfoto($file_name);
+                $plainPassword = $form["Passwd"]->getData();
+                $encoder = $this->container->get('security.password_encoder');
+                $encoded = $encoder->encodePassword($alumno, $plainPassword);
+
+                $user->setPasswd($encoded);
+                $em->persist($alumno);
+                //flush graba los datos en la base de datos
+                $flush=$em->flush();
+
+                if($flush != null){
+                    $status = "Formulario validado perfectamente pero no se ha modificado el alumno";
+                    $tipo="warning";
+                }
+                else{
+                    $status = "Formulario validado perfectamente y modificado el alumno";
+                    $tipo ="success";
+                }
+            } else {
+                $status = "Formulario no válido";
+                $tipo = "danger";
+            }
+            $this->addFlash('estado', $status);
+            $this->addFlash('tipo', $tipo);
+        }
+        return $this->render('AppBundle:Paginas:Loged.html.twig',array(
+            "form" => $form->createView()
+        ));
+
+
     }
 }

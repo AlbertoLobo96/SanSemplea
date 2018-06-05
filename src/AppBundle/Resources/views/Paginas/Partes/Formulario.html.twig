@@ -7,13 +7,29 @@
 </section>
 
 <!-- Bloque formulario-->
-<section class="g-bg-white g-color-black g-py-50 g-flex-centered">
+<section>
+    <div class="g-bg-white g-color-black g-py-50 g-flex-centered ">
+        {{ form_start( form ,{'attr': {'class': 'g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30 col-9'} },{'enctype':'multipart/from-data'}) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        <div class="float-md-right">
+            <a href="#modal23" data-modal-target="#modal23" data-modal-effect="flash"
+               class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                <i class="icon-eye g-mr-5"></i>
+                Previsualizar
+            </a>
+        </div>
+        <div class="g-recaptcha"
+             data-sitekey="6LfztFcUAAAAACDUmehDAWqLc6vmA4HYMjL2-0bM">
+        </div>
+    </div>
+    {{ form_end(form) }}
+    <!--
     <form class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30 col-9">
         <div class="form-group g-mb-20">
             <label>Nombre de la empresa:</label>
                 <input id="NombreEmp" name="NombreEmp" class="form-control form-control-md rounded-0 " type="text">
             </div>
-        </div>
         <div class="form-group g-mb-20">
             <label>Email:</label>
             <div class="input-group g-brd-blue--focus">
@@ -29,11 +45,13 @@
         <div class="form-group g-mb-20">
             <label class="g-color-black">Titulaciones:</label>
             <div class="input-group g-brd-blue--focus">
-                <select id="Cursos" class="form-control form-control-md rounded-0 js-example-basic-multiple2"
+                <select id="Cursos" class="form+-control form-control-md rounded-0 js-example-basic-multiple"
                         name="Cursos[]" multiple="multiple">
+                        {#
                     {% for grado in ListaGrados %}
                         <option value="{{ grado.id }}">{{ grado.descripcion }}</option>
                     {% endfor %}
+                    #}
                 </select>
             </div>
         </div>
@@ -106,6 +124,7 @@
             </div>
         </div>
     </form>
+    -->
     <!-- FIN bloque formulario -->
 </section>
 <!--Ventana modal que se muestra al previsualizar -->
@@ -138,10 +157,10 @@
             <i class="fa fa-envelope"></i> <span id="emailmod">Email</span>
         </span>
         <div class="float-md-center">
-        <a id="btnvis" class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
-            <i class="icon-note g-mr-5"></i>
-            Ver con Datos
-        </a>
+            <a id="btnvis" class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                <i class="icon-note g-mr-5"></i>
+                Ver con Datos
+            </a>
         </div>
     </footer>
 </div>
