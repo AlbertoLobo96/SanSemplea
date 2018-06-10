@@ -6,6 +6,7 @@ use AppBundle\Entity\Grado;
 use AppBundle\Entity\Oferta;
 use AppBundle\Entity\Usuario;
 use AppBundle\Form\UsuarioType;
+use AppBundle\Form\OfertaType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -15,18 +16,23 @@ class DefaultController extends Controller
     {
         $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
         $grados = $Grados_repository->GetAllGrados();
-
+        $Oferta  = new Oferta();
+        $form = $this->createForm(OfertaType::class,$Oferta,array(
+            'action' => $this->generateUrl('EnviarOferta'),
+        ));
         //Llamamos al servicio de autenticacion
         $authenticationUtils = $this->get('security.authentication_utils');
         // conseguir el error del login si falla
         $error = $authenticationUtils->getLastAuthenticationError();
         // ultimo nombre de usuario que se ha intentado identificar
         $lastUsername = $authenticationUtils->getLastUsername();
+
         return $this->render(
             'AppBundle:Paginas:login.html.twig', array(
             'last_username' => $lastUsername,
             'error' => $error,
             'ListaGrados' => $grados,
+            'form' => $form->createView()
         ));
     }
 
@@ -137,11 +143,14 @@ class DefaultController extends Controller
         ));
     }
     public function DeleteAction(Request $request){
+
         $em = $this->getDoctrine()->getManager();
 
         $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
 
         $id = $request->query->get("id");
+
+
         $alumno = $Alumnos_repository->find($id); //Buscamos el objeto con el id
 
         $em->remove($alumno);
@@ -171,5 +180,52 @@ class DefaultController extends Controller
         return $this->render("AppBundle:Paginas:Confirmar.html.twig",array(
             "alumno"=> $alumno
         ));
+    }
+
+    public function EnviarOfertaAction(Request $request){
+        $ofertum = new Oferta();
+        $form = $this->createForm(OfertaType::class, $ofertum);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Nueva Oferta')
+                ->setFrom('t.albertito@gmail.com')
+                ->setTo('alberto_trinidad_lobo@hotmail.es')
+                ->setBody(
+                    $this->renderView(
+                        'AppBundle:Paginas:Partes/email.html.twig',
+                        array('name' => "admin")
+                    ),
+                    'text/html'
+                );
+            $this->get('mailer')->send($message);
+
+            $ofertum=$form->getData();
+            $ofertum->setValidar(0);
+            $file = $form["Archivos"]->getData();
+            if($file != null){
+                $extension= $file->guessExtension();
+                $file_name = time().".".$extension;
+                $file->move('assets/img/Archivos',$file_name);
+
+                $ofertum->setArchivos($file_name);
+            }
+            else{
+                $ofertum->setArchivos("nada");
+            }
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($ofertum);
+            $em->flush();
+        }
+        return $this->redirectToRoute('login');
+    }
+
+    public function ValidarAction($id){
+        $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
+        $oferta = $Oferta_repository->find($id);
+        $oferta->setValidar(1);
+        return $this->redirectToRoute('Listar_Ofertas');
     }
 }

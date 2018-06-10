@@ -1,12 +1,12 @@
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>{% block title %}SanSeEmplea{% endblock %}</title>
-{% block stylesheets %}
-    {{ include('AppBundle:Base:Header.html.twig') }}
-{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}SanSeEmplea{% endblock %}</title>
+    {% block stylesheets %}
+        {{ include('AppBundle:Base:Header.html.twig') }}
+    {% endblock %}
 </head>
 <body>
 {% block body %}
@@ -21,122 +21,122 @@
                 {% endfor %}
             </div>
         {% endfor %}
-    <!-- Bloque donde se incrusta el contenido de la pagina web -->
+        <!-- Bloque donde se incrusta el contenido de la pagina web -->
     {% endblock %}
 {% endblock %}
 {% block Footer %}
 <footer class="g-bg-gray-dark-v1">
     {{ include('AppBundle:Base:Footer.html.twig') }}
-{% endblock %}
-{% block javascripts %}
-    <!-- JS Global Compulsory -->
-    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/popper.min.js"') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
+    {% endblock %}
+    {% block javascripts %}
+        <!-- JS Global Compulsory -->
+        <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/popper.min.js"') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap/bootstrap.min.js') }}"></script>
 
-    <script src="{{ asset('assets/vendor/bootstrap/offcanvas.js') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap/offcanvas.js') }}"></script>
 
-    <!-- JS Implementing Plugins -->
-    <script src="{{ asset('assets/vendor/dzsparallaxer/dzsparallaxer.js') }}"></script>
-    <script src="{{ asset('assets/vendor/dzsparallaxer/dzsscroller/scroller.js') }}"></script>
-    <script src="{{ asset('assets/vendor/dzsparallaxer/advancedscroller/plugin.js') }}"></script>
-    <script src="{{ asset('assets/vendor/masonry/dist/masonry.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
-    <script src="{{ asset('assets/vendor/fancybox/jquery.fancybox.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/custombox/custombox.min.js') }}"></script>
+        <!-- JS Implementing Plugins -->
+        <script src="{{ asset('assets/vendor/dzsparallaxer/dzsparallaxer.js') }}"></script>
+        <script src="{{ asset('assets/vendor/dzsparallaxer/dzsscroller/scroller.js') }}"></script>
+        <script src="{{ asset('assets/vendor/dzsparallaxer/advancedscroller/plugin.js') }}"></script>
+        <script src="{{ asset('assets/vendor/masonry/dist/masonry.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/slick-carousel/slick/slick.js') }}"></script>
+        <script src="{{ asset('assets/vendor/fancybox/jquery.fancybox.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/custombox/custombox.min.js') }}"></script>
 
-    <!-- JS Unify -->
-    <script src="{{ asset('assets/js/hs.core.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
-    <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.dropdown.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.popup.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.counter.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
-    <script src="{{ asset('assets/vendor/appear.js') }}"></script>
-    <script src="{{ asset('assets/js/components/hs.modal-window.js') }}"></script>
-    <!-- JS Custom -->
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-    <!-- JS SELECT2 -->
-    <script src="{{ asset('assets/vendor/select2-develop/dist/js/select2.js') }}"></script>
-    <!-- RECATCHA SRC -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- JS Unify -->
+        <script src="{{ asset('assets/js/hs.core.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.header.js') }}"></script>
+        <script src="{{ asset('assets/js/helpers/hs.hamburgers.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.dropdown.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.popup.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.carousel.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.counter.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.go-to.js') }}"></script>
+        <script src="{{ asset('assets/vendor/appear.js') }}"></script>
+        <script src="{{ asset('assets/js/components/hs.modal-window.js') }}"></script>
+        <!-- JS Custom -->
+        <script src="{{ asset('assets/js/custom.js') }}"></script>
+        <!-- JS SELECT2 -->
+        <script src="{{ asset('assets/vendor/select2-develop/dist/js/select2.js') }}"></script>
+        <!-- RECATCHA SRC -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <!-- jQuery UI Core -->
-    <script src="{{ asset('assets/vendor/jquery-ui/jquery-ui.core.min.js') }}"></script>
+        <!-- jQuery UI Core -->
+        <script src="{{ asset('assets/vendor/jquery-ui/jquery-ui.core.min.js') }}"></script>
 
-    <!-- jQuery UI Helpers -->
-    <script src="{{ asset('assets/vendor/jquery-ui/ui/widgets/menu.js') }}"></script>
-    <script src="{{ asset('assets/vendor/jquery-ui/ui/widgets/mouse.js') }}"></script>
+        <!-- jQuery UI Helpers -->
+        <script src="{{ asset('assets/vendor/jquery-ui/ui/widgets/menu.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery-ui/ui/widgets/mouse.js') }}"></script>
 
-    <!-- JS Plugins Init. -->
-    <script>
-        $(document).on('ready', function () {
-            // initialization of HSDropdown component
-            $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
-                afterOpen: function () {
-                    $(this).find('input[type="search"]').focus();
-                }
-            });
-            // initialization of popups
-            $.HSCore.components.HSModalWindow.init('[data-modal-target]');
-
-            // initialization of masonry
-            $('.masonry-grid').imagesLoaded().then(function () {
-                $('.masonry-grid').masonry({
-                    columnWidth: '.masonry-grid-sizer',
-                    itemSelector: '.masonry-grid-item',
-                    percentPosition: true
+        <!-- JS Plugins Init. -->
+        <script>
+            $(document).on('ready', function () {
+                // initialization of HSDropdown component
+                $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+                    afterOpen: function () {
+                        $(this).find('input[type="search"]').focus();
+                    }
                 });
+                // initialization of popups
+                $.HSCore.components.HSModalWindow.init('[data-modal-target]');
+
+                // initialization of masonry
+                $('.masonry-grid').imagesLoaded().then(function () {
+                    $('.masonry-grid').masonry({
+                        columnWidth: '.masonry-grid-sizer',
+                        itemSelector: '.masonry-grid-item',
+                        percentPosition: true
+                    });
+                });
+
+                // initialization of popups
+                $.HSCore.components.HSPopup.init('.js-fancybox');
+                // initialization of counters
+                $('.js-example-basic-multiple').select2();
+                $('.select2-container--default').addClass("borderselect");
+
+                $('#btnvis').on('click', function () {
+                    $("#titlemod").text($('#oferta_Nombre').val());
+
+                    if ($('#oferta_Tipo').val() === "1") {
+                        $("#tipomod").text("Oferta de Trabajo");
+                    }
+                    if ($('#oferta_Tipo').val() === "2") {
+                        $("#tipomod").text("Beca de Formación");
+                    }
+                    if ($('#oferta_Tipo').val() === "3") {
+                        $("#tipomod").text("Curso de Formación");
+                    }
+                    if ($('#oferta_Tipo').val() === "4") {
+                        $("#tipomod").text("Concurso");
+                    }
+                    if ($('#oferta_Tipo').val() === "5") {
+                        $("#tipomod").text("Otros");
+                    }
+                    $('#titulmod').text("");
+
+                    for (var i = 0; i < $("#oferta_Grados :selected").length; i++) {
+                        $('#titulmod').append("<li>" + $( "#oferta_Grados option:selected" )[i].lastChild.nodeValue + "</li>");
+                    }
+                    $("#descpmod").text($('#oferta_Descripcion').val());
+
+                    $("#urlmod").text($('#oferta_Enlaces').val());
+                    $("#telmod").text($('#oferta_Telefono').val());
+                    $("#emailmod").text($('#oferta_Email').val());
+                });
+
             });
 
-            // initialization of popups
-            $.HSCore.components.HSPopup.init('.js-fancybox');
-            // initialization of counters
-            $('.js-example-basic-multiple').select2();
-            $('.select2-container--default').addClass("borderselect");
-
-            $('#btnvis').on('click',function () {
-                $("#titlemod").text($('#NombreEmp').val());
-                if( $('#OfertaTrabajo').prop("checked") === true) {
-                    $("#tipomod").text("Oferta de Trabajo");
-                }
-                if( $('#BecaForm').prop("checked") === true) {
-                    $("#tipomod").text("Beca de Formación");
-                }
-                if( $('#CursoForm').prop("checked") === true) {
-                    $("#tipomod").text("Curso de Formación");
-                }
-                if( $('#Otros').prop("checked") === true) {
-                    $("#tipomod").text("Otros");
-                }
-                if( $('#Concurso').prop("checked") === true) {
-                    $("#tipomod").text("Concurso");
-                }
-                $('#titulmod').text("");
-
-                for (var i=0;i<$('#Cursos').val().length -1;i++){
-                    $('#titulmod').append("<li>"+$('#Cursos').val()[i]+"</li>");
-                }
-                $("#descpmod").text($('#DescpEmp').val());
-
-                $("#urlmod").text($('#EnlacesEmp').val());
-                $("#telmod").text($('#TelefonoEmp').val());
-                $("#emailmod").text($('#EmailEmp').val());
+            $(window).on('load', function () {
+                // initialization of header
+                $.HSCore.helpers.HSHamburgers.init('.hamburger');
             });
-
-        });
-
-        $(window).on('load', function () {
-            // initialization of header
-            $.HSCore.components.HSHeader.init($('#js-header'));
-            $.HSCore.helpers.HSHamburgers.init('.hamburger');
-        });
-    </script>
-{% endblock %}
+        </script>
+    {% endblock %}
 </footer>
 </body>
 </html>
