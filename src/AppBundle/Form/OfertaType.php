@@ -50,7 +50,8 @@ class OfertaType extends AbstractType
             ->add('Archivos',FileType::class,array(
                 "label"=>"Archivos de Interés:",
                 "attr"=>array("class" => "form-control form-control-md rounded-0"),
-                "data_class" => null
+                "data_class" => null,
+                "required" => false
             ))
             ->add('Grados', EntityType::class,array(
                 "attr"=>array(

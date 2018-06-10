@@ -12,9 +12,25 @@ Home:
   path: /Home
   defaults: {_controller: AppBundle:Default:DatosPersonales}
 
+Alumno_Delete:
+  path: /Alumnos/Delete
+  defaults: { _controller: AppBundle:Default:Delete }
+
+Alumno_Confirmar:
+  path: /Alumnos/Confirmar/{id}
+  defaults: { _controller: AppBundle:Default:Confirmar }
+
 Listar_Alumnos:
   path: /Alumnos/{page}
   defaults: {_controller: AppBundle:Default:ListarAlumnos,page: 1}
+
+EnviarOferta:
+  path: /Oferta/Enviar
+  defaults: {_controller: AppBundle:Default:EnviarOferta}
+
+ValidarOferta:
+  path: /Oferta/Validar/{id}
+  defaults: {_controller: AppBundle:Default:Validar}
 
 Listar_Ofertas:
   path: /Ofertas/{page}
@@ -24,17 +40,6 @@ Listar_MisOfertas:
   path: /MisOfertas/{page}
   defaults: {_controller: AppBundle:Default:MisOfertas,page: 1}
 
-Alumno_Delete:
-  path: /Alumnos/Delete
-  defaults: { _controller: AppBundle:Default:Delete }
-
-Alumno_Confirmar:
-  path: /Alumnos/Confirmar/{id}
-  defaults: { _controller: AppBundle:Default:Confirmar }
-
-EnviarOferta:
-  path: /Oferta/Enviar
-  defaults: {_controller: AppBundle:Default:EnviarOferta}
 
 
 
