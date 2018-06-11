@@ -12,6 +12,10 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion que carga el login de la pagina y crea el formulario de las ofertas
+     */
     public function LoginAction()
     {
         $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
@@ -36,6 +40,11 @@ class DefaultController extends Controller
         ));
     }
 
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion que obtiene los datos personsales del usuario y carga la pagina inicial del login con ellos
+     */
     public function DatosPersonalesAction(Request $request)
     {
         $user = $this->getUser();
@@ -52,7 +61,7 @@ class DefaultController extends Controller
                 $em = $this->getDoctrine()->getManager();
 
                 $alumno = $form->getData();
-
+                //sube la foto a una carpeta personalizada apra guardar las fotos.
                 $file = $form["Foto"]->getData();
                 $extension= $file->guessExtension();
                 $file_name = time().".".$extension;
@@ -88,10 +97,59 @@ class DefaultController extends Controller
         ));
     }
 
-    public function ListarAlumnosAction($page)
+    /**
+     * @param Request $request
+     * @param $page
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion que lista todos los alumnos de la base de datos
+     */
+    public function ListarAlumnosAction(Request $request,$page)
     {
         $Alumnos_repository = $this->getDoctrine()->getRepository(Usuario::class);
 
+        $Alumno  = new Usuario();
+
+        $form = $this->createForm(UsuarioType::class,$Alumno);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted()) {
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+
+                $alumno = $form->getData();
+
+                $file = $form["Foto"]->getData();
+                $extension= $file->guessExtension();
+                $file_name = time().".".$extension;
+                $file->move('assets/img/my',$file_name);
+
+                $alumno->setfoto($file_name);
+                //encriptamos la contraseña en la base de datos
+                $plainPassword = $form["Passwd"]->getData();
+                $encoder = $this->container->get('security.password_encoder');
+                $encoded = $encoder->encodePassword($alumno, $plainPassword);
+
+                $alumno->setPasswd($encoded);
+                $em->persist($alumno);
+                //flush graba los datos en la base de datos
+                $flush=$em->flush();
+
+                if($flush != null){
+                    $status = "Formulario validado perfectamente pero no se ha modificado el alumno";
+                    $tipo="warning";
+                }
+                else{
+                    $status = "Formulario validado perfectamente y modificado el alumno";
+                    $tipo ="success";
+                }
+            } else {
+                $status = "Formulario no válido";
+                $tipo = "danger";
+            }
+            $this->addFlash('estado', $status);
+            $this->addFlash('tipo', $tipo);
+        }
         $tampag = 4;
         $alumnos = $Alumnos_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
 
@@ -103,10 +161,16 @@ class DefaultController extends Controller
             "ListaAlumnos" => $alumnos,
             "pagina" => $page,
             "TotalAlumnos" => $totalalumnos,
-            "TotalPaginas" => $totalpag
+            "TotalPaginas" => $totalpag,
+            "form" => $form->createView()
         ));
     }
 
+    /**
+     * @param $page
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion que Lista todas las ofertas de la base de datos, validadas y no validadas
+     */
     public function ListarOfertasAction($page)
     {
         $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
@@ -125,6 +189,11 @@ class DefaultController extends Controller
         ));
     }
 
+    /**
+     * @param $page
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion para mostrar las ofertas que tiene un alumno en funcion de los grados en los que esta inscrito
+     */
     public function MisOfertasAction($page)
     {
         $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
@@ -142,6 +211,12 @@ class DefaultController extends Controller
             "TotalPaginas" => $totalpag
         ));
     }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * Funcion para borrar un alumno
+     */
     public function DeleteAction(Request $request){
 
         $em = $this->getDoctrine()->getManager();
@@ -170,6 +245,11 @@ class DefaultController extends Controller
         return $this->redirectToRoute('Listar_Alumnos');
     }
 
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion para confirmar la eliminacion de un alumno
+     */
     public function ConfirmarAction($id){
         $em = $this->getDoctrine()->getManager();
 
@@ -182,46 +262,56 @@ class DefaultController extends Controller
         ));
     }
 
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * Funcion que crea una oferta y envia un mensaje al administrador
+     */
     public function EnviarOfertaAction(Request $request){
         $ofertum = new Oferta();
         $form = $this->createForm(OfertaType::class, $ofertum);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $message = \Swift_Message::newInstance()
-                ->setSubject('Nueva Oferta')
-                ->setFrom('t.albertito@gmail.com')
-                ->setTo('alberto_trinidad_lobo@hotmail.es')
-                ->setBody(
-                    $this->renderView(
-                        'AppBundle:Paginas:Partes/email.html.twig',
-                        array('name' => "admin")
-                    ),
-                    'text/html'
-                );
-            $this->get('mailer')->send($message);
 
-            $ofertum=$form->getData();
-            $ofertum->setValidar(0);
-            $file = $form["Archivos"]->getData();
-            if($file != null){
-                $extension= $file->guessExtension();
-                $file_name = time().".".$extension;
-                $file->move('assets/img/Archivos',$file_name);
+                $message = \Swift_Message::newInstance()
+                    ->setSubject('Nueva Oferta')
+                    ->setFrom('sansemplea@gmail.com')
+                    ->setTo('alberto_trinidad_lobo@hotmail.es')
+                    ->setBody(
+                        $this->renderView(
+                            'AppBundle:Paginas:Partes/email.html.twig',
+                            array('name' => "admin")
+                        ),
+                        'text/html'
+                    );
+                $this->get('mailer')->send($message);
 
-                $ofertum->setArchivos($file_name);
+                $ofertum = $form->getData();
+                $ofertum->setValidar(0);
+                $file = $form["Archivos"]->getData();
+                if ($file != null) {
+                    $extension = $file->guessExtension();
+                    $file_name = time() . "." . $extension;
+                    $file->move('assets/img/Archivos', $file_name);
+
+                    $ofertum->setArchivos($file_name);
+                } else {
+                    $ofertum->setArchivos("nada");
+                }
+
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($ofertum);
+                $em->flush();
             }
-            else{
-                $ofertum->setArchivos("nada");
-            }
-
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($ofertum);
-            $em->flush();
-        }
-        return $this->redirectToRoute('login');
+            return $this->redirectToRoute('login');
     }
 
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * Funcion que valida una oferta
+     */
     public function ValidarAction($id){
         $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $oferta = $Oferta_repository->find($id);

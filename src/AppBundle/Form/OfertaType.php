@@ -62,7 +62,7 @@ class OfertaType extends AbstractType
                 'choice_label' => 'descripcion',
                 'multiple' => "multiple"
             ))
-            ->add('Guardar',SubmitType::class,array("attr"=>array(
+            ->add('Enviar',SubmitType::class,array("attr"=>array(
                 "class" => "btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white",
                 'style' => 'float: left'
             )))

@@ -13,19 +13,19 @@
     {% block NavBar %}
 
     {% endblock %}
-    {% block contenido %}
-        {% for tipo in app.session.flashbag().get("tipo") %}
-            <div class="alert alert-{{ tipo }}">
+     {% for tipo in app.session.flashbag().get("tipo") %}
+            <div class="alert alert-{{ tipo }} g-mt-60">
                 {% for message in app.session.flashbag().get("estado") %}
                     <h4>{{ message }}</h4>
                 {% endfor %}
             </div>
         {% endfor %}
+    {% block contenido %}
         <!-- Bloque donde se incrusta el contenido de la pagina web -->
     {% endblock %}
 {% endblock %}
 {% block Footer %}
-<footer class="g-bg-gray-dark-v1">
+<footer class="g-bg-gray-dark-v1 ">
     {{ include('AppBundle:Base:Footer.html.twig') }}
     {% endblock %}
     {% block javascripts %}

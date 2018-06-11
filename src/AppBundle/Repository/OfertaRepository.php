@@ -29,7 +29,7 @@ class OfertaRepository extends EntityRepository
         $result = $query->select('o')
             ->join('o.Grados','g')->addSelect('g')
             ->join('g.Alumnos','a')->addSelect('a')
-            ->andWhere('o.validar = 1 a.id='.$id)
+            ->andWhere('o.Validar = 1 and a.id='.$id)
             ->setFirstResult($PagSize *($PagActual-1))
             ->setMaxResults($PagSize)
             ->getQuery();

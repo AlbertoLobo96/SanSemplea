@@ -81,5 +81,21 @@
         {% endif %}
         </ul>
         </nav>
+         <div class="text-sm-right">
+                <a href="#modal23" data-modal-target="#modal23" data-modal-effect="flash"
+                   class="btn btn-md u-btn-3d g-bg-blue g-mr-10 g-mb-15 g-color-white">
+                    <i class="icon-pencil g-mr-5"></i>
+                    Añadir Alumno
+                </a>
+            </div>
+          <div id="modal23" class="text-left g-max-width-600 g-bg-white g-overflow-y-auto g-pa-20" style="display: none;">
+        <button type="button" class="close" onclick="Custombox.modal.close();">
+            <i class="hs-icon hs-icon-close"></i>
+        </button>
+        {{ form_start( form ,{'enctype':'multipart/from-data'}) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
         <!--END Listado alumnos-->
         {% endblock %}
