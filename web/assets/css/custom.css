@@ -8,6 +8,9 @@ input[type="radio"]:checked + * .g-bg-blue--checked {
 .activo{
     background-color: #004b7c !important;
 }
+.activo:hover{
+    background-color: #004b7c !important;
+}
 .g-bg-blue{
   background-color: #3398dc !important; 
 }
@@ -28,4 +31,7 @@ input[type="radio"]:checked + * .g-bg-blue--checked {
     background-color: #3398dc;
     color: #fff;
     border-color: #3398dc;
+}
+table {
+    overflow: scroll !important;
 }

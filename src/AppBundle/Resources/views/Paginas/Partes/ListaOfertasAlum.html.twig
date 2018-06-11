@@ -6,7 +6,19 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Nombre Empresa: {{ oferta.nombre }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:
+                        {% if(oferta.tipo == 1) %}
+                            Oferta de Trabajo
+                        {% elseif (oferta.tipo == 2) %}
+                            Beca de Formación
+                        {% elseif (oferta.tipo == 3) %}
+                            Curso de Formación
+                        {% elseif (oferta.tipo == 4) %}
+                            Concurso
+                        {% else %}
+                            Otros
+                        {% endif %}
+                    </h6>
                     <ul>
                         {% for sel in oferta.Grados %}
                            <li> {{ sel.nombre }}</li>
@@ -67,10 +79,6 @@
                 </li>
             {% endif %}
         </ul>
-        <div class="text-sm-right">
-            <input class="btn u-btn-blue rounded-0 g-py-12 g-px-25" type="submit" name="EnviarAlumnos"
-                   value="Enviar a los Alumnos"/>
-        </div>
     </nav>
 </div>
 {% endblock %}

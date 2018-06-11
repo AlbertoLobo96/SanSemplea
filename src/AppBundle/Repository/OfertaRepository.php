@@ -14,7 +14,7 @@ class OfertaRepository extends EntityRepository
     public function GetPagina($PagSize, $PagActual){
         $em = $this->getEntityManager();
 
-        $dql = "SELECT e FROM AppBundle\Entity\Oferta e ORDER BY e.id ASC";
+        $dql = "SELECT e FROM AppBundle\Entity\Oferta e ORDER BY e.id DESC";
 
         $query = $em->createQuery($dql)
             ->setFirstResult($PagSize *($PagActual-1))
@@ -35,5 +35,15 @@ class OfertaRepository extends EntityRepository
             ->getQuery();
         $Paginator = new Paginator($result,$fetchJoinCollection = true);
         return $Paginator;
+    }
+    public function GetAllOfertas(){
+        $em = $this->getEntityManager();
+
+        $dql = "SELECT e FROM AppBundle\Entity\Oferta e ORDER BY e.id ASC";
+
+        $query = $em->createQuery($dql)
+            ->getResult();
+
+        return $query;
     }
 }

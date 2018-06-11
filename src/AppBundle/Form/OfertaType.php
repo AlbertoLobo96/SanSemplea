@@ -27,10 +27,12 @@ class OfertaType extends AbstractType
                 "class" => "form-control form-control-md rounded-0",
             )))
             ->add('Email',EmailType::class, array("label"=>"Email Empresa:","attr"=>array(
-                "class" => "form-control form-control-md rounded-0"
+                "class" => "form-control form-control-md rounded-0",
+                "required" => false
             )))
             ->add('Telefono',TextType::class, array("label"=>"Telefono Empresa:","attr"=>array(
-                "class" => "form-control form-control-md rounded-0"
+                "class" => "form-control form-control-md rounded-0",
+                "required" => false
             )))
             ->add('Tipo', ChoiceType::class, array("label" => "Tipo de Oferta:", "attr" => array(
                 "class" => "form-control"),
@@ -42,10 +44,12 @@ class OfertaType extends AbstractType
                     'Otro'=> 5
                 )))
             ->add('Descripcion',TextareaType::class, array("label"=>"Descripcion de la oferta:","attr"=>array(
-                "class" => "form-control form-control-md u-textarea-expandable rounded-0"
+                "class" => "form-control form-control-md u-textarea-expandable rounded-0",
+                "required" => false
             )))
             ->add('Enlaces',TextType::class, array("label"=>"Enlaces de Interés:","attr"=>array(
-                "class" => "form-control form-control-md rounded-0"
+                "class" => "form-control form-control-md rounded-0",
+                "required" => false
             )))
             ->add('Archivos',FileType::class,array(
                 "label"=>"Archivos de Interés:",

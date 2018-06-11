@@ -1,2 +1,30 @@
-<h1>Hola Administrado: {{ name }}</h1>
-<p>Se ha publicado una nueva oferta porfavor entre en la plataforma para validarla. Un saludo</p>
+<h1>Buenas Sr. {{ name }}</h1>
+<p>Contactamos con usted ya que se ha publicado una oferta de trabajo</p>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Nombre Empresa: {{ oferta.nombre }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:
+            {% if(oferta.tipo == 1) %}
+                Oferta de Trabajo
+            {% elseif (oferta.tipo == 2) %}
+                Beca de Formación
+            {% elseif (oferta.tipo == 3) %}
+                Curso de Formación
+            {% elseif (oferta.tipo == 4) %}
+                Concurso
+            {% else %}
+                Otros
+            {% endif %}
+        </h6>
+        <ul>
+            {% for sel in oferta.grados %}
+                <li> {{ sel.nombre }}</li>
+            {% endfor %}
+        </ul>
+        <p class="card-text">Descripción: {{ oferta.descripcion }}</p>
+        <span>Enlaces: {{ oferta.enlaces }}</span>
+        <br/>
+        <span>Telefono: {{ oferta.telefono }}</span>
+    </div>
+</div>
+<a href="#">Entra en la aplicación para mas información</a>

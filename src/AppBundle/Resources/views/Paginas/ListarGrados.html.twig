@@ -3,7 +3,7 @@
     {{ include('AppBundle:Base:NavBarLoged.html.twig') }}
 {% endblock %}
 {% block contenido %}
-    <section class="g-my-100">
+    <section class="g-mt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 g-mb-0--lg">
@@ -29,14 +29,11 @@
                     <!-- User Image -->
                 </div>
                 <!-- End Profile Sidebar -->
-                <!-- Profle Content -->
                 <div class="col-lg-9 g-mb-100">
                     {% block panel %}
-                        {{ include('AppBundle:Paginas/Partes:DatosPersonales.html.twig') }}
+                        {{ include('AppBundle:Paginas/Partes:ListaGrados.html.twig') }}
                     {% endblock %}
-                    <!-- End Tab panes -->
                 </div>
-                <!-- End Profle Content -->
             </div>
         </div>
     </section>

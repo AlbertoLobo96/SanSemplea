@@ -23,4 +23,14 @@ class UsuarioRepository extends EntityRepository
         $Paginator = new Paginator($query,$fetchJoinCollection = true);
         return $Paginator;
     }
+    public function GetAllUsuarios(){
+        $em = $this->getEntityManager();
+
+        $dql = "SELECT e FROM AppBundle\Entity\Usuario e WHERE e.Rol ='ROLE_USER' ORDER BY e.id ASC";
+
+        $query = $em->createQuery($dql)
+            ->getResult();
+
+        return $query;
+    }
 }

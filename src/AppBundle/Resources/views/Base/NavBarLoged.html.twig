@@ -23,9 +23,6 @@
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
                     <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
-                        <li class="nav-item g-mx-20--lg">
-                            <a href="{{ path('Home') }}" class="nav-link px-0">Datos Personales</a>
-                        </li>
                         {% if app.user.rol == "ROLE_ADMIN" %}
                         <li class="nav-item g-mx-20--lg">
                             <a href="{{ path('Listar_Alumnos') }}" class="nav-link px-0">Listado Alumnos</a>
@@ -45,10 +42,28 @@
                         <li class="nav-item g-mx-20--lg">
                             <a href="#" class="nav-link px-0">Bienvenido: {{ app.user.nombre }}</a>
                         </li>
-                        <li class="nav-item g-mx-20--lg">
-                            <a href="{{ path('login') }}" class="nav-link px-0">Desconectar
-                                <i class="fa fa-power-off"></i>
-                            </a>
+                        <li class="nav-item dropdown g-mx-20--lg ">
+                            <a href="#" class="nav-link dropdown-toggle g-px-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
+                            <ul class="dropdown-menu rounded-0 g-text-transform-none g-brd-none g-brd-top g-brd-blue g-brd-top-2 g-mt-15 g-mt-10--lg--scrolling">
+                                <li class="dropdown-item g-bg-my-gradient-opacity-v1 activo">
+                                    <a href="{{ path('Home') }}" class="nav-link px-0">Datos Personales
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                </li>
+                                {% if app.user.rol == "ROLE_ADMIN" %}
+                                <li class="dropdown-item g-bg-my-gradient-opacity-v1 activo">
+                                    <a href="{{ path('Listar_Grados') }}" class="nav-link px-0">Gestionar Grados
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                <li class="dropdown-item g-bg-my-gradient-opacity-v1 activo">
+                                    <a href="{{ path('login') }}" class="nav-link px-0">Desconectar
+                                        <i class="fa fa-power-off"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- End Submenu (Bootstrap) -->
                         </li>
                     </ul>
                 </div>

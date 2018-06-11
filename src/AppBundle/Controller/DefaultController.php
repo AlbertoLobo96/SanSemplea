@@ -7,6 +7,7 @@ use AppBundle\Entity\Oferta;
 use AppBundle\Entity\Usuario;
 use AppBundle\Form\UsuarioType;
 use AppBundle\Form\OfertaType;
+use AppBundle\Form\GradoType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -96,12 +97,11 @@ class DefaultController extends Controller
             "form" => $form->createView()
         ));
     }
-
     /**
      * @param Request $request
      * @param $page
      * @return \Symfony\Component\HttpFoundation\Response
-     * Funcion que lista todos los alumnos de la base de datos
+     * Funcion que lista todos los alumnos de la base de datos y añadir uno nuevo
      */
     public function ListarAlumnosAction(Request $request,$page)
     {
@@ -129,8 +129,8 @@ class DefaultController extends Controller
                 $plainPassword = $form["Passwd"]->getData();
                 $encoder = $this->container->get('security.password_encoder');
                 $encoded = $encoder->encodePassword($alumno, $plainPassword);
-
                 $alumno->setPasswd($encoded);
+
                 $em->persist($alumno);
                 //flush graba los datos en la base de datos
                 $flush=$em->flush();
@@ -250,7 +250,7 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * Funcion para confirmar la eliminacion de un alumno
      */
-    public function ConfirmarAction($id){
+    public function ConfirmarAlumnoAction($id){
         $em = $this->getDoctrine()->getManager();
 
         $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
@@ -273,15 +273,16 @@ class DefaultController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-
                 $message = \Swift_Message::newInstance()
                     ->setSubject('Nueva Oferta')
                     ->setFrom('sansemplea@gmail.com')
-                    ->setTo('alberto_trinidad_lobo@hotmail.es')
+                    ->setTo('bosssansemplea@gmail.com')
                     ->setBody(
                         $this->renderView(
-                            'AppBundle:Paginas:Partes/email.html.twig',
-                            array('name' => "admin")
+                            'AppBundle:Paginas:Partes/email.html.twig', array(
+                                'oferta' => $ofertum,
+                                'name' => "Administrador"
+                                )
                         ),
                         'text/html'
                     );
@@ -316,6 +317,224 @@ class DefaultController extends Controller
         $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $oferta = $Oferta_repository->find($id);
         $oferta->setValidar(1);
+
+        $Alumno_repository = $this->getDoctrine()->getRepository(Usuario::class);
+        $Alumnos = $Alumno_repository->GetAllUsuarios();
+
+        foreach ($Alumnos  as $sel){
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Nueva Oferta')
+                ->setFrom('sansemplea@gmail.com')
+                ->setTo($sel->getEmail())
+                ->setBody(
+                    $this->renderView(
+                        'AppBundle:Paginas:Partes/email.html.twig', array(
+                            'oferta' => $oferta,
+                            'name' => $sel->getNombre()
+                        )
+                    ),
+                    'text/html'
+                );
+            $this->get('mailer')->send($message);
+        }
         return $this->redirectToRoute('Listar_Ofertas');
     }
-}
+
+    /**
+     * @param Request $request
+     * @param $page
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion que lista y añade grados a la base de datos
+     */
+    public function ListarGradosAction(Request $request,$page){
+
+        $grado  = new Grado();
+
+        $form = $this->createForm(GradoType::class,$grado);
+
+        $form->handleRequest($request);
+
+        $Grados_repository = $this->getDoctrine()->getRepository(Grado::class);
+
+
+        if($form->isSubmitted()) {
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $grado = $form->getData();
+                $em->persist($grado);
+                //flush graba los datos en la base de datos
+                $flush=$em->flush();
+
+                if($flush != null){
+                    $status = "Formulario validado perfectamente pero no se ha añadido el grado";
+                    $tipo="warning";
+                }
+                else{
+                    $status = "Formulario validado perfectamente y añadido el grado";
+                    $tipo ="success";
+                }
+            } else {
+                $status = "Formulario no válido";
+                $tipo = "danger";
+            }
+            $this->addFlash('estado', $status);
+            $this->addFlash('tipo', $tipo);
+        }
+
+        $tampag = 4;
+        $Grados = $Grados_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
+
+        $totalgrados = count($Grados);
+
+        $totalpag = ceil($totalgrados / $tampag);
+
+        return $this->render('AppBundle:Paginas:ListarGrados.html.twig', array(
+            "ListaGrados" => $Grados,
+            "pagina" => $page,
+            "TotalPaginas" => $totalpag,
+            "form" => $form->createView()
+        ));
+    }
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * Funcion para borrar un grado
+     */
+    public function DeleteGradoAction(Request $request){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $Grado_repository = $em->getRepository("AppBundle:Grado");
+
+        $id = $request->query->get("id");
+
+
+        $grado = $Grado_repository->find($id); //Buscamos el objeto con el id
+
+        $em->remove($grado);
+
+        $flush=$em->flush();
+
+        if($flush != null){
+            $status = "Grado no borrado";
+            $tipo="danger";
+        }
+        else{
+            $status = "El grado ha sido borrado correctamente";
+            $tipo ="success";
+        }
+        $this->addFlash('estado', $status);
+        $this->addFlash('tipo', $tipo);
+        return $this->redirectToRoute('Listar_Grados');
+    }
+
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion para confirmar la eliminacion de un grado
+     */
+    public function ConfirmarGradoAction($id){
+        $em = $this->getDoctrine()->getManager();
+
+        $Grado_repository = $em->getRepository("AppBundle:Grado");
+
+        $grado = $Grado_repository->find($id); //Buscamos el objeto con el id
+
+        return $this->render("AppBundle:Paginas:ConfirmarGrado.html.twig",array(
+            "grado"=> $grado
+        ));
+    }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * Funcion para borrar una oferta
+     */
+    public function DeleteOfertaAction(Request $request){
+
+        $em = $this->getDoctrine()->getManager();
+
+        $Oferta_repository = $em->getRepository("AppBundle:Oferta");
+
+        $id = $request->query->get("id");
+
+
+        $oferta = $Oferta_repository->find($id); //Buscamos el objeto con el id
+
+        $em->remove($oferta);
+
+        $flush=$em->flush();
+
+        if($flush != null){
+            $status = "Oferta no borrada";
+            $tipo="danger";
+        }
+        else{
+            $status = "La oferta ha sido borrada correctamente";
+            $tipo ="success";
+        }
+        $this->addFlash('estado', $status);
+        $this->addFlash('tipo', $tipo);
+        return $this->redirectToRoute('Listar_Ofertas');
+    }
+
+    /**
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     * Funcion para modificar los datos de algun alumno
+     */
+    public function ModificarAlumnoAction(Request $request){
+
+    $em = $this->getDoctrine()->getManager();
+
+    $Alumnos_repository = $em->getRepository("AppBundle:Usuario");
+
+    $id = $request->query->get("id");
+
+    $alumno = $Alumnos_repository->find($id); //Buscamos el objeto con el id
+
+    $form = $this->createForm(UsuarioType::class,$alumno);
+
+    $form->handleRequest($request);
+
+    if($form->isSubmitted()) {
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+
+            $alumno = $form->getData();
+
+            $file = $form["Foto"]->getData();
+            $extension= $file->guessExtension();
+            $file_name = time().".".$extension;
+            $file->move('assets/img/my',$file_name);
+
+            $alumno->setfoto($file_name);
+            //encriptamos la contraseña en la base de datos
+            $plainPassword = $form["Passwd"]->getData();
+            $encoder = $this->container->get('security.password_encoder');
+            $encoded = $encoder->encodePassword($alumno, $plainPassword);
+            $alumno->setPasswd($encoded);
+
+            $em->persist($alumno);
+            //flush graba los datos en la base de datos
+            $flush=$em->flush();
+
+            if($flush != null){
+                $status = "Formulario validado perfectamente pero no se ha modificado el alumno";
+                $tipo="warning";
+            }
+            else{
+                $status = "Formulario validado perfectamente y modificado el alumno";
+                $tipo ="success";
+            }
+        } else {
+            $status = "Formulario no válido";
+            $tipo = "danager";
+        }
+        $this->addFlash('estado', $status);
+        $this->addFlash('tipo', $tipo);
+    }
+    return $this->render("AppBundle:Paginas:ModAlumno.html.twig",array(
+        "form" => $form->createView()
+    ));
+}}

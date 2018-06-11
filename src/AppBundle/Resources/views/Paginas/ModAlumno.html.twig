@@ -1,0 +1,22 @@
+{% extends 'AppBundle:Base:Plantilla.html.twig' %}
+{% block NavBar %}
+    {{ include('AppBundle:Base:NavBarLoged.html.twig') }}
+{% endblock %}
+{% block contenido %}
+    <section class= "g-bg-gray-dark-v1 g-color-white g-mt-65">
+        <div class="g-bg-my-gradient-opacity-v1">
+            <h2 class="u-divider-center g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase g-my-0">
+                Modificar de alumno
+            </h2>
+        </div>
+    </section>
+    <div class="container g-bg-white g-color-black">
+        {{ form_start( form ,{'enctype':'multipart/from-data'}) }}
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        <a href="{{ path('Listar_Alumnos') }}">
+            <input type="button" class="btn btn-md u-btn-3d g-bg-beige g-mr-10 g-mb-15 g-color-black" value="Cancelar"/>
+        </a>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

@@ -5,8 +5,25 @@
         <div class="col-md-6 g-mt-10">
             <div class="card">
                 <div class="card-body">
+                    <div class="text-sm-right">
+                        <a class="g-color-red" href="{{ path('Oferta_Delete',{"id":oferta.id}) }}" >
+                            <i class="hs-icon hs-icon-close g-mr-5"></i>
+                        </a>
+                    </div>
                     <h5 class="card-title">Nombre Empresa: {{ oferta.nombre }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:{{ oferta.tipo }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Tipo Oferta:
+                        {% if(oferta.tipo == 1) %}
+                            Oferta de Trabajo
+                            {% elseif (oferta.tipo == 2) %}
+                                Beca de Formación
+                        {% elseif (oferta.tipo == 3) %}
+                            Curso de Formación
+                        {% elseif (oferta.tipo == 4) %}
+                            Concurso
+                        {% else %}
+                            Otros
+                            {% endif %}
+                    </h6>
                     <ul>
                         {% for sel in oferta.grados %}
                            <li> {{ sel.nombre }}</li>
@@ -24,9 +41,9 @@
                     <a href="mailto:{{ oferta.email }}" class="card-link">Mandar correo</a>
 
                     {% if app.user.rol != "ROLE_ADMIN" %}
-                    <a href="#" class="card-link">Solicitar</a>
+                        <a href="#" class="card-link">Solicitar</a>
                     {% elseif oferta.validar == 0 %}
-                    <a href="#" class="card-link">Validar</a>
+                        <a href="{{ path('ValidarOferta',{"id":oferta.id}) }}" class="card-link">Validar</a>
                     {% endif %}</a>
                 </div>
             </div>
@@ -67,10 +84,6 @@
                 </li>
             {% endif %}
         </ul>
-        <div class="text-sm-right">
-            <input class="btn u-btn-blue rounded-0 g-py-12 g-px-25" type="submit" name="EnviarAlumnos"
-                   value="Enviar a los Alumnos"/>
-        </div>
     </nav>
 </div>
 {% endblock %}
