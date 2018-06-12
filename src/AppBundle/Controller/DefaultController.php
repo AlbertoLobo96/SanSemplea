@@ -319,6 +319,7 @@ class DefaultController extends Controller
         $oferta->setValidar(1);
 
         $Alumno_repository = $this->getDoctrine()->getRepository(Usuario::class);
+        
         $Alumnos = $Alumno_repository->GetAllUsuarios();
 
         foreach ($Alumnos  as $sel){
@@ -381,7 +382,7 @@ class DefaultController extends Controller
             $this->addFlash('tipo', $tipo);
         }
 
-        $tampag = 4;
+        $tampag = 8;
         $Grados = $Grados_repository->GetPagina($tampag, $page); //array con todos los alumnos de la base de datos
 
         $totalgrados = count($Grados);
@@ -483,6 +484,7 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * Funcion para modificar los datos de algun alumno
      */
+    
     public function ModificarAlumnoAction(Request $request){
 
     $em = $this->getDoctrine()->getManager();
@@ -537,4 +539,5 @@ class DefaultController extends Controller
     return $this->render("AppBundle:Paginas:ModAlumno.html.twig",array(
         "form" => $form->createView()
     ));
-}}
+    }
+}

@@ -26,7 +26,7 @@ class UsuarioRepository extends EntityRepository
     public function GetAllUsuarios(){
         $em = $this->getEntityManager();
 
-        $dql = "SELECT e FROM AppBundle\Entity\Usuario e WHERE e.Rol ='ROLE_USER' ORDER BY e.id ASC";
+        $dql = "SELECT e FROM AppBundle\Entity\Usuario e WHERE e.Rol ='ROLE_USER' AND e.Recibir = 1 ORDER BY e.id ASC";
 
         $query = $em->createQuery($dql)
             ->getResult();

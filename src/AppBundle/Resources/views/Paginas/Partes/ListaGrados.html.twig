@@ -15,10 +15,7 @@
                 <td>{{ grado.nombre }}</td>
                 <td>{{ grado.descripcion }}</td>
                 <td>
-                    <a class="btn btn-xs u-btn-3d g-bg-orange g-mr-10 g-mb-15 g-color-black">
-                        <i class="fa fa-pencil"></i> Editar
-                    </a>
-                    <a class="btn btn-xs u-btn-3d g-bg-red g-mr-10 g-mb-15 g-color-black" href="{{ path('Grado_Confirmar',{"id":grado.id}) }}">
+                    <a class="btn btn-s u-btn-3d g-bg-red g-mr-10 g-mb-15 g-color-black" href="{{ path('Grado_Confirmar',{"id":grado.id}) }}">
                         <i class="fa fa-trash-o"></i> Borrar
                     </a>
                 </td>
