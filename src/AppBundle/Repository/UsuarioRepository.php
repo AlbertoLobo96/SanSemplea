@@ -27,10 +27,15 @@ class UsuarioRepository extends EntityRepository
         $em = $this->getEntityManager();
 
         $dql = "SELECT e FROM AppBundle\Entity\Usuario e WHERE e.Rol ='ROLE_USER' AND e.Recibir = 1 ORDER BY e.id ASC";
-
         $query = $em->createQuery($dql)
             ->getResult();
-
+        /*
+        $query = $this->createQueryBuilder('u');
+        $result = $query->select('u')
+            ->join('g.Grados','g')->addSelect('g')
+            ->andWhere("u.Rol = 'ROLE_USER' and u.Recibir = 1 and g.id = 1")
+            ->getQuery();
+        */
         return $query;
     }
 }

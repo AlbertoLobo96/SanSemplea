@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Versión del servidor:         10.1.31-MariaDB - mariadb.org binary distribution
+-- Versión del servidor:         10.1.21-MariaDB - mariadb.org binary distribution
 -- SO del servidor:              Win32
--- HeidiSQL Versión:             9.5.0.5277
+-- HeidiSQL Versión:             9.5.0.5273
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `grado` (
   `nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `descripcion` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- Volcando datos para la tabla bbdd_tfg.grado: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `grado` DISABLE KEYS */;
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `grados_alumnos` (
   CONSTRAINT `FK_154D292ADB38439E` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla bbdd_tfg.grados_alumnos: ~10 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_tfg.grados_alumnos: ~7 rows (aproximadamente)
 /*!40000 ALTER TABLE `grados_alumnos` DISABLE KEYS */;
 INSERT INTO `grados_alumnos` (`usuario_id`, `grado_id`) VALUES
 	(1, 1),
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `grados_ofertas` (
   CONSTRAINT `FK_341AA72FAFBF624` FOREIGN KEY (`oferta_id`) REFERENCES `oferta` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla bbdd_tfg.grados_ofertas: ~11 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_tfg.grados_ofertas: ~5 rows (aproximadamente)
 /*!40000 ALTER TABLE `grados_ofertas` DISABLE KEYS */;
 INSERT INTO `grados_ofertas` (`oferta_id`, `grado_id`) VALUES
 	(1, 1),
@@ -82,35 +82,35 @@ CREATE TABLE IF NOT EXISTS `oferta` (
   `nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `telefono` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `tipo` int(11) NOT NULL,
+  `tipo` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `descripcion` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `enlaces` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `enlaces` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `archivos` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `validar` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla bbdd_tfg.oferta: ~20 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_tfg.oferta: ~18 rows (aproximadamente)
 /*!40000 ALTER TABLE `oferta` DISABLE KEYS */;
 INSERT INTO `oferta` (`id`, `nombre`, `email`, `telefono`, `tipo`, `descripcion`, `enlaces`, `archivos`, `validar`) VALUES
-	(1, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
-	(2, 'asfas2', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
-	(3, 'asfas3', 'asfasf@asd.es', '13213', 2, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
-	(4, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
-	(5, 'asfas1', 'asfasf@asd.es', '13213', 2, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
-	(6, 'asfas1', 'asfasf@asd.es', '13213', 3, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(7, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(9, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(10, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(11, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(12, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(13, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(14, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(15, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(16, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(17, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(18, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
-	(19, 'asfas1', 'asfasf@asd.es', '13213', 1, 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0);
+	(1, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
+	(2, 'asfas2', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
+	(3, 'asfas3', 'asfasf@asd.es', '13213', '2', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
+	(4, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
+	(5, 'asfas1', 'asfasf@asd.es', '13213', '2', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 1),
+	(6, 'asfas1', 'asfasf@asd.es', '13213', '3', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(7, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(9, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(10, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(11, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(12, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(13, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(14, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(15, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(16, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(17, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(18, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0),
+	(19, 'asfas1', 'asfasf@asd.es', '13213', '1', 'asddasfasfas', 'asdfasfas', 'asfsafasdf', 0);
 /*!40000 ALTER TABLE `oferta` ENABLE KEYS */;
 
 -- Volcando estructura para tabla bbdd_tfg.usuario
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nif` varchar(9) COLLATE utf8_unicode_ci NOT NULL,
   `nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `Recibir` int(11) DEFAULT NULL,
+  `recibir` int(11) NOT NULL,
   `apellido` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `telefono` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
@@ -128,17 +128,17 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `curso` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_EDD889C1E7927C74` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla bbdd_tfg.usuario: ~12 rows (aproximadamente)
+-- Volcando datos para la tabla bbdd_tfg.usuario: ~10 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` (`id`, `nif`, `nombre`, `Recibir`, `apellido`, `telefono`, `email`, `foto`, `passwd`, `rol`, `curso`) VALUES
-	(1, '49161075R', 'Alberto', 0, 'Lobo', '698547128', 'bosssansemplea@gmail.com', '1528214261.png', '$2y$11$4Y6GR7A8f.ZmpZR2uuZFSusVNyY8w0s6WIDPVrgTh6D1WxSrHujEe', 'ROLE_ADMIN', '2016'),
+INSERT INTO `usuario` (`id`, `nif`, `nombre`, `recibir`, `apellido`, `telefono`, `email`, `foto`, `passwd`, `rol`, `curso`) VALUES
+	(1, '49161075R', 'Alberto', 1, 'Lobo', '698547128', 'bosssansemplea@gmail.com', '1528214261.png', '$2y$11$4Y6GR7A8f.ZmpZR2uuZFSusVNyY8w0s6WIDPVrgTh6D1WxSrHujEe', 'ROLE_ADMIN', '2016'),
 	(2, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd1@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_ADMIN', '2016'),
 	(3, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd2@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_ADMIN', '2016'),
 	(6, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd5@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
 	(7, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd6@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
-	(8, '49161075', 'Alberto', 0, 'Lobo', '51454', 'alberto_trinidad_lobo@hotmail.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
+	(8, '49161075', 'Alberto', 1, 'Lobo', '51454', 'alberto_trinidad_lobo@hotmail.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
 	(9, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd8@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
 	(10, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd9@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),
 	(11, '49161075', 'Alberto', 0, 'Lobo', '51454', 'asd10@asd.es', 'map.png', '$2a$04$7cw8xapnk1F.pfMasX7ja.r2875puVhev23UKkAGwg1Oqflssi3Sa', 'ROLE_USER', '2016'),

@@ -302,8 +302,8 @@ class DefaultController extends Controller
                 }
 
                 $em = $this->getDoctrine()->getManager();
-                $em->persist($ofertum);
-                $em->flush();
+            $em->persist($ofertum);
+            $em->flush();
             }
             return $this->redirectToRoute('login');
     }
@@ -314,30 +314,40 @@ class DefaultController extends Controller
      * Funcion que valida una oferta
      */
     public function ValidarAction($id){
+
         $Oferta_repository = $this->getDoctrine()->getRepository(Oferta::class);
         $oferta = $Oferta_repository->find($id);
         $oferta->setValidar(1);
 
         $Alumno_repository = $this->getDoctrine()->getRepository(Usuario::class);
-        
+
         $Alumnos = $Alumno_repository->GetAllUsuarios();
 
-        foreach ($Alumnos  as $sel){
-            $message = \Swift_Message::newInstance()
-                ->setSubject('Nueva Oferta')
-                ->setFrom('sansemplea@gmail.com')
-                ->setTo($sel->getEmail())
-                ->setBody(
-                    $this->renderView(
-                        'AppBundle:Paginas:Partes/email.html.twig', array(
-                            'oferta' => $oferta,
-                            'name' => $sel->getNombre()
-                        )
-                    ),
-                    'text/html'
-                );
-            $this->get('mailer')->send($message);
+        foreach ($oferta->getGrados() as $grad) {
+            foreach ($Alumnos as $sel) {
+                foreach ($sel->getGrados() as $s) {
+                    if ($grad->getId() == $s->getId()) {
+                        $message = \Swift_Message::newInstance()
+                            ->setSubject('Nueva Oferta')
+                            ->setFrom('sansemplea@gmail.com')
+                            ->setTo($sel->getEmail())
+                            ->setBody(
+                                $this->renderView(
+                                    'AppBundle:Paginas:Partes/email.html.twig', array(
+                                        'oferta' => $oferta,
+                                        'name' => $sel->getNombre()
+                                    )
+                                ),
+                                'text/html'
+                            );
+                        $this->get('mailer')->send($message);
+                    }
+                }
+            }
         }
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($oferta);
+        $em->flush();
         return $this->redirectToRoute('Listar_Ofertas');
     }
 
