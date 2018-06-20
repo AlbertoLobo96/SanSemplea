@@ -35,11 +35,7 @@
                     <br/>
                     <a href="mailto:{{ oferta.email }}" class="card-link">Mandar correo</a>
 
-                    {% if app.user.rol != "ROLE_ADMIN" %}
                     <a href="#" class="card-link">Solicitar</a>
-                    {% elseif oferta.validar == 0 %}
-                    <a href="#" class="card-link">Validar</a>
-                    {% endif %}
                 </div>
             </div>
         </div>

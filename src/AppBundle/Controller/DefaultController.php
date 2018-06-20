@@ -79,11 +79,11 @@ class DefaultController extends Controller
                 $flush=$em->flush();
 
                 if($flush != null){
-                    $status = "Formulario validado perfectamente pero no se ha modificado el alumno";
+                    $status = "Formulario validado perfectamente pero no se ha modificado sus datos";
                     $tipo="warning";
                 }
                 else{
-                    $status = "Formulario validado perfectamente y modificado el alumno";
+                    $status = "Formulario validado perfectamente y se han modificado sus datos";
                     $tipo ="success";
                 }
             } else {
@@ -136,11 +136,11 @@ class DefaultController extends Controller
                 $flush=$em->flush();
 
                 if($flush != null){
-                    $status = "Formulario validado perfectamente pero no se ha modificado el alumno";
+                    $status = "Formulario validado perfectamente pero no se ha añadido el usuario";
                     $tipo="warning";
                 }
                 else{
-                    $status = "Formulario validado perfectamente y modificado el alumno";
+                    $status = "Formulario validado perfectamente y añadido el usuario";
                     $tipo ="success";
                 }
             } else {
